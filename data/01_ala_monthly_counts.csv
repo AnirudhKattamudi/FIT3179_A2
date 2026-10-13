@@ -1,0 +1,2017 @@
+category,year,state,month,population_count
+Birds,2023,New South Wales,1,4041
+Birds,2023,New South Wales,2,3477
+Birds,2023,New South Wales,3,4954
+Birds,2023,New South Wales,4,4615
+Birds,2023,New South Wales,5,3846
+Birds,2023,New South Wales,6,3465
+Birds,2023,New South Wales,7,4093
+Birds,2023,New South Wales,8,5143
+Birds,2023,New South Wales,9,5086
+Birds,2023,New South Wales,10,6459
+Birds,2023,New South Wales,11,6469
+Birds,2023,New South Wales,12,5880
+Birds,2023,Victoria,1,4270
+Birds,2023,Victoria,2,3735
+Birds,2023,Victoria,3,4738
+Birds,2023,Victoria,4,6708
+Birds,2023,Victoria,5,5198
+Birds,2023,Victoria,6,4577
+Birds,2023,Victoria,7,4113
+Birds,2023,Victoria,8,4715
+Birds,2023,Victoria,9,6826
+Birds,2023,Victoria,10,6087
+Birds,2023,Victoria,11,7043
+Birds,2023,Victoria,12,5367
+Birds,2023,Queensland,1,3651
+Birds,2023,Queensland,2,3220
+Birds,2023,Queensland,3,2796
+Birds,2023,Queensland,4,4611
+Birds,2023,Queensland,5,4991
+Birds,2023,Queensland,6,6472
+Birds,2023,Queensland,7,7195
+Birds,2023,Queensland,8,6844
+Birds,2023,Queensland,9,6449
+Birds,2023,Queensland,10,6207
+Birds,2023,Queensland,11,6267
+Birds,2023,Queensland,12,5067
+Birds,2023,Western Australia,1,876
+Birds,2023,Western Australia,2,591
+Birds,2023,Western Australia,3,761
+Birds,2023,Western Australia,4,1245
+Birds,2023,Western Australia,5,991
+Birds,2023,Western Australia,6,899
+Birds,2023,Western Australia,7,1218
+Birds,2023,Western Australia,8,1402
+Birds,2023,Western Australia,9,1647
+Birds,2023,Western Australia,10,1569
+Birds,2023,Western Australia,11,1567
+Birds,2023,Western Australia,12,1628
+Birds,2023,South Australia,1,1875
+Birds,2023,South Australia,2,1370
+Birds,2023,South Australia,3,1494
+Birds,2023,South Australia,4,2157
+Birds,2023,South Australia,5,2108
+Birds,2023,South Australia,6,1531
+Birds,2023,South Australia,7,1862
+Birds,2023,South Australia,8,1948
+Birds,2023,South Australia,9,2292
+Birds,2023,South Australia,10,2730
+Birds,2023,South Australia,11,3533
+Birds,2023,South Australia,12,2736
+Birds,2023,Tasmania,1,586
+Birds,2023,Tasmania,2,608
+Birds,2023,Tasmania,3,408
+Birds,2023,Tasmania,4,441
+Birds,2023,Tasmania,5,310
+Birds,2023,Tasmania,6,256
+Birds,2023,Tasmania,7,226
+Birds,2023,Tasmania,8,207
+Birds,2023,Tasmania,9,333
+Birds,2023,Tasmania,10,1584
+Birds,2023,Tasmania,11,1038
+Birds,2023,Tasmania,12,1154
+Birds,2023,Northern Territory,1,166
+Birds,2023,Northern Territory,2,256
+Birds,2023,Northern Territory,3,304
+Birds,2023,Northern Territory,4,287
+Birds,2023,Northern Territory,5,378
+Birds,2023,Northern Territory,6,909
+Birds,2023,Northern Territory,7,1418
+Birds,2023,Northern Territory,8,689
+Birds,2023,Northern Territory,9,1394
+Birds,2023,Northern Territory,10,701
+Birds,2023,Northern Territory,11,455
+Birds,2023,Northern Territory,12,169
+Birds,2023,Australian Capital Territory,1,1533
+Birds,2023,Australian Capital Territory,2,1276
+Birds,2023,Australian Capital Territory,3,1429
+Birds,2023,Australian Capital Territory,4,1413
+Birds,2023,Australian Capital Territory,5,1293
+Birds,2023,Australian Capital Territory,6,1048
+Birds,2023,Australian Capital Territory,7,1129
+Birds,2023,Australian Capital Territory,8,1400
+Birds,2023,Australian Capital Territory,9,1556
+Birds,2023,Australian Capital Territory,10,1895
+Birds,2023,Australian Capital Territory,11,1396
+Birds,2023,Australian Capital Territory,12,1188
+Birds,2024,New South Wales,1,4422
+Birds,2024,New South Wales,2,3891
+Birds,2024,New South Wales,3,5569
+Birds,2024,New South Wales,4,4459
+Birds,2024,New South Wales,5,4225
+Birds,2024,New South Wales,6,4450
+Birds,2024,New South Wales,7,4756
+Birds,2024,New South Wales,8,5899
+Birds,2024,New South Wales,9,7926
+Birds,2024,New South Wales,10,7265
+Birds,2024,New South Wales,11,6284
+Birds,2024,New South Wales,12,5593
+Birds,2024,Victoria,1,6917
+Birds,2024,Victoria,2,5285
+Birds,2024,Victoria,3,6066
+Birds,2024,Victoria,4,8335
+Birds,2024,Victoria,5,5674
+Birds,2024,Victoria,6,5174
+Birds,2024,Victoria,7,4472
+Birds,2024,Victoria,8,5620
+Birds,2024,Victoria,9,11590
+Birds,2024,Victoria,10,8557
+Birds,2024,Victoria,11,7501
+Birds,2024,Victoria,12,7641
+Birds,2024,Queensland,1,3946
+Birds,2024,Queensland,2,3427
+Birds,2024,Queensland,3,3957
+Birds,2024,Queensland,4,4572
+Birds,2024,Queensland,5,5515
+Birds,2024,Queensland,6,6172
+Birds,2024,Queensland,7,8686
+Birds,2024,Queensland,8,9319
+Birds,2024,Queensland,9,8902
+Birds,2024,Queensland,10,7257
+Birds,2024,Queensland,11,6475
+Birds,2024,Queensland,12,5291
+Birds,2024,Western Australia,1,1724
+Birds,2024,Western Australia,2,1547
+Birds,2024,Western Australia,3,1381
+Birds,2024,Western Australia,4,2236
+Birds,2024,Western Australia,5,1568
+Birds,2024,Western Australia,6,1683
+Birds,2024,Western Australia,7,1866
+Birds,2024,Western Australia,8,1600
+Birds,2024,Western Australia,9,3544
+Birds,2024,Western Australia,10,2061
+Birds,2024,Western Australia,11,1800
+Birds,2024,Western Australia,12,2153
+Birds,2024,South Australia,1,2780
+Birds,2024,South Australia,2,2327
+Birds,2024,South Australia,3,2341
+Birds,2024,South Australia,4,3235
+Birds,2024,South Australia,5,2468
+Birds,2024,South Australia,6,2126
+Birds,2024,South Australia,7,2139
+Birds,2024,South Australia,8,2225
+Birds,2024,South Australia,9,3107
+Birds,2024,South Australia,10,3174
+Birds,2024,South Australia,11,2461
+Birds,2024,South Australia,12,2639
+Birds,2024,Tasmania,1,1101
+Birds,2024,Tasmania,2,681
+Birds,2024,Tasmania,3,1235
+Birds,2024,Tasmania,4,452
+Birds,2024,Tasmania,5,403
+Birds,2024,Tasmania,6,260
+Birds,2024,Tasmania,7,572
+Birds,2024,Tasmania,8,813
+Birds,2024,Tasmania,9,1008
+Birds,2024,Tasmania,10,1474
+Birds,2024,Tasmania,11,1483
+Birds,2024,Tasmania,12,1414
+Birds,2024,Northern Territory,1,156
+Birds,2024,Northern Territory,2,227
+Birds,2024,Northern Territory,3,490
+Birds,2024,Northern Territory,4,305
+Birds,2024,Northern Territory,5,588
+Birds,2024,Northern Territory,6,710
+Birds,2024,Northern Territory,7,847
+Birds,2024,Northern Territory,8,1550
+Birds,2024,Northern Territory,9,1349
+Birds,2024,Northern Territory,10,629
+Birds,2024,Northern Territory,11,409
+Birds,2024,Northern Territory,12,471
+Birds,2024,Australian Capital Territory,1,1169
+Birds,2024,Australian Capital Territory,2,853
+Birds,2024,Australian Capital Territory,3,1157
+Birds,2024,Australian Capital Territory,4,940
+Birds,2024,Australian Capital Territory,5,581
+Birds,2024,Australian Capital Territory,6,577
+Birds,2024,Australian Capital Territory,7,854
+Birds,2024,Australian Capital Territory,8,1055
+Birds,2024,Australian Capital Territory,9,1343
+Birds,2024,Australian Capital Territory,10,1398
+Birds,2024,Australian Capital Territory,11,1203
+Birds,2024,Australian Capital Territory,12,1178
+Birds,2025,New South Wales,1,6242
+Birds,2025,New South Wales,2,5084
+Birds,2025,New South Wales,3,6092
+Birds,2025,New South Wales,4,6905
+Birds,2025,New South Wales,5,6410
+Birds,2025,New South Wales,6,6667
+Birds,2025,New South Wales,7,7639
+Birds,2025,New South Wales,8,7790
+Birds,2025,New South Wales,9,9166
+Birds,2025,New South Wales,10,12385
+Birds,2025,New South Wales,11,8967
+Birds,2025,New South Wales,12,9588
+Birds,2025,Victoria,1,9954
+Birds,2025,Victoria,2,8421
+Birds,2025,Victoria,3,7016
+Birds,2025,Victoria,4,9948
+Birds,2025,Victoria,5,8028
+Birds,2025,Victoria,6,7985
+Birds,2025,Victoria,7,6929
+Birds,2025,Victoria,8,9299
+Birds,2025,Victoria,9,10646
+Birds,2025,Victoria,10,14436
+Birds,2025,Victoria,11,10799
+Birds,2025,Victoria,12,10516
+Birds,2025,Queensland,1,6101
+Birds,2025,Queensland,2,5530
+Birds,2025,Queensland,3,5809
+Birds,2025,Queensland,4,8215
+Birds,2025,Queensland,5,7340
+Birds,2025,Queensland,6,9835
+Birds,2025,Queensland,7,11016
+Birds,2025,Queensland,8,13267
+Birds,2025,Queensland,9,12599
+Birds,2025,Queensland,10,12508
+Birds,2025,Queensland,11,7739
+Birds,2025,Queensland,12,8002
+Birds,2025,Western Australia,1,2190
+Birds,2025,Western Australia,2,1320
+Birds,2025,Western Australia,3,1767
+Birds,2025,Western Australia,4,1693
+Birds,2025,Western Australia,5,1761
+Birds,2025,Western Australia,6,1690
+Birds,2025,Western Australia,7,2360
+Birds,2025,Western Australia,8,3028
+Birds,2025,Western Australia,9,3005
+Birds,2025,Western Australia,10,3368
+Birds,2025,Western Australia,11,2739
+Birds,2025,Western Australia,12,2199
+Birds,2025,South Australia,1,2702
+Birds,2025,South Australia,2,2187
+Birds,2025,South Australia,3,2312
+Birds,2025,South Australia,4,3048
+Birds,2025,South Australia,5,2759
+Birds,2025,South Australia,6,2378
+Birds,2025,South Australia,7,2753
+Birds,2025,South Australia,8,3594
+Birds,2025,South Australia,9,4059
+Birds,2025,South Australia,10,4498
+Birds,2025,South Australia,11,3139
+Birds,2025,South Australia,12,3574
+Birds,2025,Tasmania,1,1079
+Birds,2025,Tasmania,2,1122
+Birds,2025,Tasmania,3,1691
+Birds,2025,Tasmania,4,623
+Birds,2025,Tasmania,5,555
+Birds,2025,Tasmania,6,649
+Birds,2025,Tasmania,7,798
+Birds,2025,Tasmania,8,986
+Birds,2025,Tasmania,9,1066
+Birds,2025,Tasmania,10,1585
+Birds,2025,Tasmania,11,2729
+Birds,2025,Tasmania,12,1493
+Birds,2025,Northern Territory,1,390
+Birds,2025,Northern Territory,2,393
+Birds,2025,Northern Territory,3,197
+Birds,2025,Northern Territory,4,556
+Birds,2025,Northern Territory,5,460
+Birds,2025,Northern Territory,6,1941
+Birds,2025,Northern Territory,7,1155
+Birds,2025,Northern Territory,8,806
+Birds,2025,Northern Territory,9,843
+Birds,2025,Northern Territory,10,1524
+Birds,2025,Northern Territory,11,750
+Birds,2025,Northern Territory,12,315
+Birds,2025,Australian Capital Territory,1,1265
+Birds,2025,Australian Capital Territory,2,925
+Birds,2025,Australian Capital Territory,3,1035
+Birds,2025,Australian Capital Territory,4,1375
+Birds,2025,Australian Capital Territory,5,1368
+Birds,2025,Australian Capital Territory,6,938
+Birds,2025,Australian Capital Territory,7,938
+Birds,2025,Australian Capital Territory,8,1396
+Birds,2025,Australian Capital Territory,9,1603
+Birds,2025,Australian Capital Territory,10,1674
+Birds,2025,Australian Capital Territory,11,1228
+Birds,2025,Australian Capital Territory,12,1590
+Mammals,2023,New South Wales,1,612
+Mammals,2023,New South Wales,2,470
+Mammals,2023,New South Wales,3,649
+Mammals,2023,New South Wales,4,604
+Mammals,2023,New South Wales,5,615
+Mammals,2023,New South Wales,6,656
+Mammals,2023,New South Wales,7,715
+Mammals,2023,New South Wales,8,722
+Mammals,2023,New South Wales,9,938
+Mammals,2023,New South Wales,10,912
+Mammals,2023,New South Wales,11,911
+Mammals,2023,New South Wales,12,890
+Mammals,2023,Victoria,1,2794
+Mammals,2023,Victoria,2,1927
+Mammals,2023,Victoria,3,3701
+Mammals,2023,Victoria,4,2824
+Mammals,2023,Victoria,5,1030
+Mammals,2023,Victoria,6,673
+Mammals,2023,Victoria,7,626
+Mammals,2023,Victoria,8,709
+Mammals,2023,Victoria,9,2130
+Mammals,2023,Victoria,10,2194
+Mammals,2023,Victoria,11,2505
+Mammals,2023,Victoria,12,2425
+Mammals,2023,Queensland,1,925
+Mammals,2023,Queensland,2,673
+Mammals,2023,Queensland,3,767
+Mammals,2023,Queensland,4,1024
+Mammals,2023,Queensland,5,978
+Mammals,2023,Queensland,6,988
+Mammals,2023,Queensland,7,1382
+Mammals,2023,Queensland,8,1370
+Mammals,2023,Queensland,9,1560
+Mammals,2023,Queensland,10,1633
+Mammals,2023,Queensland,11,1599
+Mammals,2023,Queensland,12,1204
+Mammals,2023,Western Australia,1,100
+Mammals,2023,Western Australia,2,92
+Mammals,2023,Western Australia,3,94
+Mammals,2023,Western Australia,4,277
+Mammals,2023,Western Australia,5,193
+Mammals,2023,Western Australia,6,138
+Mammals,2023,Western Australia,7,181
+Mammals,2023,Western Australia,8,223
+Mammals,2023,Western Australia,9,280
+Mammals,2023,Western Australia,10,225
+Mammals,2023,Western Australia,11,164
+Mammals,2023,Western Australia,12,149
+Mammals,2023,South Australia,1,257
+Mammals,2023,South Australia,2,175
+Mammals,2023,South Australia,3,199
+Mammals,2023,South Australia,4,290
+Mammals,2023,South Australia,5,270
+Mammals,2023,South Australia,6,186
+Mammals,2023,South Australia,7,239
+Mammals,2023,South Australia,8,225
+Mammals,2023,South Australia,9,280
+Mammals,2023,South Australia,10,304
+Mammals,2023,South Australia,11,369
+Mammals,2023,South Australia,12,350
+Mammals,2023,Tasmania,1,333
+Mammals,2023,Tasmania,2,245
+Mammals,2023,Tasmania,3,222
+Mammals,2023,Tasmania,4,142
+Mammals,2023,Tasmania,5,127
+Mammals,2023,Tasmania,6,92
+Mammals,2023,Tasmania,7,78
+Mammals,2023,Tasmania,8,83
+Mammals,2023,Tasmania,9,193
+Mammals,2023,Tasmania,10,454
+Mammals,2023,Tasmania,11,369
+Mammals,2023,Tasmania,12,427
+Mammals,2023,Northern Territory,1,18
+Mammals,2023,Northern Territory,2,19
+Mammals,2023,Northern Territory,3,16
+Mammals,2023,Northern Territory,4,29
+Mammals,2023,Northern Territory,5,51
+Mammals,2023,Northern Territory,6,82
+Mammals,2023,Northern Territory,7,84
+Mammals,2023,Northern Territory,8,34
+Mammals,2023,Northern Territory,9,103
+Mammals,2023,Northern Territory,10,55
+Mammals,2023,Northern Territory,11,43
+Mammals,2023,Northern Territory,12,14
+Mammals,2023,Australian Capital Territory,1,127
+Mammals,2023,Australian Capital Territory,2,58
+Mammals,2023,Australian Capital Territory,3,66
+Mammals,2023,Australian Capital Territory,4,131
+Mammals,2023,Australian Capital Territory,5,58
+Mammals,2023,Australian Capital Territory,6,119
+Mammals,2023,Australian Capital Territory,7,100
+Mammals,2023,Australian Capital Territory,8,167
+Mammals,2023,Australian Capital Territory,9,132
+Mammals,2023,Australian Capital Territory,10,197
+Mammals,2023,Australian Capital Territory,11,89
+Mammals,2023,Australian Capital Territory,12,91
+Mammals,2024,New South Wales,1,644
+Mammals,2024,New South Wales,2,544
+Mammals,2024,New South Wales,3,736
+Mammals,2024,New South Wales,4,648
+Mammals,2024,New South Wales,5,642
+Mammals,2024,New South Wales,6,809
+Mammals,2024,New South Wales,7,744
+Mammals,2024,New South Wales,8,993
+Mammals,2024,New South Wales,9,1489
+Mammals,2024,New South Wales,10,1670
+Mammals,2024,New South Wales,11,1369
+Mammals,2024,New South Wales,12,1060
+Mammals,2024,Victoria,1,2170
+Mammals,2024,Victoria,2,1917
+Mammals,2024,Victoria,3,2108
+Mammals,2024,Victoria,4,2985
+Mammals,2024,Victoria,5,1299
+Mammals,2024,Victoria,6,963
+Mammals,2024,Victoria,7,803
+Mammals,2024,Victoria,8,872
+Mammals,2024,Victoria,9,1367
+Mammals,2024,Victoria,10,1297
+Mammals,2024,Victoria,11,1058
+Mammals,2024,Victoria,12,1155
+Mammals,2024,Queensland,1,1077
+Mammals,2024,Queensland,2,801
+Mammals,2024,Queensland,3,1072
+Mammals,2024,Queensland,4,997
+Mammals,2024,Queensland,5,1264
+Mammals,2024,Queensland,6,1261
+Mammals,2024,Queensland,7,1773
+Mammals,2024,Queensland,8,1575
+Mammals,2024,Queensland,9,1684
+Mammals,2024,Queensland,10,1678
+Mammals,2024,Queensland,11,1503
+Mammals,2024,Queensland,12,1311
+Mammals,2024,Western Australia,1,159
+Mammals,2024,Western Australia,2,159
+Mammals,2024,Western Australia,3,179
+Mammals,2024,Western Australia,4,264
+Mammals,2024,Western Australia,5,168
+Mammals,2024,Western Australia,6,230
+Mammals,2024,Western Australia,7,377
+Mammals,2024,Western Australia,8,284
+Mammals,2024,Western Australia,9,401
+Mammals,2024,Western Australia,10,306
+Mammals,2024,Western Australia,11,197
+Mammals,2024,Western Australia,12,176
+Mammals,2024,South Australia,1,274
+Mammals,2024,South Australia,2,341
+Mammals,2024,South Australia,3,284
+Mammals,2024,South Australia,4,389
+Mammals,2024,South Australia,5,434
+Mammals,2024,South Australia,6,322
+Mammals,2024,South Australia,7,412
+Mammals,2024,South Australia,8,349
+Mammals,2024,South Australia,9,450
+Mammals,2024,South Australia,10,440
+Mammals,2024,South Australia,11,409
+Mammals,2024,South Australia,12,372
+Mammals,2024,Tasmania,1,621
+Mammals,2024,Tasmania,2,322
+Mammals,2024,Tasmania,3,379
+Mammals,2024,Tasmania,4,162
+Mammals,2024,Tasmania,5,108
+Mammals,2024,Tasmania,6,97
+Mammals,2024,Tasmania,7,93
+Mammals,2024,Tasmania,8,226
+Mammals,2024,Tasmania,9,291
+Mammals,2024,Tasmania,10,451
+Mammals,2024,Tasmania,11,477
+Mammals,2024,Tasmania,12,548
+Mammals,2024,Northern Territory,1,14
+Mammals,2024,Northern Territory,2,14
+Mammals,2024,Northern Territory,3,37
+Mammals,2024,Northern Territory,4,29
+Mammals,2024,Northern Territory,5,61
+Mammals,2024,Northern Territory,6,51
+Mammals,2024,Northern Territory,7,50
+Mammals,2024,Northern Territory,8,142
+Mammals,2024,Northern Territory,9,117
+Mammals,2024,Northern Territory,10,63
+Mammals,2024,Northern Territory,11,58
+Mammals,2024,Northern Territory,12,51
+Mammals,2024,Australian Capital Territory,1,92
+Mammals,2024,Australian Capital Territory,2,72
+Mammals,2024,Australian Capital Territory,3,79
+Mammals,2024,Australian Capital Territory,4,105
+Mammals,2024,Australian Capital Territory,5,91
+Mammals,2024,Australian Capital Territory,6,121
+Mammals,2024,Australian Capital Territory,7,118
+Mammals,2024,Australian Capital Territory,8,148
+Mammals,2024,Australian Capital Territory,9,178
+Mammals,2024,Australian Capital Territory,10,182
+Mammals,2024,Australian Capital Territory,11,139
+Mammals,2024,Australian Capital Territory,12,95
+Mammals,2025,New South Wales,1,1060
+Mammals,2025,New South Wales,2,870
+Mammals,2025,New South Wales,3,988
+Mammals,2025,New South Wales,4,1240
+Mammals,2025,New South Wales,5,1024
+Mammals,2025,New South Wales,6,1380
+Mammals,2025,New South Wales,7,1287
+Mammals,2025,New South Wales,8,1148
+Mammals,2025,New South Wales,9,1426
+Mammals,2025,New South Wales,10,1738
+Mammals,2025,New South Wales,11,1449
+Mammals,2025,New South Wales,12,1461
+Mammals,2025,Victoria,1,1355
+Mammals,2025,Victoria,2,1144
+Mammals,2025,Victoria,3,1317
+Mammals,2025,Victoria,4,1408
+Mammals,2025,Victoria,5,1192
+Mammals,2025,Victoria,6,984
+Mammals,2025,Victoria,7,1078
+Mammals,2025,Victoria,8,1213
+Mammals,2025,Victoria,9,1374
+Mammals,2025,Victoria,10,1531
+Mammals,2025,Victoria,11,1326
+Mammals,2025,Victoria,12,1323
+Mammals,2025,Queensland,1,1230
+Mammals,2025,Queensland,2,1196
+Mammals,2025,Queensland,3,1106
+Mammals,2025,Queensland,4,1771
+Mammals,2025,Queensland,5,1588
+Mammals,2025,Queensland,6,1667
+Mammals,2025,Queensland,7,1751
+Mammals,2025,Queensland,8,2319
+Mammals,2025,Queensland,9,2261
+Mammals,2025,Queensland,10,2057
+Mammals,2025,Queensland,11,1861
+Mammals,2025,Queensland,12,1414
+Mammals,2025,Western Australia,1,181
+Mammals,2025,Western Australia,2,126
+Mammals,2025,Western Australia,3,195
+Mammals,2025,Western Australia,4,260
+Mammals,2025,Western Australia,5,177
+Mammals,2025,Western Australia,6,211
+Mammals,2025,Western Australia,7,355
+Mammals,2025,Western Australia,8,435
+Mammals,2025,Western Australia,9,512
+Mammals,2025,Western Australia,10,429
+Mammals,2025,Western Australia,11,491
+Mammals,2025,Western Australia,12,323
+Mammals,2025,South Australia,1,395
+Mammals,2025,South Australia,2,343
+Mammals,2025,South Australia,3,412
+Mammals,2025,South Australia,4,478
+Mammals,2025,South Australia,5,480
+Mammals,2025,South Australia,6,468
+Mammals,2025,South Australia,7,583
+Mammals,2025,South Australia,8,471
+Mammals,2025,South Australia,9,628
+Mammals,2025,South Australia,10,680
+Mammals,2025,South Australia,11,427
+Mammals,2025,South Australia,12,429
+Mammals,2025,Tasmania,1,373
+Mammals,2025,Tasmania,2,328
+Mammals,2025,Tasmania,3,384
+Mammals,2025,Tasmania,4,262
+Mammals,2025,Tasmania,5,197
+Mammals,2025,Tasmania,6,190
+Mammals,2025,Tasmania,7,246
+Mammals,2025,Tasmania,8,208
+Mammals,2025,Tasmania,9,370
+Mammals,2025,Tasmania,10,372
+Mammals,2025,Tasmania,11,747
+Mammals,2025,Tasmania,12,493
+Mammals,2025,Northern Territory,1,68
+Mammals,2025,Northern Territory,2,36
+Mammals,2025,Northern Territory,3,18
+Mammals,2025,Northern Territory,4,40
+Mammals,2025,Northern Territory,5,41
+Mammals,2025,Northern Territory,6,112
+Mammals,2025,Northern Territory,7,93
+Mammals,2025,Northern Territory,8,103
+Mammals,2025,Northern Territory,9,118
+Mammals,2025,Northern Territory,10,124
+Mammals,2025,Northern Territory,11,67
+Mammals,2025,Northern Territory,12,38
+Mammals,2025,Australian Capital Territory,1,153
+Mammals,2025,Australian Capital Territory,2,103
+Mammals,2025,Australian Capital Territory,3,135
+Mammals,2025,Australian Capital Territory,4,183
+Mammals,2025,Australian Capital Territory,5,146
+Mammals,2025,Australian Capital Territory,6,193
+Mammals,2025,Australian Capital Territory,7,178
+Mammals,2025,Australian Capital Territory,8,235
+Mammals,2025,Australian Capital Territory,9,184
+Mammals,2025,Australian Capital Territory,10,205
+Mammals,2025,Australian Capital Territory,11,182
+Mammals,2025,Australian Capital Territory,12,270
+Reptiles,2023,New South Wales,1,1319
+Reptiles,2023,New South Wales,2,953
+Reptiles,2023,New South Wales,3,1092
+Reptiles,2023,New South Wales,4,831
+Reptiles,2023,New South Wales,5,245
+Reptiles,2023,New South Wales,6,158
+Reptiles,2023,New South Wales,7,148
+Reptiles,2023,New South Wales,8,473
+Reptiles,2023,New South Wales,9,1275
+Reptiles,2023,New South Wales,10,1418
+Reptiles,2023,New South Wales,11,1568
+Reptiles,2023,New South Wales,12,1591
+Reptiles,2023,Victoria,1,657
+Reptiles,2023,Victoria,2,557
+Reptiles,2023,Victoria,3,766
+Reptiles,2023,Victoria,4,518
+Reptiles,2023,Victoria,5,152
+Reptiles,2023,Victoria,6,116
+Reptiles,2023,Victoria,7,85
+Reptiles,2023,Victoria,8,231
+Reptiles,2023,Victoria,9,765
+Reptiles,2023,Victoria,10,712
+Reptiles,2023,Victoria,11,1187
+Reptiles,2023,Victoria,12,915
+Reptiles,2023,Queensland,1,1435
+Reptiles,2023,Queensland,2,1102
+Reptiles,2023,Queensland,3,1087
+Reptiles,2023,Queensland,4,1047
+Reptiles,2023,Queensland,5,668
+Reptiles,2023,Queensland,6,519
+Reptiles,2023,Queensland,7,783
+Reptiles,2023,Queensland,8,866
+Reptiles,2023,Queensland,9,1524
+Reptiles,2023,Queensland,10,1435
+Reptiles,2023,Queensland,11,1543
+Reptiles,2023,Queensland,12,1687
+Reptiles,2023,Western Australia,1,343
+Reptiles,2023,Western Australia,2,178
+Reptiles,2023,Western Australia,3,245
+Reptiles,2023,Western Australia,4,350
+Reptiles,2023,Western Australia,5,283
+Reptiles,2023,Western Australia,6,344
+Reptiles,2023,Western Australia,7,226
+Reptiles,2023,Western Australia,8,360
+Reptiles,2023,Western Australia,9,771
+Reptiles,2023,Western Australia,10,1527
+Reptiles,2023,Western Australia,11,1212
+Reptiles,2023,Western Australia,12,425
+Reptiles,2023,South Australia,1,373
+Reptiles,2023,South Australia,2,227
+Reptiles,2023,South Australia,3,445
+Reptiles,2023,South Australia,4,383
+Reptiles,2023,South Australia,5,147
+Reptiles,2023,South Australia,6,134
+Reptiles,2023,South Australia,7,98
+Reptiles,2023,South Australia,8,186
+Reptiles,2023,South Australia,9,615
+Reptiles,2023,South Australia,10,762
+Reptiles,2023,South Australia,11,555
+Reptiles,2023,South Australia,12,493
+Reptiles,2023,Tasmania,1,144
+Reptiles,2023,Tasmania,2,117
+Reptiles,2023,Tasmania,3,79
+Reptiles,2023,Tasmania,4,37
+Reptiles,2023,Tasmania,5,15
+Reptiles,2023,Tasmania,6,1
+Reptiles,2023,Tasmania,7,5
+Reptiles,2023,Tasmania,8,9
+Reptiles,2023,Tasmania,9,28
+Reptiles,2023,Tasmania,10,86
+Reptiles,2023,Tasmania,11,132
+Reptiles,2023,Tasmania,12,159
+Reptiles,2023,Northern Territory,1,107
+Reptiles,2023,Northern Territory,2,76
+Reptiles,2023,Northern Territory,3,64
+Reptiles,2023,Northern Territory,4,104
+Reptiles,2023,Northern Territory,5,208
+Reptiles,2023,Northern Territory,6,242
+Reptiles,2023,Northern Territory,7,370
+Reptiles,2023,Northern Territory,8,167
+Reptiles,2023,Northern Territory,9,236
+Reptiles,2023,Northern Territory,10,149
+Reptiles,2023,Northern Territory,11,187
+Reptiles,2023,Northern Territory,12,165
+Reptiles,2023,Australian Capital Territory,1,153
+Reptiles,2023,Australian Capital Territory,2,123
+Reptiles,2023,Australian Capital Territory,3,128
+Reptiles,2023,Australian Capital Territory,4,50
+Reptiles,2023,Australian Capital Territory,5,18
+Reptiles,2023,Australian Capital Territory,6,6
+Reptiles,2023,Australian Capital Territory,7,6
+Reptiles,2023,Australian Capital Territory,8,28
+Reptiles,2023,Australian Capital Territory,9,132
+Reptiles,2023,Australian Capital Territory,10,162
+Reptiles,2023,Australian Capital Territory,11,178
+Reptiles,2023,Australian Capital Territory,12,145
+Reptiles,2024,New South Wales,1,1426
+Reptiles,2024,New South Wales,2,1334
+Reptiles,2024,New South Wales,3,1576
+Reptiles,2024,New South Wales,4,861
+Reptiles,2024,New South Wales,5,379
+Reptiles,2024,New South Wales,6,251
+Reptiles,2024,New South Wales,7,252
+Reptiles,2024,New South Wales,8,698
+Reptiles,2024,New South Wales,9,1534
+Reptiles,2024,New South Wales,10,1997
+Reptiles,2024,New South Wales,11,1985
+Reptiles,2024,New South Wales,12,1713
+Reptiles,2024,Victoria,1,958
+Reptiles,2024,Victoria,2,588
+Reptiles,2024,Victoria,3,654
+Reptiles,2024,Victoria,4,600
+Reptiles,2024,Victoria,5,185
+Reptiles,2024,Victoria,6,114
+Reptiles,2024,Victoria,7,77
+Reptiles,2024,Victoria,8,293
+Reptiles,2024,Victoria,9,628
+Reptiles,2024,Victoria,10,1204
+Reptiles,2024,Victoria,11,1226
+Reptiles,2024,Victoria,12,961
+Reptiles,2024,Queensland,1,1498
+Reptiles,2024,Queensland,2,1378
+Reptiles,2024,Queensland,3,1543
+Reptiles,2024,Queensland,4,1198
+Reptiles,2024,Queensland,5,946
+Reptiles,2024,Queensland,6,664
+Reptiles,2024,Queensland,7,861
+Reptiles,2024,Queensland,8,1374
+Reptiles,2024,Queensland,9,1957
+Reptiles,2024,Queensland,10,1921
+Reptiles,2024,Queensland,11,1849
+Reptiles,2024,Queensland,12,1973
+Reptiles,2024,Western Australia,1,394
+Reptiles,2024,Western Australia,2,338
+Reptiles,2024,Western Australia,3,355
+Reptiles,2024,Western Australia,4,401
+Reptiles,2024,Western Australia,5,371
+Reptiles,2024,Western Australia,6,276
+Reptiles,2024,Western Australia,7,266
+Reptiles,2024,Western Australia,8,366
+Reptiles,2024,Western Australia,9,1175
+Reptiles,2024,Western Australia,10,1765
+Reptiles,2024,Western Australia,11,1739
+Reptiles,2024,Western Australia,12,737
+Reptiles,2024,South Australia,1,464
+Reptiles,2024,South Australia,2,322
+Reptiles,2024,South Australia,3,368
+Reptiles,2024,South Australia,4,329
+Reptiles,2024,South Australia,5,96
+Reptiles,2024,South Australia,6,95
+Reptiles,2024,South Australia,7,103
+Reptiles,2024,South Australia,8,309
+Reptiles,2024,South Australia,9,739
+Reptiles,2024,South Australia,10,1183
+Reptiles,2024,South Australia,11,848
+Reptiles,2024,South Australia,12,552
+Reptiles,2024,Tasmania,1,263
+Reptiles,2024,Tasmania,2,144
+Reptiles,2024,Tasmania,3,106
+Reptiles,2024,Tasmania,4,49
+Reptiles,2024,Tasmania,5,13
+Reptiles,2024,Tasmania,6,1
+Reptiles,2024,Tasmania,7,4
+Reptiles,2024,Tasmania,8,11
+Reptiles,2024,Tasmania,9,87
+Reptiles,2024,Tasmania,10,93
+Reptiles,2024,Tasmania,11,140
+Reptiles,2024,Tasmania,12,175
+Reptiles,2024,Northern Territory,1,139
+Reptiles,2024,Northern Territory,2,143
+Reptiles,2024,Northern Territory,3,276
+Reptiles,2024,Northern Territory,4,185
+Reptiles,2024,Northern Territory,5,190
+Reptiles,2024,Northern Territory,6,176
+Reptiles,2024,Northern Territory,7,168
+Reptiles,2024,Northern Territory,8,350
+Reptiles,2024,Northern Territory,9,519
+Reptiles,2024,Northern Territory,10,293
+Reptiles,2024,Northern Territory,11,323
+Reptiles,2024,Northern Territory,12,245
+Reptiles,2024,Australian Capital Territory,1,170
+Reptiles,2024,Australian Capital Territory,2,139
+Reptiles,2024,Australian Capital Territory,3,137
+Reptiles,2024,Australian Capital Territory,4,43
+Reptiles,2024,Australian Capital Territory,5,14
+Reptiles,2024,Australian Capital Territory,6,9
+Reptiles,2024,Australian Capital Territory,7,19
+Reptiles,2024,Australian Capital Territory,8,40
+Reptiles,2024,Australian Capital Territory,9,112
+Reptiles,2024,Australian Capital Territory,10,212
+Reptiles,2024,Australian Capital Territory,11,218
+Reptiles,2024,Australian Capital Territory,12,153
+Reptiles,2025,New South Wales,1,1776
+Reptiles,2025,New South Wales,2,1598
+Reptiles,2025,New South Wales,3,1605
+Reptiles,2025,New South Wales,4,1217
+Reptiles,2025,New South Wales,5,505
+Reptiles,2025,New South Wales,6,312
+Reptiles,2025,New South Wales,7,330
+Reptiles,2025,New South Wales,8,694
+Reptiles,2025,New South Wales,9,1962
+Reptiles,2025,New South Wales,10,2766
+Reptiles,2025,New South Wales,11,2364
+Reptiles,2025,New South Wales,12,2269
+Reptiles,2025,Victoria,1,855
+Reptiles,2025,Victoria,2,629
+Reptiles,2025,Victoria,3,729
+Reptiles,2025,Victoria,4,419
+Reptiles,2025,Victoria,5,204
+Reptiles,2025,Victoria,6,157
+Reptiles,2025,Victoria,7,125
+Reptiles,2025,Victoria,8,269
+Reptiles,2025,Victoria,9,690
+Reptiles,2025,Victoria,10,1164
+Reptiles,2025,Victoria,11,1296
+Reptiles,2025,Victoria,12,1301
+Reptiles,2025,Queensland,1,2135
+Reptiles,2025,Queensland,2,1591
+Reptiles,2025,Queensland,3,1627
+Reptiles,2025,Queensland,4,1848
+Reptiles,2025,Queensland,5,1243
+Reptiles,2025,Queensland,6,966
+Reptiles,2025,Queensland,7,1301
+Reptiles,2025,Queensland,8,1685
+Reptiles,2025,Queensland,9,2705
+Reptiles,2025,Queensland,10,3403
+Reptiles,2025,Queensland,11,2748
+Reptiles,2025,Queensland,12,2367
+Reptiles,2025,Western Australia,1,524
+Reptiles,2025,Western Australia,2,392
+Reptiles,2025,Western Australia,3,492
+Reptiles,2025,Western Australia,4,434
+Reptiles,2025,Western Australia,5,378
+Reptiles,2025,Western Australia,6,304
+Reptiles,2025,Western Australia,7,354
+Reptiles,2025,Western Australia,8,481
+Reptiles,2025,Western Australia,9,976
+Reptiles,2025,Western Australia,10,2280
+Reptiles,2025,Western Australia,11,1492
+Reptiles,2025,Western Australia,12,1031
+Reptiles,2025,South Australia,1,389
+Reptiles,2025,South Australia,2,262
+Reptiles,2025,South Australia,3,388
+Reptiles,2025,South Australia,4,346
+Reptiles,2025,South Australia,5,172
+Reptiles,2025,South Australia,6,93
+Reptiles,2025,South Australia,7,151
+Reptiles,2025,South Australia,8,224
+Reptiles,2025,South Australia,9,695
+Reptiles,2025,South Australia,10,1059
+Reptiles,2025,South Australia,11,749
+Reptiles,2025,South Australia,12,758
+Reptiles,2025,Tasmania,1,243
+Reptiles,2025,Tasmania,2,138
+Reptiles,2025,Tasmania,3,126
+Reptiles,2025,Tasmania,4,32
+Reptiles,2025,Tasmania,5,21
+Reptiles,2025,Tasmania,6,5
+Reptiles,2025,Tasmania,7,4
+Reptiles,2025,Tasmania,8,13
+Reptiles,2025,Tasmania,9,68
+Reptiles,2025,Tasmania,10,95
+Reptiles,2025,Tasmania,11,201
+Reptiles,2025,Tasmania,12,193
+Reptiles,2025,Northern Territory,1,310
+Reptiles,2025,Northern Territory,2,212
+Reptiles,2025,Northern Territory,3,266
+Reptiles,2025,Northern Territory,4,332
+Reptiles,2025,Northern Territory,5,152
+Reptiles,2025,Northern Territory,6,293
+Reptiles,2025,Northern Territory,7,299
+Reptiles,2025,Northern Territory,8,245
+Reptiles,2025,Northern Territory,9,431
+Reptiles,2025,Northern Territory,10,548
+Reptiles,2025,Northern Territory,11,597
+Reptiles,2025,Northern Territory,12,272
+Reptiles,2025,Australian Capital Territory,1,188
+Reptiles,2025,Australian Capital Territory,2,182
+Reptiles,2025,Australian Capital Territory,3,151
+Reptiles,2025,Australian Capital Territory,4,69
+Reptiles,2025,Australian Capital Territory,5,22
+Reptiles,2025,Australian Capital Territory,6,8
+Reptiles,2025,Australian Capital Territory,7,9
+Reptiles,2025,Australian Capital Territory,8,21
+Reptiles,2025,Australian Capital Territory,9,101
+Reptiles,2025,Australian Capital Territory,10,262
+Reptiles,2025,Australian Capital Territory,11,254
+Reptiles,2025,Australian Capital Territory,12,204
+Amphibians,2023,New South Wales,1,543
+Amphibians,2023,New South Wales,2,345
+Amphibians,2023,New South Wales,3,508
+Amphibians,2023,New South Wales,4,338
+Amphibians,2023,New South Wales,5,84
+Amphibians,2023,New South Wales,6,76
+Amphibians,2023,New South Wales,7,83
+Amphibians,2023,New South Wales,8,168
+Amphibians,2023,New South Wales,9,304
+Amphibians,2023,New South Wales,10,397
+Amphibians,2023,New South Wales,11,636
+Amphibians,2023,New South Wales,12,777
+Amphibians,2023,Victoria,1,263
+Amphibians,2023,Victoria,2,167
+Amphibians,2023,Victoria,3,266
+Amphibians,2023,Victoria,4,370
+Amphibians,2023,Victoria,5,137
+Amphibians,2023,Victoria,6,140
+Amphibians,2023,Victoria,7,127
+Amphibians,2023,Victoria,8,182
+Amphibians,2023,Victoria,9,214
+Amphibians,2023,Victoria,10,198
+Amphibians,2023,Victoria,11,315
+Amphibians,2023,Victoria,12,279
+Amphibians,2023,Queensland,1,844
+Amphibians,2023,Queensland,2,505
+Amphibians,2023,Queensland,3,559
+Amphibians,2023,Queensland,4,364
+Amphibians,2023,Queensland,5,186
+Amphibians,2023,Queensland,6,173
+Amphibians,2023,Queensland,7,218
+Amphibians,2023,Queensland,8,208
+Amphibians,2023,Queensland,9,383
+Amphibians,2023,Queensland,10,410
+Amphibians,2023,Queensland,11,1238
+Amphibians,2023,Queensland,12,1125
+Amphibians,2023,Western Australia,1,52
+Amphibians,2023,Western Australia,2,66
+Amphibians,2023,Western Australia,3,85
+Amphibians,2023,Western Australia,4,105
+Amphibians,2023,Western Australia,5,65
+Amphibians,2023,Western Australia,6,53
+Amphibians,2023,Western Australia,7,83
+Amphibians,2023,Western Australia,8,68
+Amphibians,2023,Western Australia,9,76
+Amphibians,2023,Western Australia,10,138
+Amphibians,2023,Western Australia,11,65
+Amphibians,2023,Western Australia,12,70
+Amphibians,2023,South Australia,1,70
+Amphibians,2023,South Australia,2,36
+Amphibians,2023,South Australia,3,40
+Amphibians,2023,South Australia,4,68
+Amphibians,2023,South Australia,5,30
+Amphibians,2023,South Australia,6,52
+Amphibians,2023,South Australia,7,75
+Amphibians,2023,South Australia,8,27
+Amphibians,2023,South Australia,9,45
+Amphibians,2023,South Australia,10,37
+Amphibians,2023,South Australia,11,37
+Amphibians,2023,South Australia,12,48
+Amphibians,2023,Tasmania,1,27
+Amphibians,2023,Tasmania,2,61
+Amphibians,2023,Tasmania,3,20
+Amphibians,2023,Tasmania,4,16
+Amphibians,2023,Tasmania,5,5
+Amphibians,2023,Tasmania,6,5
+Amphibians,2023,Tasmania,7,9
+Amphibians,2023,Tasmania,8,7
+Amphibians,2023,Tasmania,9,14
+Amphibians,2023,Tasmania,10,18
+Amphibians,2023,Tasmania,11,51
+Amphibians,2023,Tasmania,12,46
+Amphibians,2023,Northern Territory,1,17
+Amphibians,2023,Northern Territory,2,40
+Amphibians,2023,Northern Territory,3,16
+Amphibians,2023,Northern Territory,4,33
+Amphibians,2023,Northern Territory,5,36
+Amphibians,2023,Northern Territory,6,105
+Amphibians,2023,Northern Territory,7,92
+Amphibians,2023,Northern Territory,8,20
+Amphibians,2023,Northern Territory,9,26
+Amphibians,2023,Northern Territory,10,18
+Amphibians,2023,Northern Territory,11,49
+Amphibians,2023,Northern Territory,12,42
+Amphibians,2023,Australian Capital Territory,1,10
+Amphibians,2023,Australian Capital Territory,2,20
+Amphibians,2023,Australian Capital Territory,3,9
+Amphibians,2023,Australian Capital Territory,4,9
+Amphibians,2023,Australian Capital Territory,5,3
+Amphibians,2023,Australian Capital Territory,6,7
+Amphibians,2023,Australian Capital Territory,7,17
+Amphibians,2023,Australian Capital Territory,8,8
+Amphibians,2023,Australian Capital Territory,9,6
+Amphibians,2023,Australian Capital Territory,10,20
+Amphibians,2023,Australian Capital Territory,11,13
+Amphibians,2023,Australian Capital Territory,12,17
+Amphibians,2024,New South Wales,1,616
+Amphibians,2024,New South Wales,2,468
+Amphibians,2024,New South Wales,3,434
+Amphibians,2024,New South Wales,4,410
+Amphibians,2024,New South Wales,5,209
+Amphibians,2024,New South Wales,6,117
+Amphibians,2024,New South Wales,7,105
+Amphibians,2024,New South Wales,8,239
+Amphibians,2024,New South Wales,9,440
+Amphibians,2024,New South Wales,10,551
+Amphibians,2024,New South Wales,11,675
+Amphibians,2024,New South Wales,12,606
+Amphibians,2024,Victoria,1,315
+Amphibians,2024,Victoria,2,175
+Amphibians,2024,Victoria,3,181
+Amphibians,2024,Victoria,4,279
+Amphibians,2024,Victoria,5,106
+Amphibians,2024,Victoria,6,96
+Amphibians,2024,Victoria,7,88
+Amphibians,2024,Victoria,8,154
+Amphibians,2024,Victoria,9,343
+Amphibians,2024,Victoria,10,283
+Amphibians,2024,Victoria,11,335
+Amphibians,2024,Victoria,12,297
+Amphibians,2024,Queensland,1,1474
+Amphibians,2024,Queensland,2,921
+Amphibians,2024,Queensland,3,840
+Amphibians,2024,Queensland,4,573
+Amphibians,2024,Queensland,5,344
+Amphibians,2024,Queensland,6,206
+Amphibians,2024,Queensland,7,265
+Amphibians,2024,Queensland,8,382
+Amphibians,2024,Queensland,9,748
+Amphibians,2024,Queensland,10,727
+Amphibians,2024,Queensland,11,1244
+Amphibians,2024,Queensland,12,1380
+Amphibians,2024,Western Australia,1,75
+Amphibians,2024,Western Australia,2,54
+Amphibians,2024,Western Australia,3,61
+Amphibians,2024,Western Australia,4,64
+Amphibians,2024,Western Australia,5,131
+Amphibians,2024,Western Australia,6,145
+Amphibians,2024,Western Australia,7,146
+Amphibians,2024,Western Australia,8,85
+Amphibians,2024,Western Australia,9,187
+Amphibians,2024,Western Australia,10,105
+Amphibians,2024,Western Australia,11,103
+Amphibians,2024,Western Australia,12,103
+Amphibians,2024,South Australia,1,34
+Amphibians,2024,South Australia,2,30
+Amphibians,2024,South Australia,3,21
+Amphibians,2024,South Australia,4,19
+Amphibians,2024,South Australia,5,17
+Amphibians,2024,South Australia,6,69
+Amphibians,2024,South Australia,7,27
+Amphibians,2024,South Australia,8,57
+Amphibians,2024,South Australia,9,76
+Amphibians,2024,South Australia,10,61
+Amphibians,2024,South Australia,11,61
+Amphibians,2024,South Australia,12,56
+Amphibians,2024,Tasmania,1,45
+Amphibians,2024,Tasmania,2,23
+Amphibians,2024,Tasmania,3,13
+Amphibians,2024,Tasmania,4,32
+Amphibians,2024,Tasmania,5,4
+Amphibians,2024,Tasmania,6,3
+Amphibians,2024,Tasmania,7,12
+Amphibians,2024,Tasmania,8,22
+Amphibians,2024,Tasmania,9,12
+Amphibians,2024,Tasmania,10,26
+Amphibians,2024,Tasmania,11,30
+Amphibians,2024,Tasmania,12,35
+Amphibians,2024,Northern Territory,1,73
+Amphibians,2024,Northern Territory,2,63
+Amphibians,2024,Northern Territory,3,87
+Amphibians,2024,Northern Territory,4,83
+Amphibians,2024,Northern Territory,5,62
+Amphibians,2024,Northern Territory,6,40
+Amphibians,2024,Northern Territory,7,43
+Amphibians,2024,Northern Territory,8,118
+Amphibians,2024,Northern Territory,9,115
+Amphibians,2024,Northern Territory,10,34
+Amphibians,2024,Northern Territory,11,42
+Amphibians,2024,Northern Territory,12,76
+Amphibians,2024,Australian Capital Territory,1,18
+Amphibians,2024,Australian Capital Territory,2,15
+Amphibians,2024,Australian Capital Territory,3,15
+Amphibians,2024,Australian Capital Territory,4,11
+Amphibians,2024,Australian Capital Territory,5,6
+Amphibians,2024,Australian Capital Territory,6,10
+Amphibians,2024,Australian Capital Territory,7,4
+Amphibians,2024,Australian Capital Territory,8,5
+Amphibians,2024,Australian Capital Territory,9,13
+Amphibians,2024,Australian Capital Territory,10,9
+Amphibians,2024,Australian Capital Territory,11,17
+Amphibians,2024,Australian Capital Territory,12,30
+Amphibians,2025,New South Wales,1,697
+Amphibians,2025,New South Wales,2,436
+Amphibians,2025,New South Wales,3,548
+Amphibians,2025,New South Wales,4,419
+Amphibians,2025,New South Wales,5,256
+Amphibians,2025,New South Wales,6,80
+Amphibians,2025,New South Wales,7,106
+Amphibians,2025,New South Wales,8,226
+Amphibians,2025,New South Wales,9,510
+Amphibians,2025,New South Wales,10,631
+Amphibians,2025,New South Wales,11,639
+Amphibians,2025,New South Wales,12,709
+Amphibians,2025,Victoria,1,253
+Amphibians,2025,Victoria,2,196
+Amphibians,2025,Victoria,3,218
+Amphibians,2025,Victoria,4,332
+Amphibians,2025,Victoria,5,137
+Amphibians,2025,Victoria,6,57
+Amphibians,2025,Victoria,7,100
+Amphibians,2025,Victoria,8,170
+Amphibians,2025,Victoria,9,257
+Amphibians,2025,Victoria,10,314
+Amphibians,2025,Victoria,11,402
+Amphibians,2025,Victoria,12,236
+Amphibians,2025,Queensland,1,1038
+Amphibians,2025,Queensland,2,762
+Amphibians,2025,Queensland,3,777
+Amphibians,2025,Queensland,4,789
+Amphibians,2025,Queensland,5,508
+Amphibians,2025,Queensland,6,378
+Amphibians,2025,Queensland,7,404
+Amphibians,2025,Queensland,8,406
+Amphibians,2025,Queensland,9,837
+Amphibians,2025,Queensland,10,1327
+Amphibians,2025,Queensland,11,1398
+Amphibians,2025,Queensland,12,1078
+Amphibians,2025,Western Australia,1,154
+Amphibians,2025,Western Australia,2,109
+Amphibians,2025,Western Australia,3,210
+Amphibians,2025,Western Australia,4,119
+Amphibians,2025,Western Australia,5,146
+Amphibians,2025,Western Australia,6,100
+Amphibians,2025,Western Australia,7,104
+Amphibians,2025,Western Australia,8,97
+Amphibians,2025,Western Australia,9,171
+Amphibians,2025,Western Australia,10,251
+Amphibians,2025,Western Australia,11,182
+Amphibians,2025,Western Australia,12,162
+Amphibians,2025,South Australia,1,29
+Amphibians,2025,South Australia,2,37
+Amphibians,2025,South Australia,3,28
+Amphibians,2025,South Australia,4,48
+Amphibians,2025,South Australia,5,21
+Amphibians,2025,South Australia,6,41
+Amphibians,2025,South Australia,7,59
+Amphibians,2025,South Australia,8,98
+Amphibians,2025,South Australia,9,143
+Amphibians,2025,South Australia,10,142
+Amphibians,2025,South Australia,11,51
+Amphibians,2025,South Australia,12,37
+Amphibians,2025,Tasmania,1,45
+Amphibians,2025,Tasmania,2,26
+Amphibians,2025,Tasmania,3,24
+Amphibians,2025,Tasmania,4,19
+Amphibians,2025,Tasmania,5,9
+Amphibians,2025,Tasmania,6,7
+Amphibians,2025,Tasmania,7,10
+Amphibians,2025,Tasmania,8,8
+Amphibians,2025,Tasmania,9,13
+Amphibians,2025,Tasmania,10,37
+Amphibians,2025,Tasmania,11,52
+Amphibians,2025,Tasmania,12,53
+Amphibians,2025,Northern Territory,1,51
+Amphibians,2025,Northern Territory,2,81
+Amphibians,2025,Northern Territory,3,42
+Amphibians,2025,Northern Territory,4,72
+Amphibians,2025,Northern Territory,5,50
+Amphibians,2025,Northern Territory,6,41
+Amphibians,2025,Northern Territory,7,68
+Amphibians,2025,Northern Territory,8,31
+Amphibians,2025,Northern Territory,9,69
+Amphibians,2025,Northern Territory,10,65
+Amphibians,2025,Northern Territory,11,115
+Amphibians,2025,Northern Territory,12,70
+Amphibians,2025,Australian Capital Territory,1,20
+Amphibians,2025,Australian Capital Territory,2,12
+Amphibians,2025,Australian Capital Territory,3,17
+Amphibians,2025,Australian Capital Territory,4,5
+Amphibians,2025,Australian Capital Territory,5,1
+Amphibians,2025,Australian Capital Territory,6,6
+Amphibians,2025,Australian Capital Territory,7,5
+Amphibians,2025,Australian Capital Territory,8,5
+Amphibians,2025,Australian Capital Territory,9,17
+Amphibians,2025,Australian Capital Territory,10,24
+Amphibians,2025,Australian Capital Territory,11,26
+Amphibians,2025,Australian Capital Territory,12,18
+Insects,2023,New South Wales,1,17665
+Insects,2023,New South Wales,2,11045
+Insects,2023,New South Wales,3,10854
+Insects,2023,New South Wales,4,6917
+Insects,2023,New South Wales,5,4210
+Insects,2023,New South Wales,6,1938
+Insects,2023,New South Wales,7,1922
+Insects,2023,New South Wales,8,3637
+Insects,2023,New South Wales,9,9590
+Insects,2023,New South Wales,10,10738
+Insects,2023,New South Wales,11,15889
+Insects,2023,New South Wales,12,19301
+Insects,2023,Victoria,1,23361
+Insects,2023,Victoria,2,19462
+Insects,2023,Victoria,3,17458
+Insects,2023,Victoria,4,14121
+Insects,2023,Victoria,5,4503
+Insects,2023,Victoria,6,2867
+Insects,2023,Victoria,7,2525
+Insects,2023,Victoria,8,4130
+Insects,2023,Victoria,9,13135
+Insects,2023,Victoria,10,14696
+Insects,2023,Victoria,11,22059
+Insects,2023,Victoria,12,21310
+Insects,2023,Queensland,1,21550
+Insects,2023,Queensland,2,16472
+Insects,2023,Queensland,3,15848
+Insects,2023,Queensland,4,13435
+Insects,2023,Queensland,5,9881
+Insects,2023,Queensland,6,7496
+Insects,2023,Queensland,7,7696
+Insects,2023,Queensland,8,8705
+Insects,2023,Queensland,9,12331
+Insects,2023,Queensland,10,12425
+Insects,2023,Queensland,11,16153
+Insects,2023,Queensland,12,18022
+Insects,2023,Western Australia,1,1877
+Insects,2023,Western Australia,2,959
+Insects,2023,Western Australia,3,1213
+Insects,2023,Western Australia,4,1937
+Insects,2023,Western Australia,5,1391
+Insects,2023,Western Australia,6,836
+Insects,2023,Western Australia,7,1212
+Insects,2023,Western Australia,8,1233
+Insects,2023,Western Australia,9,3223
+Insects,2023,Western Australia,10,3423
+Insects,2023,Western Australia,11,2589
+Insects,2023,Western Australia,12,1503
+Insects,2023,South Australia,1,3261
+Insects,2023,South Australia,2,2111
+Insects,2023,South Australia,3,2437
+Insects,2023,South Australia,4,4231
+Insects,2023,South Australia,5,1630
+Insects,2023,South Australia,6,773
+Insects,2023,South Australia,7,944
+Insects,2023,South Australia,8,1382
+Insects,2023,South Australia,9,3603
+Insects,2023,South Australia,10,3708
+Insects,2023,South Australia,11,4562
+Insects,2023,South Australia,12,3762
+Insects,2023,Tasmania,1,4404
+Insects,2023,Tasmania,2,2039
+Insects,2023,Tasmania,3,1670
+Insects,2023,Tasmania,4,1459
+Insects,2023,Tasmania,5,384
+Insects,2023,Tasmania,6,203
+Insects,2023,Tasmania,7,299
+Insects,2023,Tasmania,8,223
+Insects,2023,Tasmania,9,490
+Insects,2023,Tasmania,10,1228
+Insects,2023,Tasmania,11,1071
+Insects,2023,Tasmania,12,2524
+Insects,2023,Northern Territory,1,206
+Insects,2023,Northern Territory,2,354
+Insects,2023,Northern Territory,3,281
+Insects,2023,Northern Territory,4,496
+Insects,2023,Northern Territory,5,773
+Insects,2023,Northern Territory,6,1123
+Insects,2023,Northern Territory,7,678
+Insects,2023,Northern Territory,8,596
+Insects,2023,Northern Territory,9,386
+Insects,2023,Northern Territory,10,255
+Insects,2023,Northern Territory,11,964
+Insects,2023,Northern Territory,12,651
+Insects,2023,Australian Capital Territory,1,3564
+Insects,2023,Australian Capital Territory,2,2560
+Insects,2023,Australian Capital Territory,3,2180
+Insects,2023,Australian Capital Territory,4,1181
+Insects,2023,Australian Capital Territory,5,346
+Insects,2023,Australian Capital Territory,6,146
+Insects,2023,Australian Capital Territory,7,98
+Insects,2023,Australian Capital Territory,8,371
+Insects,2023,Australian Capital Territory,9,957
+Insects,2023,Australian Capital Territory,10,1939
+Insects,2023,Australian Capital Territory,11,3377
+Insects,2023,Australian Capital Territory,12,3577
+Insects,2024,New South Wales,1,18517
+Insects,2024,New South Wales,2,14319
+Insects,2024,New South Wales,3,15384
+Insects,2024,New South Wales,4,10529
+Insects,2024,New South Wales,5,5389
+Insects,2024,New South Wales,6,3252
+Insects,2024,New South Wales,7,3411
+Insects,2024,New South Wales,8,7930
+Insects,2024,New South Wales,9,18779
+Insects,2024,New South Wales,10,18622
+Insects,2024,New South Wales,11,22272
+Insects,2024,New South Wales,12,26147
+Insects,2024,Victoria,1,24114
+Insects,2024,Victoria,2,24353
+Insects,2024,Victoria,3,21657
+Insects,2024,Victoria,4,14193
+Insects,2024,Victoria,5,5603
+Insects,2024,Victoria,6,2604
+Insects,2024,Victoria,7,1645
+Insects,2024,Victoria,8,4021
+Insects,2024,Victoria,9,14783
+Insects,2024,Victoria,10,21542
+Insects,2024,Victoria,11,26370
+Insects,2024,Victoria,12,26165
+Insects,2024,Queensland,1,21843
+Insects,2024,Queensland,2,22921
+Insects,2024,Queensland,3,20793
+Insects,2024,Queensland,4,16630
+Insects,2024,Queensland,5,11276
+Insects,2024,Queensland,6,7937
+Insects,2024,Queensland,7,8849
+Insects,2024,Queensland,8,11866
+Insects,2024,Queensland,9,19602
+Insects,2024,Queensland,10,20993
+Insects,2024,Queensland,11,18467
+Insects,2024,Queensland,12,20772
+Insects,2024,Western Australia,1,1650
+Insects,2024,Western Australia,2,1187
+Insects,2024,Western Australia,3,1322
+Insects,2024,Western Australia,4,1568
+Insects,2024,Western Australia,5,1828
+Insects,2024,Western Australia,6,1753
+Insects,2024,Western Australia,7,1326
+Insects,2024,Western Australia,8,2165
+Insects,2024,Western Australia,9,5453
+Insects,2024,Western Australia,10,3864
+Insects,2024,Western Australia,11,3735
+Insects,2024,Western Australia,12,3318
+Insects,2024,South Australia,1,3889
+Insects,2024,South Australia,2,3660
+Insects,2024,South Australia,3,4129
+Insects,2024,South Australia,4,3687
+Insects,2024,South Australia,5,2019
+Insects,2024,South Australia,6,1462
+Insects,2024,South Australia,7,1094
+Insects,2024,South Australia,8,2717
+Insects,2024,South Australia,9,4860
+Insects,2024,South Australia,10,5820
+Insects,2024,South Australia,11,4986
+Insects,2024,South Australia,12,4883
+Insects,2024,Tasmania,1,3456
+Insects,2024,Tasmania,2,1968
+Insects,2024,Tasmania,3,1725
+Insects,2024,Tasmania,4,1378
+Insects,2024,Tasmania,5,469
+Insects,2024,Tasmania,6,193
+Insects,2024,Tasmania,7,183
+Insects,2024,Tasmania,8,461
+Insects,2024,Tasmania,9,472
+Insects,2024,Tasmania,10,825
+Insects,2024,Tasmania,11,1594
+Insects,2024,Tasmania,12,2157
+Insects,2024,Northern Territory,1,1249
+Insects,2024,Northern Territory,2,1190
+Insects,2024,Northern Territory,3,2461
+Insects,2024,Northern Territory,4,1497
+Insects,2024,Northern Territory,5,1603
+Insects,2024,Northern Territory,6,1095
+Insects,2024,Northern Territory,7,713
+Insects,2024,Northern Territory,8,1091
+Insects,2024,Northern Territory,9,1407
+Insects,2024,Northern Territory,10,975
+Insects,2024,Northern Territory,11,1573
+Insects,2024,Northern Territory,12,1275
+Insects,2024,Australian Capital Territory,1,3703
+Insects,2024,Australian Capital Territory,2,3128
+Insects,2024,Australian Capital Territory,3,3450
+Insects,2024,Australian Capital Territory,4,1036
+Insects,2024,Australian Capital Territory,5,574
+Insects,2024,Australian Capital Territory,6,284
+Insects,2024,Australian Capital Territory,7,400
+Insects,2024,Australian Capital Territory,8,992
+Insects,2024,Australian Capital Territory,9,1780
+Insects,2024,Australian Capital Territory,10,2926
+Insects,2024,Australian Capital Territory,11,4240
+Insects,2024,Australian Capital Territory,12,3161
+Insects,2025,New South Wales,1,22965
+Insects,2025,New South Wales,2,17103
+Insects,2025,New South Wales,3,14129
+Insects,2025,New South Wales,4,12364
+Insects,2025,New South Wales,5,6782
+Insects,2025,New South Wales,6,3946
+Insects,2025,New South Wales,7,3797
+Insects,2025,New South Wales,8,5649
+Insects,2025,New South Wales,9,16232
+Insects,2025,New South Wales,10,33052
+Insects,2025,New South Wales,11,28803
+Insects,2025,New South Wales,12,28534
+Insects,2025,Victoria,1,24279
+Insects,2025,Victoria,2,20751
+Insects,2025,Victoria,3,15362
+Insects,2025,Victoria,4,15573
+Insects,2025,Victoria,5,5769
+Insects,2025,Victoria,6,2246
+Insects,2025,Victoria,7,2117
+Insects,2025,Victoria,8,3989
+Insects,2025,Victoria,9,11808
+Insects,2025,Victoria,10,21114
+Insects,2025,Victoria,11,23976
+Insects,2025,Victoria,12,26034
+Insects,2025,Queensland,1,24347
+Insects,2025,Queensland,2,19240
+Insects,2025,Queensland,3,15409
+Insects,2025,Queensland,4,18343
+Insects,2025,Queensland,5,14707
+Insects,2025,Queensland,6,11747
+Insects,2025,Queensland,7,12158
+Insects,2025,Queensland,8,15265
+Insects,2025,Queensland,9,20681
+Insects,2025,Queensland,10,24489
+Insects,2025,Queensland,11,26567
+Insects,2025,Queensland,12,26945
+Insects,2025,Western Australia,1,3910
+Insects,2025,Western Australia,2,1831
+Insects,2025,Western Australia,3,3377
+Insects,2025,Western Australia,4,2639
+Insects,2025,Western Australia,5,1736
+Insects,2025,Western Australia,6,1774
+Insects,2025,Western Australia,7,1663
+Insects,2025,Western Australia,8,2437
+Insects,2025,Western Australia,9,4065
+Insects,2025,Western Australia,10,5473
+Insects,2025,Western Australia,11,5504
+Insects,2025,Western Australia,12,5849
+Insects,2025,South Australia,1,5407
+Insects,2025,South Australia,2,3274
+Insects,2025,South Australia,3,3021
+Insects,2025,South Australia,4,5037
+Insects,2025,South Australia,5,2211
+Insects,2025,South Australia,6,1377
+Insects,2025,South Australia,7,1297
+Insects,2025,South Australia,8,2022
+Insects,2025,South Australia,9,4103
+Insects,2025,South Australia,10,7397
+Insects,2025,South Australia,11,5111
+Insects,2025,South Australia,12,5416
+Insects,2025,Tasmania,1,2567
+Insects,2025,Tasmania,2,2951
+Insects,2025,Tasmania,3,1475
+Insects,2025,Tasmania,4,861
+Insects,2025,Tasmania,5,320
+Insects,2025,Tasmania,6,361
+Insects,2025,Tasmania,7,407
+Insects,2025,Tasmania,8,538
+Insects,2025,Tasmania,9,635
+Insects,2025,Tasmania,10,1064
+Insects,2025,Tasmania,11,2557
+Insects,2025,Tasmania,12,3026
+Insects,2025,Northern Territory,1,732
+Insects,2025,Northern Territory,2,1778
+Insects,2025,Northern Territory,3,744
+Insects,2025,Northern Territory,4,1049
+Insects,2025,Northern Territory,5,1185
+Insects,2025,Northern Territory,6,1651
+Insects,2025,Northern Territory,7,1715
+Insects,2025,Northern Territory,8,1372
+Insects,2025,Northern Territory,9,2117
+Insects,2025,Northern Territory,10,2578
+Insects,2025,Northern Territory,11,1783
+Insects,2025,Northern Territory,12,1185
+Insects,2025,Australian Capital Territory,1,3185
+Insects,2025,Australian Capital Territory,2,3001
+Insects,2025,Australian Capital Territory,3,2622
+Insects,2025,Australian Capital Territory,4,1310
+Insects,2025,Australian Capital Territory,5,613
+Insects,2025,Australian Capital Territory,6,206
+Insects,2025,Australian Capital Territory,7,222
+Insects,2025,Australian Capital Territory,8,777
+Insects,2025,Australian Capital Territory,9,1245
+Insects,2025,Australian Capital Territory,10,3268
+Insects,2025,Australian Capital Territory,11,4612
+Insects,2025,Australian Capital Territory,12,4563
+Plants,2023,New South Wales,1,10020
+Plants,2023,New South Wales,2,7312
+Plants,2023,New South Wales,3,8672
+Plants,2023,New South Wales,4,8976
+Plants,2023,New South Wales,5,8780
+Plants,2023,New South Wales,6,9120
+Plants,2023,New South Wales,7,10321
+Plants,2023,New South Wales,8,15094
+Plants,2023,New South Wales,9,20938
+Plants,2023,New South Wales,10,14782
+Plants,2023,New South Wales,11,21077
+Plants,2023,New South Wales,12,14583
+Plants,2023,Victoria,1,10778
+Plants,2023,Victoria,2,7063
+Plants,2023,Victoria,3,6038
+Plants,2023,Victoria,4,12036
+Plants,2023,Victoria,5,8298
+Plants,2023,Victoria,6,6172
+Plants,2023,Victoria,7,9088
+Plants,2023,Victoria,8,15154
+Plants,2023,Victoria,9,31320
+Plants,2023,Victoria,10,21535
+Plants,2023,Victoria,11,24952
+Plants,2023,Victoria,12,15644
+Plants,2023,Queensland,1,8056
+Plants,2023,Queensland,2,7254
+Plants,2023,Queensland,3,7620
+Plants,2023,Queensland,4,11163
+Plants,2023,Queensland,5,11137
+Plants,2023,Queensland,6,11751
+Plants,2023,Queensland,7,14149
+Plants,2023,Queensland,8,13446
+Plants,2023,Queensland,9,11529
+Plants,2023,Queensland,10,8337
+Plants,2023,Queensland,11,9297
+Plants,2023,Queensland,12,8121
+Plants,2023,Western Australia,1,1289
+Plants,2023,Western Australia,2,877
+Plants,2023,Western Australia,3,1168
+Plants,2023,Western Australia,4,3316
+Plants,2023,Western Australia,5,2478
+Plants,2023,Western Australia,6,2548
+Plants,2023,Western Australia,7,3292
+Plants,2023,Western Australia,8,8371
+Plants,2023,Western Australia,9,17845
+Plants,2023,Western Australia,10,16652
+Plants,2023,Western Australia,11,4006
+Plants,2023,Western Australia,12,1339
+Plants,2023,South Australia,1,2630
+Plants,2023,South Australia,2,2062
+Plants,2023,South Australia,3,2443
+Plants,2023,South Australia,4,5406
+Plants,2023,South Australia,5,4392
+Plants,2023,South Australia,6,4299
+Plants,2023,South Australia,7,6393
+Plants,2023,South Australia,8,8407
+Plants,2023,South Australia,9,11995
+Plants,2023,South Australia,10,8374
+Plants,2023,South Australia,11,5751
+Plants,2023,South Australia,12,4557
+Plants,2023,Tasmania,1,3261
+Plants,2023,Tasmania,2,1661
+Plants,2023,Tasmania,3,1687
+Plants,2023,Tasmania,4,1371
+Plants,2023,Tasmania,5,728
+Plants,2023,Tasmania,6,699
+Plants,2023,Tasmania,7,760
+Plants,2023,Tasmania,8,1210
+Plants,2023,Tasmania,9,1599
+Plants,2023,Tasmania,10,4549
+Plants,2023,Tasmania,11,5265
+Plants,2023,Tasmania,12,5007
+Plants,2023,Northern Territory,1,158
+Plants,2023,Northern Territory,2,220
+Plants,2023,Northern Territory,3,214
+Plants,2023,Northern Territory,4,408
+Plants,2023,Northern Territory,5,817
+Plants,2023,Northern Territory,6,1177
+Plants,2023,Northern Territory,7,1632
+Plants,2023,Northern Territory,8,756
+Plants,2023,Northern Territory,9,976
+Plants,2023,Northern Territory,10,421
+Plants,2023,Northern Territory,11,1111
+Plants,2023,Northern Territory,12,250
+Plants,2023,Australian Capital Territory,1,1735
+Plants,2023,Australian Capital Territory,2,1258
+Plants,2023,Australian Capital Territory,3,931
+Plants,2023,Australian Capital Territory,4,1439
+Plants,2023,Australian Capital Territory,5,783
+Plants,2023,Australian Capital Territory,6,836
+Plants,2023,Australian Capital Territory,7,837
+Plants,2023,Australian Capital Territory,8,1799
+Plants,2023,Australian Capital Territory,9,2003
+Plants,2023,Australian Capital Territory,10,3277
+Plants,2023,Australian Capital Territory,11,2030
+Plants,2023,Australian Capital Territory,12,1911
+Plants,2024,New South Wales,1,12441
+Plants,2024,New South Wales,2,11208
+Plants,2024,New South Wales,3,14788
+Plants,2024,New South Wales,4,11576
+Plants,2024,New South Wales,5,11842
+Plants,2024,New South Wales,6,12637
+Plants,2024,New South Wales,7,11132
+Plants,2024,New South Wales,8,19979
+Plants,2024,New South Wales,9,35155
+Plants,2024,New South Wales,10,23017
+Plants,2024,New South Wales,11,19288
+Plants,2024,New South Wales,12,16208
+Plants,2024,Victoria,1,14261
+Plants,2024,Victoria,2,9837
+Plants,2024,Victoria,3,7285
+Plants,2024,Victoria,4,14114
+Plants,2024,Victoria,5,10200
+Plants,2024,Victoria,6,9089
+Plants,2024,Victoria,7,8803
+Plants,2024,Victoria,8,15446
+Plants,2024,Victoria,9,49278
+Plants,2024,Victoria,10,33276
+Plants,2024,Victoria,11,21385
+Plants,2024,Victoria,12,16007
+Plants,2024,Queensland,1,9810
+Plants,2024,Queensland,2,8454
+Plants,2024,Queensland,3,10685
+Plants,2024,Queensland,4,14665
+Plants,2024,Queensland,5,13261
+Plants,2024,Queensland,6,10993
+Plants,2024,Queensland,7,11997
+Plants,2024,Queensland,8,16855
+Plants,2024,Queensland,9,18782
+Plants,2024,Queensland,10,15816
+Plants,2024,Queensland,11,12443
+Plants,2024,Queensland,12,13090
+Plants,2024,Western Australia,1,1457
+Plants,2024,Western Australia,2,933
+Plants,2024,Western Australia,3,1817
+Plants,2024,Western Australia,4,2119
+Plants,2024,Western Australia,5,2041
+Plants,2024,Western Australia,6,2937
+Plants,2024,Western Australia,7,5959
+Plants,2024,Western Australia,8,11218
+Plants,2024,Western Australia,9,27405
+Plants,2024,Western Australia,10,12849
+Plants,2024,Western Australia,11,6223
+Plants,2024,Western Australia,12,3741
+Plants,2024,South Australia,1,4241
+Plants,2024,South Australia,2,3201
+Plants,2024,South Australia,3,2690
+Plants,2024,South Australia,4,4594
+Plants,2024,South Australia,5,2914
+Plants,2024,South Australia,6,3662
+Plants,2024,South Australia,7,6082
+Plants,2024,South Australia,8,7099
+Plants,2024,South Australia,9,12700
+Plants,2024,South Australia,10,10050
+Plants,2024,South Australia,11,4610
+Plants,2024,South Australia,12,3973
+Plants,2024,Tasmania,1,3785
+Plants,2024,Tasmania,2,2170
+Plants,2024,Tasmania,3,1663
+Plants,2024,Tasmania,4,1415
+Plants,2024,Tasmania,5,1423
+Plants,2024,Tasmania,6,848
+Plants,2024,Tasmania,7,1044
+Plants,2024,Tasmania,8,1764
+Plants,2024,Tasmania,9,3301
+Plants,2024,Tasmania,10,3326
+Plants,2024,Tasmania,11,5090
+Plants,2024,Tasmania,12,4397
+Plants,2024,Northern Territory,1,480
+Plants,2024,Northern Territory,2,419
+Plants,2024,Northern Territory,3,1088
+Plants,2024,Northern Territory,4,814
+Plants,2024,Northern Territory,5,1100
+Plants,2024,Northern Territory,6,1104
+Plants,2024,Northern Territory,7,1217
+Plants,2024,Northern Territory,8,2204
+Plants,2024,Northern Territory,9,1184
+Plants,2024,Northern Territory,10,890
+Plants,2024,Northern Territory,11,704
+Plants,2024,Northern Territory,12,1212
+Plants,2024,Australian Capital Territory,1,1818
+Plants,2024,Australian Capital Territory,2,1565
+Plants,2024,Australian Capital Territory,3,1262
+Plants,2024,Australian Capital Territory,4,1196
+Plants,2024,Australian Capital Territory,5,881
+Plants,2024,Australian Capital Territory,6,639
+Plants,2024,Australian Capital Territory,7,829
+Plants,2024,Australian Capital Territory,8,1181
+Plants,2024,Australian Capital Territory,9,1996
+Plants,2024,Australian Capital Territory,10,2056
+Plants,2024,Australian Capital Territory,11,1883
+Plants,2024,Australian Capital Territory,12,1110
+Plants,2025,New South Wales,1,14279
+Plants,2025,New South Wales,2,13517
+Plants,2025,New South Wales,3,14734
+Plants,2025,New South Wales,4,17421
+Plants,2025,New South Wales,5,13614
+Plants,2025,New South Wales,6,15944
+Plants,2025,New South Wales,7,16883
+Plants,2025,New South Wales,8,24299
+Plants,2025,New South Wales,9,35555
+Plants,2025,New South Wales,10,44634
+Plants,2025,New South Wales,11,24422
+Plants,2025,New South Wales,12,18610
+Plants,2025,Victoria,1,14957
+Plants,2025,Victoria,2,11461
+Plants,2025,Victoria,3,12792
+Plants,2025,Victoria,4,13776
+Plants,2025,Victoria,5,10355
+Plants,2025,Victoria,6,7958
+Plants,2025,Victoria,7,7705
+Plants,2025,Victoria,8,14102
+Plants,2025,Victoria,9,37571
+Plants,2025,Victoria,10,44253
+Plants,2025,Victoria,11,28114
+Plants,2025,Victoria,12,21545
+Plants,2025,Queensland,1,13347
+Plants,2025,Queensland,2,14748
+Plants,2025,Queensland,3,9758
+Plants,2025,Queensland,4,19290
+Plants,2025,Queensland,5,17057
+Plants,2025,Queensland,6,16706
+Plants,2025,Queensland,7,19717
+Plants,2025,Queensland,8,27026
+Plants,2025,Queensland,9,26997
+Plants,2025,Queensland,10,17878
+Plants,2025,Queensland,11,19162
+Plants,2025,Queensland,12,16020
+Plants,2025,Western Australia,1,5394
+Plants,2025,Western Australia,2,1759
+Plants,2025,Western Australia,3,3321
+Plants,2025,Western Australia,4,3396
+Plants,2025,Western Australia,5,3952
+Plants,2025,Western Australia,6,5161
+Plants,2025,Western Australia,7,7786
+Plants,2025,Western Australia,8,15227
+Plants,2025,Western Australia,9,26643
+Plants,2025,Western Australia,10,26996
+Plants,2025,Western Australia,11,11682
+Plants,2025,Western Australia,12,4889
+Plants,2025,South Australia,1,3969
+Plants,2025,South Australia,2,3594
+Plants,2025,South Australia,3,3080
+Plants,2025,South Australia,4,4845
+Plants,2025,South Australia,5,5372
+Plants,2025,South Australia,6,4328
+Plants,2025,South Australia,7,5856
+Plants,2025,South Australia,8,8207
+Plants,2025,South Australia,9,17038
+Plants,2025,South Australia,10,19794
+Plants,2025,South Australia,11,8950
+Plants,2025,South Australia,12,6137
+Plants,2025,Tasmania,1,4511
+Plants,2025,Tasmania,2,3894
+Plants,2025,Tasmania,3,3436
+Plants,2025,Tasmania,4,2180
+Plants,2025,Tasmania,5,1436
+Plants,2025,Tasmania,6,1538
+Plants,2025,Tasmania,7,2150
+Plants,2025,Tasmania,8,3217
+Plants,2025,Tasmania,9,3477
+Plants,2025,Tasmania,10,5272
+Plants,2025,Tasmania,11,8948
+Plants,2025,Tasmania,12,7336
+Plants,2025,Northern Territory,1,484
+Plants,2025,Northern Territory,2,650
+Plants,2025,Northern Territory,3,585
+Plants,2025,Northern Territory,4,1498
+Plants,2025,Northern Territory,5,1180
+Plants,2025,Northern Territory,6,2071
+Plants,2025,Northern Territory,7,2206
+Plants,2025,Northern Territory,8,2238
+Plants,2025,Northern Territory,9,1988
+Plants,2025,Northern Territory,10,1456
+Plants,2025,Northern Territory,11,750
+Plants,2025,Northern Territory,12,843
+Plants,2025,Australian Capital Territory,1,1127
+Plants,2025,Australian Capital Territory,2,1118
+Plants,2025,Australian Capital Territory,3,1114
+Plants,2025,Australian Capital Territory,4,879
+Plants,2025,Australian Capital Territory,5,959
+Plants,2025,Australian Capital Territory,6,501
+Plants,2025,Australian Capital Territory,7,502
+Plants,2025,Australian Capital Territory,8,1458
+Plants,2025,Australian Capital Territory,9,1781
+Plants,2025,Australian Capital Territory,10,3653
+Plants,2025,Australian Capital Territory,11,2403
+Plants,2025,Australian Capital Territory,12,1449
+Fungi,2023,New South Wales,1,770
+Fungi,2023,New South Wales,2,878
+Fungi,2023,New South Wales,3,1887
+Fungi,2023,New South Wales,4,5875
+Fungi,2023,New South Wales,5,5389
+Fungi,2023,New South Wales,6,2278
+Fungi,2023,New South Wales,7,1210
+Fungi,2023,New South Wales,8,734
+Fungi,2023,New South Wales,9,532
+Fungi,2023,New South Wales,10,365
+Fungi,2023,New South Wales,11,1845
+Fungi,2023,New South Wales,12,1473
+Fungi,2023,Victoria,1,322
+Fungi,2023,Victoria,2,382
+Fungi,2023,Victoria,3,1397
+Fungi,2023,Victoria,4,9483
+Fungi,2023,Victoria,5,12553
+Fungi,2023,Victoria,6,12300
+Fungi,2023,Victoria,7,6445
+Fungi,2023,Victoria,8,2723
+Fungi,2023,Victoria,9,1810
+Fungi,2023,Victoria,10,972
+Fungi,2023,Victoria,11,1034
+Fungi,2023,Victoria,12,1693
+Fungi,2023,Queensland,1,1234
+Fungi,2023,Queensland,2,894
+Fungi,2023,Queensland,3,1196
+Fungi,2023,Queensland,4,1039
+Fungi,2023,Queensland,5,799
+Fungi,2023,Queensland,6,816
+Fungi,2023,Queensland,7,1202
+Fungi,2023,Queensland,8,888
+Fungi,2023,Queensland,9,471
+Fungi,2023,Queensland,10,424
+Fungi,2023,Queensland,11,1068
+Fungi,2023,Queensland,12,1429
+Fungi,2023,Western Australia,1,18
+Fungi,2023,Western Australia,2,29
+Fungi,2023,Western Australia,3,93
+Fungi,2023,Western Australia,4,466
+Fungi,2023,Western Australia,5,842
+Fungi,2023,Western Australia,6,1420
+Fungi,2023,Western Australia,7,1322
+Fungi,2023,Western Australia,8,505
+Fungi,2023,Western Australia,9,358
+Fungi,2023,Western Australia,10,160
+Fungi,2023,Western Australia,11,76
+Fungi,2023,Western Australia,12,39
+Fungi,2023,South Australia,1,73
+Fungi,2023,South Australia,2,77
+Fungi,2023,South Australia,3,164
+Fungi,2023,South Australia,4,883
+Fungi,2023,South Australia,5,2175
+Fungi,2023,South Australia,6,2202
+Fungi,2023,South Australia,7,1856
+Fungi,2023,South Australia,8,618
+Fungi,2023,South Australia,9,282
+Fungi,2023,South Australia,10,189
+Fungi,2023,South Australia,11,235
+Fungi,2023,South Australia,12,361
+Fungi,2023,Tasmania,1,282
+Fungi,2023,Tasmania,2,237
+Fungi,2023,Tasmania,3,601
+Fungi,2023,Tasmania,4,991
+Fungi,2023,Tasmania,5,1031
+Fungi,2023,Tasmania,6,665
+Fungi,2023,Tasmania,7,253
+Fungi,2023,Tasmania,8,285
+Fungi,2023,Tasmania,9,174
+Fungi,2023,Tasmania,10,432
+Fungi,2023,Tasmania,11,468
+Fungi,2023,Tasmania,12,247
+Fungi,2023,Northern Territory,1,63
+Fungi,2023,Northern Territory,2,16
+Fungi,2023,Northern Territory,3,12
+Fungi,2023,Northern Territory,4,27
+Fungi,2023,Northern Territory,5,9
+Fungi,2023,Northern Territory,6,54
+Fungi,2023,Northern Territory,7,40
+Fungi,2023,Northern Territory,8,9
+Fungi,2023,Northern Territory,9,15
+Fungi,2023,Northern Territory,10,12
+Fungi,2023,Northern Territory,11,54
+Fungi,2023,Northern Territory,12,53
+Fungi,2023,Australian Capital Territory,1,48
+Fungi,2023,Australian Capital Territory,2,42
+Fungi,2023,Australian Capital Territory,3,54
+Fungi,2023,Australian Capital Territory,4,281
+Fungi,2023,Australian Capital Territory,5,328
+Fungi,2023,Australian Capital Territory,6,141
+Fungi,2023,Australian Capital Territory,7,60
+Fungi,2023,Australian Capital Territory,8,33
+Fungi,2023,Australian Capital Territory,9,84
+Fungi,2023,Australian Capital Territory,10,68
+Fungi,2023,Australian Capital Territory,11,71
+Fungi,2023,Australian Capital Territory,12,196
+Fungi,2024,New South Wales,1,3216
+Fungi,2024,New South Wales,2,2275
+Fungi,2024,New South Wales,3,3807
+Fungi,2024,New South Wales,4,5722
+Fungi,2024,New South Wales,5,11984
+Fungi,2024,New South Wales,6,6575
+Fungi,2024,New South Wales,7,3758
+Fungi,2024,New South Wales,8,1987
+Fungi,2024,New South Wales,9,1245
+Fungi,2024,New South Wales,10,1504
+Fungi,2024,New South Wales,11,1366
+Fungi,2024,New South Wales,12,964
+Fungi,2024,Victoria,1,2636
+Fungi,2024,Victoria,2,618
+Fungi,2024,Victoria,3,676
+Fungi,2024,Victoria,4,7349
+Fungi,2024,Victoria,5,15835
+Fungi,2024,Victoria,6,13144
+Fungi,2024,Victoria,7,6853
+Fungi,2024,Victoria,8,2784
+Fungi,2024,Victoria,9,4846
+Fungi,2024,Victoria,10,2152
+Fungi,2024,Victoria,11,1140
+Fungi,2024,Victoria,12,917
+Fungi,2024,Queensland,1,3689
+Fungi,2024,Queensland,2,1689
+Fungi,2024,Queensland,3,2278
+Fungi,2024,Queensland,4,2217
+Fungi,2024,Queensland,5,1944
+Fungi,2024,Queensland,6,1088
+Fungi,2024,Queensland,7,869
+Fungi,2024,Queensland,8,1347
+Fungi,2024,Queensland,9,856
+Fungi,2024,Queensland,10,2038
+Fungi,2024,Queensland,11,1774
+Fungi,2024,Queensland,12,2599
+Fungi,2024,Western Australia,1,67
+Fungi,2024,Western Australia,2,37
+Fungi,2024,Western Australia,3,151
+Fungi,2024,Western Australia,4,100
+Fungi,2024,Western Australia,5,366
+Fungi,2024,Western Australia,6,1701
+Fungi,2024,Western Australia,7,1778
+Fungi,2024,Western Australia,8,1073
+Fungi,2024,Western Australia,9,1088
+Fungi,2024,Western Australia,10,175
+Fungi,2024,Western Australia,11,77
+Fungi,2024,Western Australia,12,65
+Fungi,2024,South Australia,1,229
+Fungi,2024,South Australia,2,92
+Fungi,2024,South Australia,3,127
+Fungi,2024,South Australia,4,401
+Fungi,2024,South Australia,5,306
+Fungi,2024,South Australia,6,1218
+Fungi,2024,South Australia,7,1760
+Fungi,2024,South Australia,8,850
+Fungi,2024,South Australia,9,561
+Fungi,2024,South Australia,10,345
+Fungi,2024,South Australia,11,143
+Fungi,2024,South Australia,12,159
+Fungi,2024,Tasmania,1,445
+Fungi,2024,Tasmania,2,299
+Fungi,2024,Tasmania,3,332
+Fungi,2024,Tasmania,4,856
+Fungi,2024,Tasmania,5,1605
+Fungi,2024,Tasmania,6,781
+Fungi,2024,Tasmania,7,478
+Fungi,2024,Tasmania,8,463
+Fungi,2024,Tasmania,9,592
+Fungi,2024,Tasmania,10,478
+Fungi,2024,Tasmania,11,463
+Fungi,2024,Tasmania,12,414
+Fungi,2024,Northern Territory,1,198
+Fungi,2024,Northern Territory,2,86
+Fungi,2024,Northern Territory,3,613
+Fungi,2024,Northern Territory,4,47
+Fungi,2024,Northern Territory,5,12
+Fungi,2024,Northern Territory,6,16
+Fungi,2024,Northern Territory,7,10
+Fungi,2024,Northern Territory,8,24
+Fungi,2024,Northern Territory,9,23
+Fungi,2024,Northern Territory,10,27
+Fungi,2024,Northern Territory,11,90
+Fungi,2024,Northern Territory,12,117
+Fungi,2024,Australian Capital Territory,1,406
+Fungi,2024,Australian Capital Territory,2,62
+Fungi,2024,Australian Capital Territory,3,80
+Fungi,2024,Australian Capital Territory,4,290
+Fungi,2024,Australian Capital Territory,5,682
+Fungi,2024,Australian Capital Territory,6,449
+Fungi,2024,Australian Capital Territory,7,190
+Fungi,2024,Australian Capital Territory,8,155
+Fungi,2024,Australian Capital Territory,9,71
+Fungi,2024,Australian Capital Territory,10,47
+Fungi,2024,Australian Capital Territory,11,48
+Fungi,2024,Australian Capital Territory,12,53
+Fungi,2025,New South Wales,1,2116
+Fungi,2025,New South Wales,2,2441
+Fungi,2025,New South Wales,3,4816
+Fungi,2025,New South Wales,4,10066
+Fungi,2025,New South Wales,5,13878
+Fungi,2025,New South Wales,6,5485
+Fungi,2025,New South Wales,7,3312
+Fungi,2025,New South Wales,8,2941
+Fungi,2025,New South Wales,9,1128
+Fungi,2025,New South Wales,10,1138
+Fungi,2025,New South Wales,11,1187
+Fungi,2025,New South Wales,12,1307
+Fungi,2025,Victoria,1,865
+Fungi,2025,Victoria,2,740
+Fungi,2025,Victoria,3,1651
+Fungi,2025,Victoria,4,7840
+Fungi,2025,Victoria,5,9589
+Fungi,2025,Victoria,6,12961
+Fungi,2025,Victoria,7,11570
+Fungi,2025,Victoria,8,4672
+Fungi,2025,Victoria,9,2960
+Fungi,2025,Victoria,10,2518
+Fungi,2025,Victoria,11,2980
+Fungi,2025,Victoria,12,1394
+Fungi,2025,Queensland,1,1989
+Fungi,2025,Queensland,2,1920
+Fungi,2025,Queensland,3,3234
+Fungi,2025,Queensland,4,5437
+Fungi,2025,Queensland,5,2681
+Fungi,2025,Queensland,6,1715
+Fungi,2025,Queensland,7,1624
+Fungi,2025,Queensland,8,1817
+Fungi,2025,Queensland,9,1519
+Fungi,2025,Queensland,10,844
+Fungi,2025,Queensland,11,2200
+Fungi,2025,Queensland,12,2008
+Fungi,2025,Western Australia,1,137
+Fungi,2025,Western Australia,2,74
+Fungi,2025,Western Australia,3,131
+Fungi,2025,Western Australia,4,522
+Fungi,2025,Western Australia,5,1083
+Fungi,2025,Western Australia,6,2716
+Fungi,2025,Western Australia,7,2625
+Fungi,2025,Western Australia,8,1237
+Fungi,2025,Western Australia,9,903
+Fungi,2025,Western Australia,10,822
+Fungi,2025,Western Australia,11,135
+Fungi,2025,Western Australia,12,104
+Fungi,2025,South Australia,1,160
+Fungi,2025,South Australia,2,109
+Fungi,2025,South Australia,3,110
+Fungi,2025,South Australia,4,418
+Fungi,2025,South Australia,5,502
+Fungi,2025,South Australia,6,2535
+Fungi,2025,South Australia,7,2916
+Fungi,2025,South Australia,8,1265
+Fungi,2025,South Australia,9,649
+Fungi,2025,South Australia,10,632
+Fungi,2025,South Australia,11,627
+Fungi,2025,South Australia,12,226
+Fungi,2025,Tasmania,1,347
+Fungi,2025,Tasmania,2,295
+Fungi,2025,Tasmania,3,418
+Fungi,2025,Tasmania,4,1287
+Fungi,2025,Tasmania,5,1913
+Fungi,2025,Tasmania,6,2174
+Fungi,2025,Tasmania,7,1424
+Fungi,2025,Tasmania,8,715
+Fungi,2025,Tasmania,9,477
+Fungi,2025,Tasmania,10,469
+Fungi,2025,Tasmania,11,1142
+Fungi,2025,Tasmania,12,991
+Fungi,2025,Northern Territory,1,64
+Fungi,2025,Northern Territory,2,205
+Fungi,2025,Northern Territory,3,127
+Fungi,2025,Northern Territory,4,206
+Fungi,2025,Northern Territory,5,48
+Fungi,2025,Northern Territory,6,54
+Fungi,2025,Northern Territory,7,20
+Fungi,2025,Northern Territory,8,25
+Fungi,2025,Northern Territory,9,31
+Fungi,2025,Northern Territory,10,36
+Fungi,2025,Northern Territory,11,113
+Fungi,2025,Northern Territory,12,53
+Fungi,2025,Australian Capital Territory,1,56
+Fungi,2025,Australian Capital Territory,2,86
+Fungi,2025,Australian Capital Territory,3,86
+Fungi,2025,Australian Capital Territory,4,181
+Fungi,2025,Australian Capital Territory,5,336
+Fungi,2025,Australian Capital Territory,6,342
+Fungi,2025,Australian Capital Territory,7,230
+Fungi,2025,Australian Capital Territory,8,181
+Fungi,2025,Australian Capital Territory,9,96
+Fungi,2025,Australian Capital Territory,10,98
+Fungi,2025,Australian Capital Territory,11,60
+Fungi,2025,Australian Capital Territory,12,31

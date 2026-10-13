@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Through the Australian Lens</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Through the Australian Lens</h1>
+
+    <p class="subtitle">
+      What Nature Photography Reveals About Australia
+    </p>
+
+    <section class="chart-section">
+
+      <h2>Chapter 1: Australia Through the Camera</h2>
+
+      <p>
+        Photographic observations provide a window into how
+        Australians document the natural environment.
+        But has photographic recording activity increased?
+      </p>
+
+      <div id="vis1"></div>
+<p class="insight">
+        <strong>Key finding:</strong>
+        Summed photographic observation counts increased by
+        approximately 51.3% between 2023 and 2025.
+        This reflects an increase in recorded activity,
+        not necessarily an increase in biodiversity.
+      </p>
+
+      <p class="source">
+  Source:
+  <a href="https://www.ala.org.au/" target="_blank" rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023–2025.
+  Counts are summed across selected taxonomic groups
+  and may not represent unique observations.
+</p>
+
+<p>
+  Explore how photographic observation counts differ between
+  nature groups. Use the dropdown to compare years.
+</p>
+
+<div id="vis2"></div>
+
+      
+<p class="insight">
+  <strong>Key finding:</strong>
+  Plants and insects consistently receive the highest numbers
+  of photographic observation records, while amphibians,
+  reptiles and mammals receive considerably fewer.
+  This highlights an uneven distribution of photographic
+  recording activity across nature groups, rather than
+  differences in their actual abundance in Australia.
+</p>
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/" target="_blank" rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023–2025.
+  Counts are summed across selected taxonomic groups
+  and may not represent unique observations.
+</p>
+
+
+
+<p>
+  Total photographic records have increased, but has the
+  proportion of attention given to each nature group changed?
+  This chart compares the percentage contribution of each
+  group across 2023, 2024 and 2025.
+</p>
+
+<div id="vis3"></div>
+
+<p class="insight">
+  <strong>Key finding:</strong>
+  Although the total number of photographic observation records
+  increased between 2023 and 2025, the overall distribution
+  across nature groups remained relatively stable.
+  Plants and insects consistently accounted for the largest
+  shares, while amphibians, reptiles and mammals represented
+  much smaller proportions. This suggests that photographic
+  recording activity has grown without a major shift in
+  which nature groups are most frequently documented.
+</p>
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/" target="_blank" rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023–2025.
+  Percentages are calculated from summed counts across
+  selected taxonomic groups and may not represent
+  unique observations.
+</p>
+
+
+</section>
+
+<section class="chart-section">
+<h2>Chapter 2: Nature Through the Seasons</h2>
+
+<p>
+  Australia's natural environment changes throughout the year.
+  Does photographic recording activity follow a seasonal pattern?
+  Explore monthly records and switch between years.
+</p>
+
+<div id="vis4"></div>
+
+
+
+<p class="insight">
+  <strong>Key finding (2025):</strong>
+  Nature photography records peaked in October at approximately
+  343,000 observations, compared with around 146,000 in June.
+  Recording activity increased sharply during September and
+  October, suggesting that spring is a particularly active
+  period for documenting Australian nature.
+  However, this reflects photographic recording activity
+  rather than changes in actual biodiversity abundance.
+</p>
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/" target="_blank" rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  monthly photographic observation records, 2023–2025.
+  Counts are summed across selected taxonomic groups
+  and may not represent unique observations.
+</p>
+
+
+<p>
+  Different nature groups may have different seasonal
+  recording patterns. The heatmap below compares each
+  group's monthly activity with its own busiest month.
+  Select a year to explore how these patterns change.
+</p>
+
+<div id="vis5"></div>
+
+
+<p class="insight">
+  <strong>Key finding (2025):</strong>
+  Most nature groups experienced their highest photographic
+  recording activity during spring, particularly October.
+  However, fungi followed a different seasonal pattern,
+  with recording activity peaking around May.
+  This contrast highlights how photographic observation
+  patterns vary between nature groups and seasons,
+  rather than directly measuring changes in biodiversity.
+</p>
+
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  monthly photographic observation records, 2023–2025.
+  Counts are summed across selected taxonomic groups
+  and may not represent unique observations.
+</p>
+
+</section>
+<section class="chart-section">
+  <h2>Chapter 3: Where Australia Photographs Nature</h2>
+  <h3>State-by-State Photography Activity</h3>
+
+  <p>
+    Nature photography records are not distributed evenly
+    across Australia. Explore how photographic observation
+    counts vary by state and territory between 2023 and 2025.
+  </p>
+
+  <div id="vis6"></div>
+
+  <p class="insight">
+    <strong>Key finding:</strong>
+    Queensland, New South Wales and Victoria account for
+    many of the photographic observations. These counts
+    reflect recording activity, not the actual abundance
+    of wildlife in each state.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.ala.org.au/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Atlas of Living Australia (ALA)
+    </a>,
+    photographic observation records, 2023–2025.
+  </p>
+
+
+    </section>
+
+  </div>
+
+  <script>
+    vegaEmbed("#vis1", "visualisations/vis1.json", {
+      actions: false
+    }).catch(console.error);
+
+    vegaEmbed("#vis2", "visualisations/vis2.json", {
+  actions: false
+    }).catch(console.error);
+
+    vegaEmbed("#vis3", "visualisations/vis3.json", {
+  actions: false
+}).catch(console.error);
+
+vegaEmbed("#vis4", "visualisations/vis4.json", {
+  actions: false
+}).catch(console.error);
+
+vegaEmbed("#vis5", "visualisations/vis5.json", {
+  actions: false
+}).catch(console.error);
+
+vegaEmbed("#vis6", "visualisations/vis6.json", {
+  actions: false
+}).catch(console.error);
+
+
+  </script>
+
+   
+</body>
+</html>

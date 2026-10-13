@@ -1,0 +1,106 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "When Is Nature Photography Most Active?",
+    "subtitle": "Monthly ALA photographic observation counts, 2023–2025",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 12,
+    "offset": 20
+  },
+  "width": 650,
+  "height": 340,
+  "data": {
+    "url": "data/01_ala_monthly_counts.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "month": "number",
+        "population_count": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.year == selectedYear"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "population_count",
+          "as": "records"
+        }
+      ],
+      "groupby": ["month"]
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "color": "#24765B",
+    "strokeWidth": 3,
+    "point": {
+      "filled": true,
+      "size": 80
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": "ascending",
+      "title": "Month",
+      "axis": {
+        "labelAngle": 0,
+        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value-1]"
+      }
+    },
+    "y": {
+      "field": "records",
+      "type": "quantitative",
+      "title": "Photographic observation records",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": "~s"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "month",
+        "type": "ordinal",
+        "title": "Month"
+      },
+      {
+        "field": "records",
+        "type": "quantitative",
+        "title": "Records",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#E8ECE9",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
+  }
+}
