@@ -1,0 +1,215 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Are the Most Nature Photographs Recorded?",
+    "subtitle": "Photographic observation records by state and territory, 2023–2025",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "color": "#174d39"
+  },
+  "width": 700,
+  "height": 470,
+  "projection": {
+    "type": "mercator",
+    "center": [134, -27],
+    "scale": 650
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select photography year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "data/australian_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f0f4ef",
+        "stroke": "#8da99a",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [149.13, -35.28],
+                [150.7, -35.3]
+              ]
+            },
+            "properties": {
+              "name": "ACT label connector"
+            }
+          }
+        ]
+      },
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "stroke": "#174d39",
+        "strokeWidth": 1.5,
+        "strokeDash": [4, 3]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 149.13,
+            "latitude": -35.28
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 35,
+        "color": "#174d39"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/04_ala_state_year_counts.csv"
+      },
+      "transform": [
+        {
+          "filter": "toNumber(datum.year) == selectedYear"
+        },
+        {
+          "calculate": "datum.state == 'Western Australia' ? 121.5 : datum.state == 'Northern Territory' ? 133.5 : datum.state == 'Queensland' ? 145 : datum.state == 'South Australia' ? 135 : datum.state == 'New South Wales' ? 147 : datum.state == 'Australian Capital Territory' ? 150.7 : datum.state == 'Victoria' ? 141.8 : 146.7",
+          "as": "longitude"
+        },
+        {
+          "calculate": "datum.state == 'Western Australia' ? -25 : datum.state == 'Northern Territory' ? -19 : datum.state == 'Queensland' ? -22 : datum.state == 'South Australia' ? -30 : datum.state == 'New South Wales' ? -32 : datum.state == 'Australian Capital Territory' ? -35.3 : datum.state == 'Victoria' ? -38.5 : -42",
+          "as": "latitude"
+        },
+        {
+          "calculate": "datum.state == 'Western Australia' ? 'WA' : datum.state == 'Northern Territory' ? 'NT' : datum.state == 'Queensland' ? 'QLD' : datum.state == 'South Australia' ? 'SA' : datum.state == 'New South Wales' ? 'NSW' : datum.state == 'Australian Capital Territory' ? 'ACT' : datum.state == 'Victoria' ? 'VIC' : 'TAS'",
+          "as": "state_label"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "color": "#238b63",
+            "opacity": 0.65,
+            "stroke": "#174d39",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "population_count",
+              "type": "quantitative",
+              "title": "Observation records",
+              "scale": {
+                "type": "sqrt",
+                "range": [80, 3200]
+              },
+              "legend": {
+                "title": "Observation records",
+                "values": [100000, 300000, 600000],
+                "format": "~s",
+                "orient": "bottom",
+                "direction": "horizontal",
+                "symbolFillColor": "#238b63",
+                "symbolStrokeColor": "#174d39",
+                "labelFontSize": 11,
+                "titleFontSize": 12
+              }
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "type": "nominal",
+                "title": "State / Territory"
+              },
+              {
+                "field": "year",
+                "type": "ordinal",
+                "title": "Year"
+              },
+              {
+                "field": "population_count",
+                "type": "quantitative",
+                "title": "Photographic Records",
+                "format": ",.0f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#174d39",
+            "baseline": "middle",
+            "align": "center"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "state_label",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

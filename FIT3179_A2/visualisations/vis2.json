@@ -1,0 +1,126 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Which Nature Groups Receive the Most Attention?",
+    "subtitle": "ALA photographic observation counts by nature group",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 12,
+    "offset": 20
+  },
+  "width": 650,
+  "height": 350,
+  "data": {
+    "url": "data/02_ala_annual_counts.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "population_count": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.year == selectedYear"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "population_count",
+          "as": "records"
+        }
+      ],
+      "groupby": ["category"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#24765B",
+        "cornerRadiusEnd": 4
+      },
+      "encoding": {
+        "y": {
+          "field": "category",
+          "type": "nominal",
+          "sort": "-x",
+          "title": "Nature group",
+          "axis": {
+            "labelFontSize": 13
+          }
+        },
+        "x": {
+          "field": "records",
+          "type": "quantitative",
+          "title": "Photographic observation records",
+          "axis": {
+            "format": "~s"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Nature group"
+          },
+          {
+            "field": "records",
+            "type": "quantitative",
+            "title": "Records",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "color": "#24765B"
+      },
+      "encoding": {
+        "y": {
+          "field": "category",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "records",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "records",
+          "type": "quantitative",
+          "format": ".2s"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#E8ECE9",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
+  }
+}

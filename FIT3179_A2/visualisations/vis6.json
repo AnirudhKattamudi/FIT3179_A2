@@ -1,0 +1,181 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Are Nature Photographs Most Concentrated?",
+    "subtitle": "Photographic observation records per 1,000 km² of land, 2023–2025",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12
+  },
+  "width": 650,
+  "height": 460,
+  "data": {
+    "url": "data/04_ala_state_year_counts.csv"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) == selectedYear"
+    },
+    {
+      "lookup": "state",
+      "from": {
+        "data": {
+          "url": "data/australian_states.geojson",
+          "format": {
+            "type": "json",
+            "property": "features"
+          }
+        },
+        "key": "properties.STATE_NAME",
+        "fields": ["geometry"]
+      }
+    },
+    {
+      "filter": "isValid(datum.geometry)"
+    }
+  ],
+  "projection": {
+    "type": "mercator",
+    "center": [134, -25],
+    "scale": 650
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "observations_per_1000_km2",
+          "type": "quantitative",
+          "title": "Records per 1,000 km²",
+          "scale": {
+            "type": "symlog",
+            "constant": 100,
+            "scheme": "greens",
+            "domainMin": 0
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "population_count",
+            "type": "quantitative",
+            "title": "Observation records",
+            "format": ","
+          },
+          {
+            "field": "land_area_km2",
+            "type": "quantitative",
+            "title": "Land area (km²)",
+            "format": ","
+          },
+          {
+            "field": "observations_per_1000_km2",
+            "type": "quantitative",
+            "title": "Records per 1,000 km²",
+            "format": ",.2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 149.13,
+            "latitude": -35.28,
+            "longitude2": 153,
+            "latitude2": -33.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#174d39",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "longitude2"
+        },
+        "latitude2": {
+          "field": "latitude2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 153,
+            "latitude": -33.5,
+            "label": "ACT"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#174d39",
+        "align": "left",
+        "dx": 5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

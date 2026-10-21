@@ -1,0 +1,146 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "When Are Different Nature Groups Photographed?",
+    "subtitle": "Monthly recording activity by nature group, 2023–2025",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 12,
+    "offset": 20
+  },
+  "width": 650,
+  "height": 330,
+  "data": {
+    "url": "data/01_ala_monthly_counts.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "month": "number",
+        "population_count": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "heatmapYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.year == heatmapYear"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "population_count",
+          "as": "records"
+        }
+      ],
+      "groupby": ["category", "month"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "records",
+          "as": "groupMax"
+        }
+      ],
+      "groupby": ["category"]
+    },
+    {
+      "calculate": "datum.groupMax > 0 ? datum.records / datum.groupMax : 0",
+      "as": "relativeActivity"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2,
+    "cornerRadius": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": "ascending",
+      "title": "Month",
+      "axis": {
+        "labelAngle": 0,
+        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value-1]"
+      }
+    },
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Nature group",
+      "sort": [
+        "Birds",
+        "Mammals",
+        "Reptiles",
+        "Amphibians",
+        "Insects",
+        "Plants",
+        "Fungi"
+      ]
+    },
+    "color": {
+      "field": "relativeActivity",
+      "type": "quantitative",
+      "title": "Relative activity",
+      "scale": {
+        "domain": [0, 1],
+        "range": ["#E9F3ED", "#17684B"]
+      },
+      "legend": {
+        "format": ".0%"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal",
+        "title": "Nature group"
+      },
+      {
+        "field": "month",
+        "type": "ordinal",
+        "title": "Month number"
+      },
+      {
+        "field": "records",
+        "type": "quantitative",
+        "title": "Photographic records",
+        "format": ","
+      },
+      {
+        "field": "relativeActivity",
+        "type": "quantitative",
+        "title": "Relative to group peak",
+        "format": ".0%"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
+  }
+}
