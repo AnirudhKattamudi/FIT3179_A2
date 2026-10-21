@@ -1,0 +1,11 @@
+state_code,feature_count,sum_gis_area_ha,source,note
+TAS,2599,1934394.08,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+ACT,76,131902.39,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+SA,2145,28774349.1,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+NSW,1017,7864023.16,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+WA,1971,77136333.97,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+NT,282,33294785.24,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+VIC,3260,4899452.31,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+EXT,19,43694.62,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+QLD,1278,17154726.29,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage
+JBT,2,5597.49,DCCEEW CAPAD 2024 FeatureServer /0; ENVIRON='T',Raw GIS area sum; overlaps may occur; not unique protected land coverage

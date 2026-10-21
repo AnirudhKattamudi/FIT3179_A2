@@ -1,0 +1,188 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Does Australia Photograph the Same Nature Everywhere?",
+    "subtitle": "Percentage of photographic observation records by nature group within each state, 2023–2025",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12
+  },
+  "data": {
+    "url": "data/02_ala_annual_counts.csv"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) == selectedYear"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "population_count",
+          "as": "group_count"
+        }
+      ],
+      "groupby": ["state", "category", "year"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "group_count",
+          "as": "state_total"
+        }
+      ],
+      "groupby": ["state", "year"]
+    },
+    {
+      "calculate": "datum.state_total > 0 ? datum.group_count / datum.state_total * 100 : null",
+      "as": "percentage"
+    }
+  ],
+  "width": {
+    "step": 75
+  },
+  "height": {
+    "step": 42
+  },
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Nature Group",
+      "axis": {
+        "labelAngle": -35,
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "labelLimit": 120
+      },
+      "scale": {
+        "paddingInner": 0.05,
+        "paddingOuter": 0.02
+      }
+    },
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State / Territory",
+      "sort": [
+        "Western Australia",
+        "Northern Territory",
+        "Queensland",
+        "South Australia",
+        "New South Wales",
+        "Australian Capital Territory",
+        "Victoria",
+        "Tasmania"
+      ],
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "labelLimit": 200
+      },
+      "scale": {
+        "paddingInner": 0.05,
+        "paddingOuter": 0.02
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "color": {
+          "field": "percentage",
+          "type": "quantitative",
+          "title": "Share of state records (%)",
+          "scale": {
+            "scheme": "greens",
+            "domainMin": 0
+          },
+          "legend": {
+            "gradientLength": 250,
+            "titleFontSize": 12,
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Nature Group"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "group_count",
+            "type": "quantitative",
+            "title": "Observation records",
+            "format": ","
+          },
+          {
+            "field": "state_total",
+            "type": "quantitative",
+            "title": "Total state records",
+            "format": ","
+          },
+          {
+            "field": "percentage",
+            "type": "quantitative",
+            "title": "Share of state records (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "percentage",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.percentage >= 25",
+            "value": "white"
+          },
+          "value": "#174d39"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

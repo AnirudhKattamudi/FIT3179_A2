@@ -1,0 +1,182 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Do More Protected Areas Mean More Nature Photography?",
+    "subtitle": "Protected-area feature counts (2024) vs photographic observation density (2023–2025)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12
+  },
+  "width": 650,
+  "height": 360,
+  "data": {
+    "url": "data/04_ala_state_year_counts.csv"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select photography year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) == selectedYear"
+    },
+    {
+      "calculate": "datum.state == 'Australian Capital Territory' ? 'ACT' : datum.state == 'New South Wales' ? 'NSW' : datum.state == 'Northern Territory' ? 'NT' : datum.state == 'Queensland' ? 'QLD' : datum.state == 'South Australia' ? 'SA' : datum.state == 'Tasmania' ? 'TAS' : datum.state == 'Victoria' ? 'VIC' : 'WA'",
+      "as": "state_code"
+    },
+    {
+      "lookup": "state_code",
+      "from": {
+        "data": {
+          "url": "data/09_capad_2024_terrestrial_state_summary.csv"
+        },
+        "key": "state_code",
+        "fields": ["feature_count"]
+      }
+    },
+    {
+      "calculate": "datum.state == 'Australian Capital Territory' ? 2358 : datum.state == 'New South Wales' ? 801150 : datum.state == 'Northern Territory' ? 1347791 : datum.state == 'Queensland' ? 1729742 : datum.state == 'South Australia' ? 984321 : datum.state == 'Tasmania' ? 68401 : datum.state == 'Victoria' ? 227444 : 2527013",
+      "as": "land_area_km2"
+    },
+    {
+      "calculate": "datum.population_count / datum.land_area_km2 * 1000",
+      "as": "observation_density"
+    },
+    {
+      "filter": "isValid(datum.feature_count) && isValid(datum.observation_density)"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 230,
+        "opacity": 0.85,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "feature_count",
+          "type": "quantitative",
+          "title": "Number of Protected-Area Features (2024)",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "grid": false,
+            "tickCount": 7,
+            "domain": true,
+            "domainColor": "#aab8ae",
+            "tickSize": 4,
+            "format": ",.0f"
+          }
+        },
+        "y": {
+          "field": "observation_density",
+          "type": "quantitative",
+          "title": "Observation Records per 1,000 km²",
+          "scale": {
+            "type": "symlog",
+            "constant": 100,
+            "zero": true
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "values": [
+              0,
+              100,
+              500,
+              1000,
+              3000,
+              10000,
+              25000
+            ],
+            "format": ",.0f",
+            "grid": true,
+            "gridColor": "#dce6df",
+            "gridOpacity": 0.75,
+            "gridWidth": 1,
+            "domain": true,
+            "domainColor": "#aab8ae",
+            "tickSize": 4
+          }
+        },
+        "color": {
+          "value": "#147d64"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Photography Year"
+          },
+          {
+            "field": "feature_count",
+            "type": "quantitative",
+            "title": "Protected-Area Features",
+            "format": ",.0f"
+          },
+          {
+            "field": "population_count",
+            "type": "quantitative",
+            "title": "Photographic Records",
+            "format": ",.0f"
+          },
+          {
+            "field": "observation_density",
+            "type": "quantitative",
+            "title": "Records per 1,000 km²",
+            "format": ",.2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 9,
+        "fontSize": 11,
+        "color": "#174d39"
+      },
+      "encoding": {
+        "x": {
+          "field": "feature_count",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "observation_density",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state_code",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

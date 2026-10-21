@@ -2,8 +2,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Where Are Australians Photographing Nature?",
-    "subtitle": "Photographic observation records by state and territory",
+    "text": "Where Are Nature Photographs Most Concentrated?",
+    "subtitle": "Photographic observation records per 1,000 km² of land, 2023–2025",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12
@@ -51,44 +51,127 @@
     "center": [134, -25],
     "scale": 650
   },
-  "mark": {
-    "type": "geoshape",
-    "stroke": "white",
-    "strokeWidth": 1.2
-  },
-  "encoding": {
-    "shape": {
-      "field": "geometry",
-      "type": "geojson"
-    },
-    "color": {
-      "field": "population_count",
-      "type": "quantitative",
-      "title": "Observation records",
-      "scale": {
-        "scheme": "greens",
-        "domainMin": 0
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "observations_per_1000_km2",
+          "type": "quantitative",
+          "title": "Records per 1,000 km²",
+          "scale": {
+            "type": "symlog",
+            "constant": 100,
+            "scheme": "greens",
+            "domainMin": 0
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "population_count",
+            "type": "quantitative",
+            "title": "Observation records",
+            "format": ","
+          },
+          {
+            "field": "land_area_km2",
+            "type": "quantitative",
+            "title": "Land area (km²)",
+            "format": ","
+          },
+          {
+            "field": "observations_per_1000_km2",
+            "type": "quantitative",
+            "title": "Records per 1,000 km²",
+            "format": ",.2f"
+          }
+        ]
       }
     },
-    "tooltip": [
-      {
-        "field": "state",
-        "type": "nominal",
-        "title": "State / Territory"
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 149.13,
+            "latitude": -35.28,
+            "longitude2": 153,
+            "latitude2": -33.5
+          }
+        ]
       },
-      {
-        "field": "year",
-        "type": "ordinal",
-        "title": "Year"
+      "mark": {
+        "type": "rule",
+        "color": "#174d39",
+        "strokeWidth": 1.5
       },
-      {
-        "field": "population_count",
-        "type": "quantitative",
-        "title": "Observation records",
-        "format": ","
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "longitude2"
+        },
+        "latitude2": {
+          "field": "latitude2"
+        }
       }
-    ]
-  },
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 153,
+            "latitude": -33.5,
+            "label": "ACT"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#174d39",
+        "align": "left",
+        "dx": 5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
   "config": {
     "view": {
       "stroke": null

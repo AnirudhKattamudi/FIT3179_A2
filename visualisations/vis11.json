@@ -1,0 +1,267 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia Resized by Nature Photography",
+    "subtitle": "Non-contiguous cartogram of photographic records, 2023–2025",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "color": "#174d39"
+  },
+  "width": 690,
+  "height": 480,
+  "projection": {
+    "type": "mercator",
+    "center": [134, -27],
+    "scale": 650,
+    "translate": [345, 240]
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2025,
+      "bind": {
+        "input": "select",
+        "options": [2023, 2024, 2025],
+        "name": "Select photography year: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "data/australian_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8eee9",
+        "stroke": "#b5c5bb",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/vis11_cartogram.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "toNumber(datum.properties.year) == selectedYear"
+        },
+        {
+          "calculate": "datum.properties.state",
+          "as": "state"
+        },
+        {
+          "calculate": "toNumber(datum.properties.population_count)",
+          "as": "records"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#15543c",
+        "strokeWidth": 1.2,
+        "opacity": 0.95
+      },
+      "encoding": {
+        "shape": {
+          "field": "geometry",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "records",
+          "type": "quantitative",
+          "title": "Photographic records",
+          "scale": {
+            "scheme": "greens"
+          },
+          "legend": {
+            "orient": "bottom",
+            "format": "~s",
+            "titleFontSize": 12,
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / Territory"
+          },
+          {
+            "field": "records",
+            "type": "quantitative",
+            "title": "Photographic records",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "WA",
+            "lon": 121.0,
+            "lat": -25.5
+          },
+          {
+            "label": "NT",
+            "lon": 133.2,
+            "lat": -19.0
+          },
+          {
+            "label": "QLD",
+            "lon": 145.0,
+            "lat": -22.0
+          },
+          {
+            "label": "SA",
+            "lon": 135.0,
+            "lat": -30.0
+          },
+          {
+            "label": "NSW",
+            "lon": 147.5,
+            "lat": -32.5
+          },
+          {
+            "label": "VIC",
+            "lon": 144.0,
+            "lat": -38.0
+          },
+          {
+            "label": "TAS",
+            "lon": 146.8,
+            "lat": -42.3
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#000000",
+        "filled": true,
+        "align": "center",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [149.13, -35.28],
+                [151.2, -35.7]
+              ]
+            }
+          }
+        ]
+      },
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "stroke": "#174d39",
+        "strokeWidth": 1.2,
+        "strokeDash": [4, 3]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.13,
+            "lat": -35.28
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 35,
+        "color": "#174d39"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label": "ACT",
+            "lon": 151.5,
+            "lat": -35.7
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#000000",
+        "filled": true,
+        "align": "left",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

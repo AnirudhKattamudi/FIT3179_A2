@@ -1,0 +1,222 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How Has Nature Photography Changed Across States?",
+    "subtitle": "Change in each nature group's share of state records, 2023 vs 2025",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12
+  },
+  "width": 650,
+  "height": {
+    "step": 48
+  },
+  "data": {
+    "url": "data/02_ala_annual_counts.csv"
+  },
+  "params": [
+    {
+      "name": "selectedCategory",
+      "value": "Plants",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Amphibians",
+          "Birds",
+          "Fungi",
+          "Insects",
+          "Mammals",
+          "Plants",
+          "Reptiles"
+        ],
+        "name": "Select nature group: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) == 2023 || toNumber(datum.year) == 2025"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "population_count",
+          "as": "group_count"
+        }
+      ],
+      "groupby": ["state", "category", "year"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "group_count",
+          "as": "state_total"
+        }
+      ],
+      "groupby": ["state", "year"]
+    },
+    {
+      "calculate": "datum.state_total > 0 ? datum.group_count / datum.state_total * 100 : null",
+      "as": "percentage"
+    },
+    {
+      "filter": "datum.category == selectedCategory"
+    },
+    {
+      "calculate": "toString(datum.year)",
+      "as": "year_label"
+    },
+    {
+      "pivot": "year_label",
+      "value": "percentage",
+      "groupby": ["state", "category"],
+      "op": "sum"
+    },
+    {
+      "calculate": "datum['2023']",
+      "as": "share_2023"
+    },
+    {
+      "calculate": "datum['2025']",
+      "as": "share_2025"
+    },
+    {
+      "calculate": "datum.share_2025 - datum.share_2023",
+      "as": "change_pp"
+    },
+    {
+      "calculate": "format(datum.change_pp, '+.1f') + ' pp'",
+      "as": "change_label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State / Territory",
+      "sort": [
+        "Western Australia",
+        "Northern Territory",
+        "Queensland",
+        "South Australia",
+        "New South Wales",
+        "Australian Capital Territory",
+        "Victoria",
+        "Tasmania"
+      ],
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "labelLimit": 210
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#a8b8ae"
+      },
+      "encoding": {
+        "x": {
+          "field": "share_2023",
+          "type": "quantitative",
+          "title": "Share of State Records (%)",
+          "scale": {
+            "domain": [0, 75]
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 13
+          }
+        },
+        "x2": {
+          "field": "share_2025"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State / Territory"
+          },
+          {
+            "field": "category",
+            "title": "Nature Group"
+          },
+          {
+            "field": "share_2023",
+            "title": "2023 Share (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "share_2025",
+            "title": "2025 Share (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "change_pp",
+            "title": "Change (percentage points)",
+            "format": "+.1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 140,
+        "color": "#e69f00"
+      },
+      "encoding": {
+        "x": {
+          "field": "share_2023",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 140,
+        "color": "#147d64"
+      },
+      "encoding": {
+        "x": {
+          "field": "share_2025",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#174d39"
+      },
+      "encoding": {
+        "x": {
+          "datum": 62,
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "change_label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "white"
+  }
+}

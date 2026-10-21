@@ -191,23 +191,240 @@
 </section>
 <section class="chart-section">
   <h2>Chapter 3: Where Australia Photographs Nature</h2>
-  <h3>State-by-State Photography Activity</h3>
+  <h3>Observation Density Across States and Territories</h3>
+
+  
+<p>
+  Compare photographic observation records per 1,000 km² of land
+  across states and territories from 2023 to 2025.
+  Hover over a state to see both the normalised density and raw count.
+  A logarithmic-style colour scale is used to make differences between states easier to distinguish.
+</p>
+
+<div id="vis6"></div>
+
+<p class="insight">
+  <strong>Key finding:</strong>
+  The ACT has the highest recorded observation density per 1,000 km²
+  in each selected year, despite having fewer total records than
+  several larger states. This measures recording concentration,
+  not biodiversity or wildlife abundance. 
+</p>
+
+
+  
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023–2025;
+  land areas from
+  <a href="https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/area-of-australia-states-and-territories"
+     target="_blank"
+     rel="noopener noreferrer">
+    Geoscience Australia
+  </a>.
+  Density = records ÷ land area (km²) × 1,000.
+  Counts are summed across selected groups and may not represent
+  unique observations. Colour uses a symmetric logarithmic scale; the legend values remain in records per 1,000 km².
+</p>
+
+
+<h3>What Types of Nature Does Each State Photograph?</h3>
+
+<p>
+  While observation density varies across Australia, the types of
+  nature being photographed may also differ between states.
+  This heatmap compares the percentage of photographic records
+  belonging to each nature group within every state and territory.
+  Darker green indicates a larger share of that state's records.
+  Select a year to explore how these patterns change.
+</p>
+
+<div id="vis7"></div>
+
+
+
+<p class="insight">
+  <strong>Key finding (2025):</strong>
+  Plant observations dominate in Western Australia (55.7%)
+  and Tasmania (49.5%), while insects account for the
+  largest share in the ACT (40.4%), Northern Territory (36.0%)
+  and Queensland (36.1%).
+  This reveals clear regional differences in which nature groups
+  are most frequently photographed, rather than differences
+  in their actual abundance.
+</p>
+
+
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023–2025.
+  Percentages are calculated within each state using summed
+  counts across selected taxonomic groups and may not
+  represent unique observations.
+</p>
+
+
+<h3>How Have Nature Photography Preferences Changed?</h3>
+
+<p>
+  The types of nature photographed vary across states, but have
+  these patterns changed over time? This chart compares each
+  nature group's percentage share of photographic records
+  between 2023 and 2025.
+  Select a nature group to explore changes across Australia.
+</p>
+
+<p>
+  <strong style="color: #e69f00;">● 2023</strong>
+  &nbsp;&nbsp;
+  <strong style="color: #147d64;">● 2025</strong>
+</p>
+
+<div id="vis8"></div>
+
+
+
+<p class="insight" id="vis8-insight">
+  <strong>Key finding (Plants, 2023–2025):</strong>
+  Plant observations changed differently across states between
+  2023 and 2025. The ACT experienced a decline in plant records'
+  share, while Queensland and Tasmania experienced increases.
+  These changes reflect photographic recording activity rather
+  than actual species abundance.
+</p>
+
+
+
+<p class="source">
+  Source:
+  <a href="https://www.ala.org.au/"
+     target="_blank"
+     rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>,
+  photographic observation records, 2023 and 2025.
+  Percentages are calculated within each state using summed
+  counts across selected taxonomic groups.
+  Changes are measured in percentage points, not percentage growth.
+  Counts may not represent unique observations.
+</p>
+
+
+
+    </section>
+
+
+<section class="chart-section">
+
+  <h2>Chapter 4: Photography and Protected Landscapes</h2>
 
   <p>
-    Nature photography records are not distributed evenly
-    across Australia. Explore how photographic observation
-    counts vary by state and territory between 2023 and 2025.
+    Australia contains thousands of protected natural areas,
+    but does having more protected areas correspond with
+    greater photographic recording activity?
+
+    This scatter plot compares the number of protected-area
+    features recorded in CAPAD 2024 with photographic
+    observation density across Australian states and territories.
+
+    Select a photography year to explore the relationship.
   </p>
 
-  <div id="vis6"></div>
+  <div id="vis9"></div>
 
-  <p class="insight">
-    <strong>Key finding:</strong>
-    Queensland, New South Wales and Victoria account for
-    many of the photographic observations. These counts
-    reflect recording activity, not the actual abundance
-    of wildlife in each state.
+  <p class="insight" id="vis9-insight">
+    <strong>Key finding (2025):</strong>
+    The number of protected-area features does not show a
+    consistent relationship with nature photography density.
+    Victoria has the highest protected-area feature count
+    and relatively high photographic activity, while the ACT
+    records by far the highest observation density despite
+    having relatively few protected areas. This suggests that
+    photographic recording activity may be influenced by
+    factors beyond the number of protected areas, including
+    accessibility, population concentration and observer
+    participation.
   </p>
+
+  <p class="source">
+    Sources:
+    <a href="https://www.ala.org.au/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Atlas of Living Australia (ALA)
+    </a>,
+    photographic observation records, 2023–2025;
+
+    <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+       target="_blank"
+       rel="noopener noreferrer">
+      CAPAD 2024
+    </a>,
+    terrestrial protected-area feature counts;
+
+    and
+    <a href="https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/area-of-australia-states-and-territories"
+       target="_blank"
+       rel="noopener noreferrer">
+      Geoscience Australia
+    </a>,
+    state and territory land areas.
+
+    Observation density is measured per 1,000 km².
+    The vertical axis uses a symmetric logarithmic scale.
+    Protected-area feature counts are not equivalent to
+    protected-land coverage. This comparison is exploratory
+    and does not establish causation.
+  </p>
+
+
+
+
+<section class="chart-section">
+
+  <h3>Where Are the Most Nature Photographs Recorded?</h3>
+
+  <p>
+    Nature photography activity differs substantially
+    across Australian states and territories.
+
+    This proportional symbol map uses circle size to
+    represent the number of photographic observation
+    records submitted to the Atlas of Living Australia.
+    Larger circles indicate more recorded observations.
+
+    Select a year to explore how the geographic
+    distribution of nature photography changes
+    between 2023 and 2025.
+  </p>
+
+  <div id="vis10"></div>
+
+  
+
+<p class="insight" id="vis10-insight">
+  <strong>Key finding (2025):</strong>
+  Nature photography records are unevenly distributed
+  across Australian states and territories. Queensland,
+  New South Wales and Victoria show substantial recording
+  activity, while the ACT and Northern Territory have
+  comparatively fewer records. Unlike the choropleth in
+  Chapter 3, this map shows total records rather than
+  observation density.
+</p>
+
+
 
   <p class="source">
     Source:
@@ -217,10 +434,78 @@
       Atlas of Living Australia (ALA)
     </a>,
     photographic observation records, 2023–2025.
+
+    Circle areas represent photographic record counts.
+    Symbols are placed at approximate state and
+    territory reference locations rather than the
+    exact locations of individual observations. 
+The ACT symbol is displaced from Canberra for readability,
+with a dashed connector indicating its approximate geographic location.
+
   </p>
 
 
-    </section>
+
+
+<section class="chart-section">
+  <h3>What Would Australia Look Like if States Were Sized by Nature Photography?</h3>
+
+  <p>
+    What if Australia's states were sized according to
+    the number of nature photographs recorded, rather
+    than their actual land area?
+
+    This non-contiguous cartogram transforms Australia's
+    geography by resizing each state and territory
+    according to its photographic observation totals.
+    Select a year to see how this representation
+    changes between 2023 and 2025.
+  </p>
+
+  <div id="vis11"></div>
+
+  <p class="map-explanation">
+    <strong>How to read this map:</strong>
+    The light grey outlines represent Australia's
+    actual geography. The green shapes represent
+    states resized according to photographic records.
+    Larger green regions indicate more observations,
+    while smaller regions indicate fewer observations.
+    Darker green also indicates higher observation totals.
+  </p>
+
+  <p class="insight" id="vis11-insight">
+    <strong>Key finding:</strong>
+    Loading the selected year's observations...
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.ala.org.au/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Atlas of Living Australia (ALA)
+    </a>, photographic observations, 2023–2025.
+    State boundaries from the project's Australian
+    states GeoJSON. Resized shapes are approximate,
+    with each year's largest recording total used
+    as the scaling reference.
+  </p>
+</section>
+
+
+</section>
+
+
+
+</section>
+
+
+</section>
+
+
+
+
 
   </div>
 
@@ -248,6 +533,158 @@ vegaEmbed("#vis5", "visualisations/vis5.json", {
 vegaEmbed("#vis6", "visualisations/vis6.json", {
   actions: false
 }).catch(console.error);
+
+vegaEmbed("#vis7", "visualisations/vis7.json", {
+  actions: false
+}).catch(console.error);
+
+
+vegaEmbed("#vis8", "visualisations/vis8.json", {
+  actions: false
+}).then(function(result) {
+
+  const view = result.view;
+  const insight = document.getElementById("vis8-insight");
+
+  const findings = {
+    "Plants":
+      "Plant photography shares remained relatively stable in most states, but declined in the ACT while increasing in Queensland and Tasmania.",
+
+    "Insects":
+      "Insect photography shares increased in the Northern Territory (+9.5 percentage points) and ACT (+6.4 pp), but decreased in Tasmania (-9.0 pp), Queensland (-4.8 pp) and Victoria (-4.6 pp).",
+
+    "Birds":
+      "Bird photography shares changed across Australian states and territories between 2023 and 2025. Compare the percentage-point labels to identify the largest changes.",
+
+    "Fungi":
+      "Fungi photography shares varied between 2023 and 2025. The percentage-point labels highlight which states experienced increases or decreases.",
+
+    "Mammals":
+      "Mammal photography shares changed across states. These changes represent differences in recording activity rather than actual mammal abundance.",
+
+    "Amphibians":
+      "Amphibian photography shares remained relatively small across Australia. The chart shows how their contribution to each state's records changed over time.",
+
+    "Reptiles":
+      "Reptile photography shares varied across states between 2023 and 2025. Use the percentage-point labels to compare changes."
+  };
+
+  function updateInsight(name, value) {
+    if (!insight) return;
+
+    insight.innerHTML =
+      "<strong>Key finding (" + value + ", 2023–2025):</strong> " +
+      findings[value];
+  }
+
+  view.addSignalListener("selectedCategory", updateInsight);
+
+}).catch(console.error);
+
+
+vegaEmbed("#vis9", "visualisations/vis9.json", {
+  actions: false
+}).then(function(result) {
+
+  const view = result.view;
+  const insight = document.getElementById("vis9-insight");
+
+  function updateInsight(name, year) {
+    if (!insight) return;
+
+    const findings = {
+      2023: "The ACT has a much higher photographic observation density than other states and territories, despite having relatively few protected-area features. The distribution suggests that the number of protected-area features alone does not explain recording density.",
+
+      2024: "The ACT stands out for its high photographic observation density despite having relatively few protected-area features. Other states show considerable variation, indicating no simple relationship between feature counts and photographic activity.",
+
+      2025: "The number of protected-area features does not show a consistent relationship with nature photography density. Victoria has the highest protected-area feature count and relatively high photographic activity, while the ACT records by far the highest observation density despite having relatively few protected areas."
+    };
+
+    insight.innerHTML =
+      "<strong>Key finding (" + year + "):</strong> " +
+      findings[year] +
+      " These differences reflect photographic recording activity, not actual biodiversity abundance.";
+  }
+
+  view.addSignalListener("selectedYear", updateInsight);
+
+}).catch(console.error);
+
+
+vegaEmbed("#vis10", "visualisations/vis10.json", {
+  actions: false
+}).then(function(result) {
+
+  const view = result.view;
+  const insight = document.getElementById("vis10-insight");
+
+  
+const findings = {
+  2023:
+    "New South Wales, Queensland and Victoria are among the states with the largest nature photography recording totals in 2023, while the Northern Territory and ACT have substantially fewer records. The contrast shows how photographic observations are concentrated unevenly across Australia.",
+
+  2024:
+    "Nature photography recording activity remains concentrated in the eastern states in 2024, particularly New South Wales, Queensland and Victoria. The smaller circles in the Northern Territory and ACT highlight the difference between total photographic records and the observation density shown in Chapter 3.",
+
+  2025:
+    "Queensland, New South Wales and Victoria continue to account for substantial photographic recording activity in 2025. However, the ACT has relatively few total records despite having the highest observation density in the choropleth map. This demonstrates how total counts and area-normalised measures can tell different geographic stories."
+};
+
+
+  function updateInsight(year) {
+    if (!insight) return;
+
+    const selected = Number(year);
+
+    insight.innerHTML =
+      "<strong>Key finding (" + selected + "):</strong> " +
+      findings[selected];
+  }
+
+  // Display the correct finding when the chart first loads.
+  updateInsight(view.signal("selectedYear"));
+
+  // Update the finding whenever the dropdown changes.
+  view.addSignalListener(
+    "selectedYear",
+    function(name, value) {
+      updateInsight(value);
+    }
+  );
+
+}).catch(console.error);
+
+
+
+vegaEmbed("#vis11", "visualisations/vis11.json", {
+  actions: false
+})
+.then(result => {
+  const view = result.view;
+  const insight = document.getElementById("vis11-insight");
+
+  const findings = {
+    2023: "In 2023, resizing Australia's states by nature photography records reveals how photographic activity differs from physical geography. States with fewer observations shrink, while states with larger totals remain more prominent. The gaps between the green shapes and the original grey boundaries highlight these differences.",
+
+    2024: "In 2024, the non-contiguous cartogram again highlights the uneven geographic distribution of nature photography records. Comparing the green shapes with the grey outlines makes it easier to distinguish photographic recording activity from the actual land area of each state.",
+
+    2025: "In 2025, Queensland and New South Wales appear particularly prominent in the cartogram, while regions with fewer photographic records are considerably smaller. The contrast with the original Australian map demonstrates how changing the geographic size encoding can reveal a different perspective on the data."
+  };
+
+  function updateInsight(year) {
+    insight.innerHTML =
+      "<strong>Key finding (" + year + "):</strong> " +
+      findings[year];
+  }
+
+  updateInsight(view.signal("selectedYear"));
+
+  view.addSignalListener("selectedYear", (name, value) => {
+    updateInsight(value);
+  });
+})
+.catch(console.error);
+
 
 
   </script>

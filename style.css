@@ -141,3 +141,14 @@ h2 {
   }
 }
 
+
+.map-explanation {
+  background-color: #f1f6f2;
+  border-left: 4px solid #91b9a0;
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 4px;
+  color: #284438;
+  font-size: 14px;
+  line-height: 1.7;
+}
