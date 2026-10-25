@@ -1,15 +1,23 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Does Australia Photograph the Same Nature Everywhere?",
-    "subtitle": "Percentage of photographic observation records by nature group within each state, 2023–2025",
-    "anchor": "start",
-    "fontSize": 18,
-    "subtitleFontSize": 12
+  "width": 720,
+  "height": 410,
+  "padding": {
+    "left": 5,
+    "right": 10,
+    "top": 10,
+    "bottom": 40
   },
   "data": {
-    "url": "data/02_ala_annual_counts.csv"
+    "url": "data/02_ala_annual_counts.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "population_count": "number"
+      }
+    }
   },
   "params": [
     {
@@ -24,80 +32,123 @@
   ],
   "transform": [
     {
-      "filter": "toNumber(datum.year) == selectedYear"
+      "filter": "datum.year == selectedYear && isValid(datum.state) && isValid(datum.category) && isValid(datum.population_count)"
     },
     {
       "aggregate": [
         {
           "op": "sum",
           "field": "population_count",
-          "as": "group_count"
+          "as": "records"
         }
       ],
-      "groupby": ["state", "category", "year"]
+      "groupby": ["state", "category"]
     },
     {
       "joinaggregate": [
         {
           "op": "sum",
-          "field": "group_count",
+          "field": "records",
           "as": "state_total"
         }
       ],
-      "groupby": ["state", "year"]
+      "groupby": ["state"]
     },
     {
-      "calculate": "datum.state_total > 0 ? datum.group_count / datum.state_total * 100 : null",
-      "as": "percentage"
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "records",
+          "as": "national_total"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.records / datum.state_total",
+      "as": "category_share"
+    },
+    {
+      "calculate": "datum.state_total / datum.national_total",
+      "as": "state_share"
+    },
+    {
+      "stack": "records",
+      "groupby": ["state"],
+      "sort": [
+        {
+          "field": "category",
+          "order": "ascending"
+        }
+      ],
+      "offset": "normalize",
+      "as": ["y0", "y1"]
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "category_row"
+        }
+      ],
+      "groupby": ["state"],
+      "sort": [
+        {
+          "field": "category",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.category_row == 1 ? datum.state_total : 0",
+      "as": "state_once"
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "state_once",
+          "as": "cumulative_total"
+        }
+      ],
+      "sort": [
+        {
+          "field": "state",
+          "order": "ascending"
+        },
+        {
+          "field": "category_row",
+          "order": "ascending"
+        }
+      ],
+      "frame": [null, 0]
+    },
+    {
+      "calculate": "datum.cumulative_total / datum.national_total",
+      "as": "x1"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "x1",
+          "as": "state_x1"
+        }
+      ],
+      "groupby": ["state"]
+    },
+    {
+      "calculate": "datum.state_x1 - datum.state_share",
+      "as": "state_x0"
+    },
+    {
+      "calculate": "(datum.state_x0 + datum.state_x1) / 2",
+      "as": "state_mid"
+    },
+    {
+      "calculate": "datum.state == 'Australian Capital Territory' ? 'ACT' : datum.state == 'New South Wales' ? 'NSW' : datum.state == 'Northern Territory' ? 'NT' : datum.state == 'Queensland' ? 'QLD' : datum.state == 'South Australia' ? 'SA' : datum.state == 'Tasmania' ? 'TAS' : datum.state == 'Victoria' ? 'VIC' : datum.state == 'Western Australia' ? 'WA' : datum.state",
+      "as": "state_label"
     }
   ],
-  "width": {
-    "step": 75
-  },
-  "height": {
-    "step": 42
-  },
-  "encoding": {
-    "x": {
-      "field": "category",
-      "type": "nominal",
-      "title": "Nature Group",
-      "axis": {
-        "labelAngle": -35,
-        "labelFontSize": 12,
-        "titleFontSize": 13,
-        "labelLimit": 120
-      },
-      "scale": {
-        "paddingInner": 0.05,
-        "paddingOuter": 0.02
-      }
-    },
-    "y": {
-      "field": "state",
-      "type": "nominal",
-      "title": "State / Territory",
-      "sort": [
-        "Western Australia",
-        "Northern Territory",
-        "Queensland",
-        "South Australia",
-        "New South Wales",
-        "Australian Capital Territory",
-        "Victoria",
-        "Tasmania"
-      ],
-      "axis": {
-        "labelFontSize": 12,
-        "titleFontSize": 13,
-        "labelLimit": 200
-      },
-      "scale": {
-        "paddingInner": 0.05,
-        "paddingOuter": 0.02
-      }
-    }
-  },
   "layer": [
     {
       "mark": {
@@ -106,18 +157,45 @@
         "strokeWidth": 1
       },
       "encoding": {
-        "color": {
-          "field": "percentage",
+        "x": {
+          "field": "state_x0",
           "type": "quantitative",
-          "title": "Share of state records (%)",
+          "title": "Share of Australian photographic records",
           "scale": {
-            "scheme": "greens",
-            "domainMin": 0
+            "domain": [0, 1]
+          },
+          "axis": {
+            "format": ".0%",
+            "grid": false
+          }
+        },
+        "x2": {
+          "field": "state_x1"
+        },
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "title": "Nature-group share within state",
+          "scale": {
+            "domain": [0, 1]
+          },
+          "axis": {
+            "format": ".0%"
+          }
+        },
+        "y2": {
+          "field": "y1"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Nature group",
+          "scale": {
+            "scheme": "tableau10"
           },
           "legend": {
-            "gradientLength": 250,
-            "titleFontSize": 12,
-            "labelFontSize": 11
+            "orient": "bottom",
+            "columns": 4
           }
         },
         "tooltip": [
@@ -129,60 +207,85 @@
           {
             "field": "category",
             "type": "nominal",
-            "title": "Nature Group"
+            "title": "Nature group"
           },
           {
-            "field": "year",
-            "type": "ordinal",
-            "title": "Year"
-          },
-          {
-            "field": "group_count",
+            "field": "records",
             "type": "quantitative",
             "title": "Observation records",
             "format": ","
           },
           {
-            "field": "state_total",
+            "field": "category_share",
             "type": "quantitative",
-            "title": "Total state records",
-            "format": ","
+            "title": "Share within state",
+            "format": ".1%"
           },
           {
-            "field": "percentage",
+            "field": "state_share",
             "type": "quantitative",
-            "title": "Share of state records (%)",
-            "format": ".1f"
+            "title": "Share of national records",
+            "format": ".1%"
           }
         ]
       }
     },
     {
+      "transform": [
+        {
+          "filter": "datum.category_row == 1"
+        }
+      ],
       "mark": {
         "type": "text",
-        "fontSize": 11,
-        "fontWeight": "bold"
+        "align": "center",
+        "baseline": "bottom",
+        "dy": -8,
+        "font": "DM Sans",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "color": "#263B32"
       },
       "encoding": {
-        "text": {
-          "field": "percentage",
+        "x": {
+          "field": "state_mid",
           "type": "quantitative",
-          "format": ".1f"
+          "scale": {
+            "domain": [0, 1]
+          }
         },
-        "color": {
-          "condition": {
-            "test": "datum.percentage >= 25",
-            "value": "white"
-          },
-          "value": "#174d39"
+        "y": {
+          "datum": 1,
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 1]
+          }
+        },
+        "text": {
+          "field": "state_label",
+          "type": "nominal"
         }
       }
     }
   ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "background": "white"
+    "background": "white",
+    "axis": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "gridColor": "#E8ECE9"
+    },
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
   }
 }

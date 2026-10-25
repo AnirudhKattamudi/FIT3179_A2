@@ -11,11 +11,35 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
 
   <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<nav class="chapter-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">THE AUSTRALIAN LENS</a>
+
+    <div class="nav-links">
+      <a href="#chapter1">01 · Camera</a>
+      <a href="#chapter2">02 · Seasons</a>
+      <a href="#chapter3">03 · Geography</a>
+      <a href="#chapter4">04 · Landscapes</a>
+    </div>
+  </div>
+</nav>
+
 
   <div class="container">
 
@@ -25,15 +49,97 @@
       What Nature Photography Reveals About Australia
     </p>
 
-    <section class="chart-section">
 
-      <h2>Chapter 1: Australia Through the Camera</h2>
+<div class="hero-image">
+  <img
+    src="images/australian-nature.jpg"
+    alt="Australian natural landscape showcasing native vegetation and wildlife"
+  >
+  <div class="hero-overlay">
+    <span>Exploring Australia's nature through photographic observations, 2023–2025</span>
+  </div>
+</div>
 
-      <p>
-        Photographic observations provide a window into how
-        Australians document the natural environment.
-        But has photographic recording activity increased?
-      </p>
+
+<div class="hero-stats">
+  <div class="hero-stat">
+    <span class="stat-number">+51.3%</span>
+    <span class="stat-label">Growth in selected records</span>
+  </div>
+
+  <div class="hero-stat">
+    <span class="stat-number">7</span>
+    <span class="stat-label">Nature groups explored</span>
+  </div>
+
+  <div class="hero-stat">
+    <span class="stat-number">2023–25</span>
+    <span class="stat-label">Study period</span>
+  </div>
+</div>
+
+<section class="story-intro">
+  <p class="story-eyebrow">AUSTRALIA | 2023–2025</p>
+
+  <h2>Millions of observations. Seven nature groups.
+  One question: what are we really seeing?</h2>
+
+  <p>
+    From birds and insects to plants and fungi, Australia's
+    natural world is documented through photographic
+    observations. These records help reveal where people
+    direct their attention, when recording activity peaks,
+    and which parts of nature appear most frequently.
+  </p>
+
+  <p class="story-note">
+  <strong>The key distinction:</strong>
+  More photographs do not necessarily mean more wildlife.
+  These records reveal patterns in photographic activity,
+  not a complete measure of Australia's biodiversity.
+</p>
+
+  <p>
+    Using records from the Atlas of Living Australia
+    between 2023 and 2025, this visual story explores
+    four questions: What do we photograph? When do we
+    photograph it? Where is activity concentrated?
+    And how much can these records really tell us
+    about Australia's natural landscapes?
+  </p>
+
+  <p class="story-note">
+    Follow the four chapters below. Hover over charts
+    for details and use the selectors to compare years
+    and nature groups.
+  </p>
+</section>
+
+<section id="chapter1" class="chart-section">
+
+
+<div class="chapter-heading">
+  <span class="chapter-number">CHAPTER 01 / THE CAMERA</span>
+  <h2>Australia Through the Camera</h2>
+  <p class="chapter-subtitle">
+    What does Australia's nature photography reveal about our attention?
+  </p>
+</div>
+
+<p>
+  Every photograph contributes to a growing record of
+  Australia's natural environment. Between 2023 and 2025,
+  the selected photographic observation counts increased
+  substantially. But growth alone does not reveal which
+  parts of nature receive the most attention.
+</p>
+
+<p>
+  This chapter follows that question in three stages:
+  how much recording activity has grown, which nature
+  groups contribute the most records, and whether
+  their relative shares have changed over time.
+</p>
 
       <div id="vis1"></div>
 <p class="insight">
@@ -43,6 +149,7 @@
         This reflects an increase in recorded activity,
         not necessarily an increase in biodiversity.
       </p>
+  
 
       <p class="source">
   Source:
@@ -54,10 +161,18 @@
   and may not represent unique observations.
 </p>
 
-<p>
-  Explore how photographic observation counts differ between
-  nature groups. Use the dropdown to compare years.
+
+<p class="story-transition">
+  <strong>More records, but of what?</strong>
+  The upward trend shows increasing photographic recording
+  activity across the selected groups. However, this
+  growth does not necessarily mean that Australia's
+  wildlife populations are increasing. It may also reflect
+  changes in observer participation and recording behaviour.
+  To understand what is driving these totals, we first
+  need to look at the nature groups being photographed.
 </p>
+
 
 <div id="vis2"></div>
 
@@ -83,26 +198,35 @@
 </p>
 
 
+<p class="story-transition">
+  <strong>Does this imbalance change over time?</strong>
+  Plants and insects dominate the total records, but
+  rising observation counts can make it difficult to
+  compare their relative importance across years.
+  Looking at percentages instead reveals whether
+  photographic attention is shifting.
+</p>
 
 <p>
-  Total photographic records have increased, but has the
-  proportion of attention given to each nature group changed?
-  This chart compares the percentage contribution of each
-  group across 2023, 2024 and 2025.
+  Each waffle chart divides one year's records into
+  100 squares, with each square representing approximately
+  1%. Compare 2023, 2024 and 2025 to see how the seven
+  nature groups share Australia's photographic attention.
 </p>
+
 
 <div id="vis3"></div>
 
 <p class="insight">
   <strong>Key finding:</strong>
-  Although the total number of photographic observation records
-  increased between 2023 and 2025, the overall distribution
-  across nature groups remained relatively stable.
-  Plants and insects consistently accounted for the largest
-  shares, while amphibians, reptiles and mammals represented
-  much smaller proportions. This suggests that photographic
-  recording activity has grown without a major shift in
-  which nature groups are most frequently documented.
+  Despite a 51.3% increase in summed photographic
+  records between 2023 and 2025, the overall
+  distribution of nature groups remains broadly
+  similar. Plants and insects consistently dominate,
+  while amphibians account for approximately one
+  square out of every hundred. This suggests that
+  increased recording activity has not substantially
+  changed which nature groups receive the most attention.
 </p>
 
 <p class="source">
@@ -117,31 +241,68 @@
 </p>
 
 
+<p class="chapter-takeaway">
+  <strong>Chapter 1 takeaway:</strong>
+  Australia's selected photographic records have grown
+  considerably, but attention remains uneven across
+  nature groups. Plants and insects dominate the records,
+  while less frequently recorded groups occupy only a
+  small proportion.
+
+  The next question is whether this photographic activity
+  remains consistent throughout the year.
+</p>
+
+
 </section>
 
-<section class="chart-section">
-<h2>Chapter 2: Nature Through the Seasons</h2>
+<section id="chapter2" class="chart-section">
+
+<div class="chapter-heading">
+  <span class="chapter-number">CHAPTER 02 / THE SEASONS</span>
+
+  <h2>Nature Through the Seasons</h2>
+
+  <p class="chapter-subtitle">
+    How does nature photography change with the seasons?
+  </p>
+</div>
+
+
 
 <p>
-  Australia's natural environment changes throughout the year.
-  Does photographic recording activity follow a seasonal pattern?
-  Explore monthly records and switch between years.
+  Australia's natural world changes throughout the year,
+  and so does the way people photograph it. From warmer
+  spring days to cooler winter months, photographic
+  recording activity follows a seasonal rhythm.
 </p>
 
-<div id="vis4"></div>
-
-
-
-<p class="insight">
-  <strong>Key finding (2025):</strong>
-  Nature photography records peaked in October at approximately
-  343,000 observations, compared with around 146,000 in June.
-  Recording activity increased sharply during September and
-  October, suggesting that spring is a particularly active
-  period for documenting Australian nature.
-  However, this reflects photographic recording activity
-  rather than changes in actual biodiversity abundance.
+<p>
+  But is there one peak season for all nature photography?
+  This chapter first explores the busiest and quietest
+  months nationally, before revealing how recording
+  patterns differ between birds, insects, plants,
+  fungi and other nature groups.
 </p>
+
+
+<p>
+  Each segment of the circular chart represents one month.
+  Longer segments indicate more photographic records,
+  while colours distinguish Australia's four seasons.
+  Select a year to discover when recording activity
+  reaches its highest and lowest levels.
+</p>
+
+
+<div id="vis4" class="radial-chart-container"></div>
+
+<p class="insight" id="vis4-insight">
+  <strong>Key finding:</strong>
+  Loading seasonal observations...
+</p>
+
+
 
 <p class="source">
   Source:
@@ -154,26 +315,45 @@
 </p>
 
 
-<p>
-  Different nature groups may have different seasonal
-  recording patterns. The heatmap below compares each
-  group's monthly activity with its own busiest month.
-  Select a year to explore how these patterns change.
+<p class="story-transition">
+  <strong>One calendar, seven different stories.</strong>
+  The national pattern reveals when photographic recording
+  is busiest overall, but it combines very different
+  nature groups into one total.
+
+  A peak in spring does not necessarily mean every
+  group is photographed most often in spring.
+  To uncover these differences, we need to look at
+  each nature group's seasonal pattern separately.
 </p>
+
+<p>
+  The heatmap below separates the national recording
+  pattern into seven nature groups. Each row represents
+  a group, and each column represents a month.
+
+  Darker green indicates a month with activity closer
+  to that group's own annual peak, while lighter green
+  indicates relatively lower activity.
+</p>
+
+<p>
+  <strong>Why compare relative activity?</strong>
+  Some groups, such as plants, have far more records
+  than others. Using each group's own peak as a reference
+  makes it easier to see when different groups are most
+  actively photographed, without the largest groups
+  overwhelming the colour scale.
+</p>
+
 
 <div id="vis5"></div>
 
-
-<p class="insight">
-  <strong>Key finding (2025):</strong>
-  Most nature groups experienced their highest photographic
-  recording activity during spring, particularly October.
-  However, fungi followed a different seasonal pattern,
-  with recording activity peaking around May.
-  This contrast highlights how photographic observation
-  patterns vary between nature groups and seasons,
-  rather than directly measuring changes in biodiversity.
+<p class="insight" id="vis5-insight">
+  <strong>Key finding:</strong>
+  Analysing seasonal patterns...
 </p>
+
 
 
 <p class="source">
@@ -188,28 +368,80 @@
   and may not represent unique observations.
 </p>
 
-</section>
-<section class="chart-section">
-  <h2>Chapter 3: Where Australia Photographs Nature</h2>
-  <h3>Observation Density Across States and Territories</h3>
 
-  
+<p class="chapter-takeaway">
+  <strong>Chapter 2 takeaway:</strong>
+  Nature photography follows a seasonal rhythm, but
+  the timing of recording activity differs between
+  nature groups. Looking beyond national totals
+  reveals patterns that would otherwise remain hidden.
+
+  However, time is only one part of the story.
+  Australia's states and territories also differ
+  greatly in how much photographic activity they
+  record and which nature groups receive attention.
+  The next chapter explores these geographic differences.
+</p>
+
+</section>
+<section id="chapter3" class="chart-section">
+
+<div class="chapter-heading">
+  <span class="chapter-number">CHAPTER 03 / THE GEOGRAPHY</span>
+
+  <h2>Where Australia Photographs Nature</h2>
+
+  <p class="chapter-subtitle">
+    Where is nature photography concentrated across Australia?
+  </p>
+</div>
+
+
 <p>
-  Compare photographic observation records per 1,000 km² of land
-  across states and territories from 2023 to 2025.
-  Hover over a state to see both the normalised density and raw count.
-  A logarithmic-style colour scale is used to make differences between states easier to distinguish.
+  Australia's natural landscapes stretch from tropical
+  northern regions to temperate southern forests,
+  coastal environments and vast inland areas.
+  Yet photographic recording activity is not distributed
+  evenly across this geography.
+</p>
+
+<p>
+  This chapter explores three different perspectives.
+  First, where is photographic activity most concentrated?
+  Second, do different states and territories photograph
+  the same kinds of nature? Finally, has the balance of
+  photographic attention changed between 2023 and 2025?
+</p>
+
+
+<p>
+  Australia's states and territories differ enormously
+  in land area. Comparing total photographic records
+  alone can therefore be misleading.
+
+  This map uses observation density, measured as records
+  per 1,000 km², to compare photographic activity
+  relative to the size of each state or territory.
+  Darker regions represent higher recording density.
+</p>
+
+
+<p>
+  <strong>Why a symmetric logarithmic colour scale?</strong>
+  Observation densities vary dramatically between states
+  and territories. This scale makes both low- and
+  high-density regions easier to distinguish without
+  allowing the highest values to dominate the map.
 </p>
 
 <div id="vis6"></div>
 
-<p class="insight">
+
+<p class="insight" id="vis6-insight">
   <strong>Key finding:</strong>
-  The ACT has the highest recorded observation density per 1,000 km²
-  in each selected year, despite having fewer total records than
-  several larger states. This measures recording concentration,
-  not biodiversity or wildlife abundance. 
+  Analysing geographic observation patterns...
 </p>
+
 
 
   
@@ -233,33 +465,55 @@
 </p>
 
 
-<h3>What Types of Nature Does Each State Photograph?</h3>
+<p class="story-transition">
+  <strong>Where nature is photographed is only half
+  the story.</strong>
+  Observation density tells us how concentrated
+  photographic activity is geographically, but it
+  does not reveal which nature groups dominate
+  those records.
+
+  Two states can have very different recording
+  densities while still photographing similar
+  proportions of plants, birds and insects.
+  To explore this distinction, we need to compare
+  both the size and composition of each state's
+  photographic records.
+</p>
+
+
+<h3>Does Australia Photograph the Same Nature Everywhere?</h3>
+
 
 <p>
-  While observation density varies across Australia, the types of
-  nature being photographed may also differ between states.
-  This heatmap compares the percentage of photographic records
-  belonging to each nature group within every state and territory.
-  Darker green indicates a larger share of that state's records.
-  Select a year to explore how these patterns change.
+  Which states contribute the most photographic records,
+  and what kinds of nature make up those records?
+
+  The Marimekko chart answers both questions at once.
+  Each state's column width represents its share of
+  Australia's selected photographic records, while
+  the coloured segments show how those records are
+  divided between nature groups.
 </p>
+
+<p>
+  <strong>How to read this chart:</strong>
+  A wider column means a state contributes more records
+  nationally. A taller coloured segment means that
+  nature group accounts for a larger proportion of
+  that state's records.
+
+  Select a year to compare how these patterns differ
+  between 2023 and 2025.
+</p>
+
 
 <div id="vis7"></div>
 
-
-
-<p class="insight">
-  <strong>Key finding (2025):</strong>
-  Plant observations dominate in Western Australia (55.7%)
-  and Tasmania (49.5%), while insects account for the
-  largest share in the ACT (40.4%), Northern Territory (36.0%)
-  and Queensland (36.1%).
-  This reveals clear regional differences in which nature groups
-  are most frequently photographed, rather than differences
-  in their actual abundance.
+<p class="insight" id="vis7-insight">
+  <strong>Key finding:</strong>
+  Loading the selected year's observations...
 </p>
-
-
 
 <p class="source">
   Source:
@@ -269,21 +523,58 @@
     Atlas of Living Australia (ALA)
   </a>,
   photographic observation records, 2023–2025.
-  Percentages are calculated within each state using summed
-  counts across selected taxonomic groups and may not
-  represent unique observations.
+
+  Column widths represent each state's share of the
+  national total, while segment heights represent
+  nature-group percentages within each state.
+
+  Counts are summed across selected taxonomic groups
+  and may not represent unique observations.
 </p>
+
+
+<p class="story-transition">
+  <strong>Different places, different photographic
+  profiles.</strong>
+  The Marimekko chart reveals that the contribution
+  of each state and the composition of its records
+  are two separate dimensions.
+
+  But geography is not the only source of variation.
+  The balance of nature groups can also shift over time.
+  The next chart compares the beginning and end of
+  our three-year period to reveal those changes.
+</p>
+
 
 
 <h3>How Have Nature Photography Preferences Changed?</h3>
 
 <p>
-  The types of nature photographed vary across states, but have
-  these patterns changed over time? This chart compares each
-  nature group's percentage share of photographic records
-  between 2023 and 2025.
-  Select a nature group to explore changes across Australia.
+  Has Australia's photographic attention shifted towards
+  different nature groups, and do these changes vary
+  between states and territories?
 </p>
+
+<p>
+  This dumbbell chart compares the selected nature group's
+  share of each state's photographic records in 2023 and
+  2025. The two endpoints represent the percentage share
+  in each year, while the connecting line shows the size
+  and direction of the change.
+</p>
+
+<p>
+  <strong>How to read this chart:</strong>
+  Select a nature group to explore how its relative share
+  has changed across Australia. Positive changes indicate
+  that the group accounts for a larger proportion of a
+  state's records in 2025, while negative changes indicate
+  a smaller proportion. Differences are measured in
+  percentage points, not percentage growth.
+</p>
+
+
 
 <p>
   <strong style="color: #e69f00;">● 2023</strong>
@@ -322,92 +613,142 @@
 
 
 
+<p class="chapter-takeaway">
+  <strong>Chapter 3 takeaway:</strong>
+  Australia's photographic activity is geographically
+  uneven. Observation density, state contributions and
+  nature-group composition each reveal different
+  patterns, while changes between 2023 and 2025 show
+  that photographic attention can shift differently
+  across states and territories.
+
+  These geographic differences raise another question:
+  how does photographic activity relate to Australia's
+  protected natural landscapes? The final chapter
+  explores this relationship.
+</p>
+
+
+
     </section>
 
 
-<section class="chart-section">
+<section id="chapter4" class="chart-section">
 
-  <h2>Chapter 4: Photography and Protected Landscapes</h2>
 
-  <p>
-    Australia contains thousands of protected natural areas,
-    but does having more protected areas correspond with
-    greater photographic recording activity?
+<div class="chapter-heading">
+  <span class="chapter-number">CHAPTER 04 / THE LANDSCAPES</span>
 
-    This scatter plot compares the number of protected-area
-    features recorded in CAPAD 2024 with photographic
-    observation density across Australian states and territories.
+  <h2>Photography and Protected Landscapes</h2>
 
-    Select a photography year to explore the relationship.
+  <p class="chapter-subtitle">
+    What can photographic records reveal about Australia's protected landscapes?
   </p>
+</div>
+
+
+<p>
+  Australia's protected landscapes play an important
+  role in conserving natural environments. But does
+  having more protected areas correspond with greater
+  nature photography activity?
+</p>
+
+<p>
+  This final chapter examines the relationship between
+  protected-area features and photographic observation
+  density, before comparing two alternative ways of
+  mapping the geographic distribution of photographic
+  records.
+</p>
+
+<p>
+  Each point represents an Australian state or territory.
+  The horizontal axis shows the number of protected-area
+  features recorded in CAPAD 2024, while the vertical axis
+  shows photographic observations per 1,000 km².
+  Select a year to explore how the relationship changes.
+</p>
+
+<p>
+  <strong>How to interpret this chart:</strong>
+  The vertical axis uses a symmetric logarithmic scale
+  to accommodate large differences in observation density.
+  Protected-area feature counts describe the number of
+  mapped features, not the proportion of land protected.
+  Any correlation represents an association, not causation.
+</p>
 
   <div id="vis9"></div>
 
-  <p class="insight" id="vis9-insight">
-    <strong>Key finding (2025):</strong>
-    The number of protected-area features does not show a
-    consistent relationship with nature photography density.
-    Victoria has the highest protected-area feature count
-    and relatively high photographic activity, while the ACT
-    records by far the highest observation density despite
-    having relatively few protected areas. This suggests that
-    photographic recording activity may be influenced by
-    factors beyond the number of protected areas, including
-    accessibility, population concentration and observer
-    participation.
-  </p>
 
-  <p class="source">
-    Sources:
-    <a href="https://www.ala.org.au/"
-       target="_blank"
-       rel="noopener noreferrer">
-      Atlas of Living Australia (ALA)
-    </a>,
-    photographic observation records, 2023–2025;
+<p class="insight" id="vis9-insight">
+  <strong>Key finding:</strong>
+  Loading the selected year's observations...
+</p>
 
-    <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
-       target="_blank"
-       rel="noopener noreferrer">
-      CAPAD 2024
-    </a>,
-    terrestrial protected-area feature counts;
 
-    and
-    <a href="https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/area-of-australia-states-and-territories"
-       target="_blank"
-       rel="noopener noreferrer">
-      Geoscience Australia
-    </a>,
-    state and territory land areas.
+ 
+<p class="source">
+  Sources:
+  <a href="https://www.ala.org.au/" target="_blank"
+     rel="noopener noreferrer">
+    Atlas of Living Australia (ALA)
+  </a>, photographic observation records, 2023–2025;
 
-    Observation density is measured per 1,000 km².
-    The vertical axis uses a symmetric logarithmic scale.
-    Protected-area feature counts are not equivalent to
-    protected-land coverage. This comparison is exploratory
-    and does not establish causation.
-  </p>
+  <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad"
+     target="_blank" rel="noopener noreferrer">
+    CAPAD 2024
+  </a>, terrestrial protected-area feature counts;
+
+  and Geoscience Australia, state and territory land areas.
+
+  Observation density is measured per 1,000 km².
+  The vertical axis uses a symmetric logarithmic scale.
+  Protected-area feature counts are not equivalent to
+  protected-land coverage. This comparison is exploratory
+  and does not establish causation.
+</p>
 
 
 
+<p class="story-transition">
+  <strong>A relationship worth questioning.</strong>
+  The scatterplot explores whether protected-area feature
+  counts and photographic observation density move
+  together, but it cannot explain why particular states
+  record more photographs.
 
-<section class="chart-section">
+  To understand the geographic distribution itself,
+  we can examine the same observations using two
+  different mapping techniques.
+</p>
+
 
   <h3>Where Are the Most Nature Photographs Recorded?</h3>
 
-  <p>
-    Nature photography activity differs substantially
-    across Australian states and territories.
+  
+<p>
+  Where are Australia's photographic records concentrated
+  in absolute numbers?
+</p>
 
-    This proportional symbol map uses circle size to
-    represent the number of photographic observation
-    records submitted to the Atlas of Living Australia.
-    Larger circles indicate more recorded observations.
+<p>
+  This proportional symbol map places circles over
+  Australian states and territories, with larger circles
+  representing more photographic observations.
+  Unlike the earlier choropleth map, which adjusted
+  records for land area, this map shows total recorded
+  activity.
+</p>
 
-    Select a year to explore how the geographic
-    distribution of nature photography changes
-    between 2023 and 2025.
-  </p>
+<p>
+  <strong>Why use proportional symbols?</strong>
+  Circle sizes make differences in recording volume
+  visible without colouring entire states according
+  to their geographic area.
+</p>
+
 
   <div id="vis10"></div>
 
@@ -441,26 +782,45 @@
     exact locations of individual observations. 
 The ACT symbol is displaced from Canberra for readability,
 with a dashed connector indicating its approximate geographic location.
-
-  </p>
-
+ </p>
 
 
+<p class="story-transition">
+  <strong>What if the map itself reflected photographic
+  activity?</strong>
+  The proportional symbol map preserves Australia's
+  familiar geography while using circles to represent
+  record counts.
 
-<section class="chart-section">
+  The final visualisation takes a more dramatic approach:
+  changing the apparent size of states and territories
+  according to their photographic contribution.
+</p>
+
   <h3>What Would Australia Look Like if States Were Sized by Nature Photography?</h3>
 
-  <p>
-    What if Australia's states were sized according to
-    the number of nature photographs recorded, rather
-    than their actual land area?
+<p>
+  What would Australia look like if its geography
+  reflected photographic activity rather than land area?
+</p>
 
-    This non-contiguous cartogram transforms Australia's
-    geography by resizing each state and territory
-    according to its photographic observation totals.
-    Select a year to see how this representation
-    changes between 2023 and 2025.
-  </p>
+<p>
+  This non-contiguous cartogram resizes state and
+  territory shapes to represent their photographic
+  observation counts. Larger shapes indicate greater
+  recording activity, while smaller shapes indicate
+  fewer records.
+</p>
+
+<p>
+  <strong>How to read this chart:</strong>
+  Compare the relative prominence of each state rather
+  than its real-world land area. The shapes are
+  approximately scaled and should not be interpreted
+  as precise area-proportional representations.
+  Select a year to explore changes from 2023 to 2025.
+</p>
+
 
   <div id="vis11"></div>
 
@@ -491,25 +851,102 @@ with a dashed connector indicating its approximate geographic location.
     with each year's largest recording total used
     as the scaling reference.
   </p>
-</section>
+
+
+
+<p class="chapter-takeaway">
+  <strong>Chapter 4 takeaway:</strong>
+  The relationship between protected-area feature counts
+  and photographic observation density is not straightforward.
+  Protected-area counts alone cannot establish why some
+  states record more nature photographs than others.
+
+  Comparing observation density, total records and
+  differently scaled maps reveals contrasting perspectives
+  on Australia's photographic activity. Ultimately,
+  how we measure and visualise nature influences
+  the patterns we notice.
+</p>
 
 
 </section>
 
+<section class="story-conclusion">
 
+  <h2>Through the Australian Lens: What Have We Discovered?</h2>
+
+  <p>
+    Millions of photographic observations reveal more than
+    just Australia's natural beauty. They show where people
+    record nature, when they are most active, and which
+    parts of the natural world receive the most attention.
+    Across eleven visualisations, four key insights emerge.
+  </p>
+
+  <h3>Four Insights from Australia's Nature Photography</h3>
+
+  <p>
+    <strong>1. Nature photography is growing.</strong>
+    Selected photographic observation counts increased by
+    <strong>51.3% between 2023 and 2025</strong>.
+    However, more observations do not necessarily mean
+    more wildlife. They reflect increased recording
+    activity, not a direct increase in biodiversity.
+  </p>
+
+  <p>
+    <strong>2. Not all nature receives equal attention.</strong>
+    Plants and insects dominate photographic records,
+    while groups such as amphibians account for a much
+    smaller share. Despite the growth in observations,
+    the overall balance between nature groups remained
+    relatively stable.
+  </p>
+
+  <p>
+    <strong>3. Time and geography shape the story.</strong>
+    Photography follows seasonal patterns, but different
+    nature groups experience different peaks. Recording
+    activity also varies considerably between states and
+    territories, both in density and in the types of
+    nature photographed.
+  </p>
+
+  <p>
+    <strong>4. How we measure nature changes what we see.</strong>
+    Observation density, total record counts and
+    protected-area comparisons reveal different aspects
+    of Australia's photographic activity. The maps
+    demonstrate how different visual representations
+    can change which geographic patterns stand out.
+  </p>
+
+  <h3>Beyond the Camera Lens</h3>
+
+  <p>
+    These findings reveal patterns in photographic
+    recording activity, not a complete picture of
+    Australia's biodiversity. Where and when observations
+    are recorded can be influenced by accessibility,
+    participation, seasonal conditions and human interest.
+    The dataset therefore reflects both nature and the
+    people documenting it.
+  </p>
+
+  <p class="closing-message">
+    <strong>
+      Australia's natural world is bigger than what
+      appears through the camera lens. Understanding
+      what we photograph is a first step towards
+      recognising what may be overlooked.
+    </strong>
+  </p>
 
 </section>
 
+</div>
 
-</section>
-
-
-
-
-
-  </div>
-
-  <script>
+<script>
     vegaEmbed("#vis1", "visualisations/vis1.json", {
       actions: false
     }).catch(console.error);
@@ -522,93 +959,882 @@ with a dashed connector indicating its approximate geographic location.
   actions: false
 }).catch(console.error);
 
+
 vegaEmbed("#vis4", "visualisations/vis4.json", {
   actions: false
+}).then(function(result) {
+
+  const view = result.view;
+  const insight = document.getElementById("vis4-insight");
+
+  fetch("data/01_ala_monthly_counts.csv")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Could not load monthly ALA data");
+      }
+      return response.text();
+    })
+    .then(csvText => {
+
+      const rows = vega.read(csvText, { type: "csv" });
+
+      const monthNames = [
+        "January", "February", "March", "April",
+        "May", "June", "July", "August",
+        "September", "October", "November", "December"
+      ];
+
+      function getSeason(month) {
+        if (month === 12 || month <= 2) return "Summer";
+        if (month <= 5) return "Autumn";
+        if (month <= 8) return "Winter";
+        return "Spring";
+      }
+
+      function updateInsight(year) {
+
+        if (!insight) return;
+
+        const monthlyTotals = Array(12).fill(0);
+        const monthlyPresent = Array(12).fill(false);
+
+        rows.forEach(row => {
+          const rowYear = Number(row.year);
+          const month = Number(row.month);
+          const count = Number(row.population_count);
+
+          if (
+            rowYear !== Number(year) ||
+            !Number.isInteger(month) ||
+            month < 1 ||
+            month > 12 ||
+            !Number.isFinite(count)
+          ) {
+            return;
+          }
+
+          monthlyTotals[month - 1] += count;
+          monthlyPresent[month - 1] = true;
+        });
+
+        const availableMonths = monthlyTotals
+          .map((count, index) => ({
+            month: index + 1,
+            count,
+            present: monthlyPresent[index]
+          }))
+          .filter(item => item.present);
+
+        if (availableMonths.length === 0) {
+          insight.textContent =
+            "No photographic observations available for " + year + ".";
+          return;
+        }
+
+        const sortedMonths = [...availableMonths]
+          .sort((a, b) => b.count - a.count);
+
+        const busiest = sortedMonths[0];
+        const quietest = sortedMonths[sortedMonths.length - 1];
+
+        const seasonalTotals = {
+          Summer: 0,
+          Autumn: 0,
+          Winter: 0,
+          Spring: 0
+        };
+
+        availableMonths.forEach(item => {
+          seasonalTotals[getSeason(item.month)] += item.count;
+        });
+
+        const strongestSeason = Object.entries(seasonalTotals)
+          .sort((a, b) => b[1] - a[1])[0];
+
+        const percentageDifference =
+          quietest.count > 0
+            ? (
+                (busiest.count - quietest.count) /
+                quietest.count * 100
+              ).toFixed(1)
+            : null;
+
+        const differenceText = percentageDifference !== null
+          ? " This was " + percentageDifference +
+            "% higher than the quietest month."
+          : "";
+
+        insight.innerHTML =
+          "<strong>Key finding (" + year + "):</strong> " +
+          monthNames[busiest.month - 1] +
+          " recorded the highest photographic activity (" +
+          busiest.count.toLocaleString() +
+          " records), while " +
+          monthNames[quietest.month - 1] +
+          " recorded the lowest (" +
+          quietest.count.toLocaleString() +
+          " records)." +
+          differenceText +
+          " Overall, " + strongestSeason[0] +
+          " had the highest combined observation count. " +
+          "These patterns reflect photographic recording activity " +
+          "rather than actual biodiversity abundance.";
+      }
+
+      // Display the finding for the default selected year.
+      updateInsight(view.signal("selectedYear"));
+
+      // Automatically update when the dropdown changes.
+      view.addSignalListener("selectedYear", function(name, value) {
+        updateInsight(value);
+      });
+
+    })
+    .catch(function(error) {
+      console.error("Vis4 insight error:", error);
+
+      if (insight) {
+        insight.textContent =
+          "Key finding unavailable. Please check the data file.";
+      }
+    });
+
 }).catch(console.error);
+
+
 
 vegaEmbed("#vis5", "visualisations/vis5.json", {
   actions: false
-}).catch(console.error);
+}).then(async (result) => {
+
+  const view = result.view;
+  const insight = document.getElementById("vis5-insight");
+
+  const response = await fetch("data/01_ala_monthly_counts.csv");
+  if (!response.ok) {
+    throw new Error("Could not load Vis5 data");
+  }
+
+  const csvText = await response.text();
+
+  const rows = vega.read(csvText, {
+    type: "csv",
+    parse: {
+      year: "number",
+      month: "number",
+      population_count: "number"
+    }
+  });
+
+  const months = [
+    "January", "February", "March", "April",
+    "May", "June", "July", "August",
+    "September", "October", "November", "December"
+  ];
+
+  function updateVis5Finding(year) {
+
+    const selectedRows = rows.filter(d =>
+      Number(d.year) === Number(year) &&
+      Number(d.month) >= 1 &&
+      Number(d.month) <= 12 &&
+      Number.isFinite(Number(d.population_count))
+    );
+
+    const groupData = {};
+
+    // Aggregate records by nature group and month
+    selectedRows.forEach(d => {
+      const group = String(d.category);
+      const month = Number(d.month);
+      const records = Number(d.population_count);
+
+      if (!groupData[group]) {
+        groupData[group] = Array(12).fill(0);
+      }
+
+      groupData[group][month - 1] += records;
+    });
+
+    const groups = Object.entries(groupData)
+      .map(([name, values]) => {
+
+        const max = Math.max(...values);
+        const min = Math.min(...values);
+
+        const peakMonth = values.indexOf(max);
+        const quietMonth = values.indexOf(min);
+
+        return {
+          name,
+          values,
+          max,
+          min,
+          peakMonth,
+          quietMonth,
+          variation: max > 0
+            ? ((max - min) / max) * 100
+            : 0
+        };
+      })
+      .filter(g => g.max > 0);
+
+    if (!groups.length) {
+      insight.textContent =
+        `No seasonal data available for ${year}.`;
+      return;
+    }
+
+    // Group with greatest relative seasonal variation
+    groups.sort((a, b) => b.variation - a.variation);
+
+    const strongest = groups[0];
+
+    // Count how many groups peak in each month
+    const peakCounts = Array(12).fill(0);
+
+    groups.forEach(g => {
+      peakCounts[g.peakMonth]++;
+    });
+
+    const mostPeaks = Math.max(...peakCounts);
+
+    const commonPeakMonths = peakCounts
+      .map((count, index) => ({ count, index }))
+      .filter(d => d.count === mostPeaks)
+      .map(d => months[d.index]);
+
+    const commonPeakText = commonPeakMonths.join(" and ");
+
+    const variationText = strongest.variation.toFixed(1);
+
+    insight.innerHTML = `
+      <strong>Key finding (${year}):</strong>
+      <strong>${strongest.name}</strong> showed the strongest
+      relative seasonal variation, with photographic
+      records peaking in
+      <strong>${months[strongest.peakMonth]}</strong>
+      (${strongest.max.toLocaleString("en-AU")} records)
+      and falling to their lowest level in
+      <strong>${months[strongest.quietMonth]}</strong>
+      (${strongest.min.toLocaleString("en-AU")} records).
+      This represents a
+      <strong>${variationText}% decline</strong>
+      from its busiest to quietest month.
+      ${mostPeaks} of the seven nature groups reached
+      their individual peaks in
+      <strong>${commonPeakText}</strong>.
+      Although several nature groups share a peak month,
+others follow different seasonal patterns.
+This helps explain why the national seasonal trend
+does not tell the full story of when Australians
+photograph nature.
+    `;
+  }
+
+  // Initialise with 2025
+  updateVis5Finding(view.signal("heatmapYear"));
+
+  // Update when dropdown changes
+  view.addSignalListener("heatmapYear", (name, value) => {
+    updateVis5Finding(value);
+  });
+
+}).catch(error => {
+  console.error("Vis5 error:", error);
+});
+
+
 
 vegaEmbed("#vis6", "visualisations/vis6.json", {
   actions: false
-}).catch(console.error);
+}).then(async (result) => {
+
+  const view = result.view;
+  const insight = document.getElementById("vis6-insight");
+
+  const response = await fetch("data/04_ala_state_year_counts.csv");
+  if (!response.ok) {
+    throw new Error("Could not load Vis6 data");
+  }
+
+  const csvText = await response.text();
+
+  const rows = vega.read(csvText, {
+    type: "csv",
+    parse: {
+      year: "number",
+      population_count: "number",
+      observations_per_1000_km2: "number"
+    }
+  });
+
+  const formatNumber = n =>
+    Number(n).toLocaleString("en-AU", {
+      maximumFractionDigits: 1
+    });
+
+  function updateVis6Finding(year) {
+
+    const yearRows = rows.filter(d =>
+      Number(d.year) === Number(year) &&
+      Number.isFinite(Number(d.observations_per_1000_km2))
+    );
+
+    if (!yearRows.length) {
+      insight.textContent =
+        `No geographic data available for ${year}.`;
+      return;
+    }
+
+    const sorted = [...yearRows].sort(
+      (a, b) =>
+        Number(b.observations_per_1000_km2) -
+        Number(a.observations_per_1000_km2)
+    );
+
+    const highest = sorted[0];
+    const lowest = sorted[sorted.length - 1];
+
+    const highDensity =
+      Number(highest.observations_per_1000_km2);
+
+    const lowDensity =
+      Number(lowest.observations_per_1000_km2);
+
+    const ratio = lowDensity > 0
+      ? highDensity / lowDensity
+      : null;
+
+    const ratioText = ratio !== null
+      ? `${formatNumber(ratio)} times`
+      : "substantially";
+
+    insight.innerHTML = `
+      <strong>Key finding (${year}):</strong>
+      <strong>${highest.state}</strong> recorded the highest
+      photographic observation density, at
+      <strong>${formatNumber(highDensity)} records per
+      1,000 km²</strong>, while
+      <strong>${lowest.state}</strong> recorded the lowest,
+      at <strong>${formatNumber(lowDensity)} records per
+      1,000 km²</strong>.
+
+      The highest density was approximately
+      <strong>${ratioText}</strong> the lowest.
+
+      This substantial geographic difference helps explain
+      why the map uses a symmetric logarithmic colour scale:
+      it makes both high- and low-density regions easier
+      to distinguish. These differences reflect where
+      observations are recorded, not necessarily where
+      biodiversity is greatest.
+    `;
+  }
+
+  // Initialise with the chart's selected year
+  updateVis6Finding(view.signal("selectedYear"));
+
+  // Update automatically when the dropdown changes
+  view.addSignalListener("selectedYear", (name, value) => {
+    updateVis6Finding(value);
+  });
+
+}).catch(error => {
+  console.error("Vis6 error:", error);
+});
+
+
 
 vegaEmbed("#vis7", "visualisations/vis7.json", {
   actions: false
+}).then(function(result) {
+
+  const view = result.view;
+  const insight = document.getElementById("vis7-insight");
+
+  // Load the same CSV used by Vis7.
+  fetch("data/02_ala_annual_counts.csv")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Could not load ALA data");
+      }
+      return response.text();
+    })
+    .then(csvText => {
+
+      const rows = vega.read(csvText, { type: "csv" });
+
+      function updateInsight(year) {
+
+        if (!insight) return;
+
+        const stateTotals = {};
+        const groupTotals = {};
+        let nationalTotal = 0;
+
+        rows.forEach(row => {
+
+          if (Number(row.year) !== Number(year)) return;
+
+          const state = row.state;
+          const category = row.category;
+          const count = Number(row.population_count);
+
+          if (!state || !category || !Number.isFinite(count)) return;
+
+          stateTotals[state] = (stateTotals[state] || 0) + count;
+
+          if (!groupTotals[state]) {
+            groupTotals[state] = {};
+          }
+
+          groupTotals[state][category] =
+            (groupTotals[state][category] || 0) + count;
+
+          nationalTotal += count;
+        });
+
+        if (nationalTotal === 0) {
+          insight.textContent = "No data available for " + year + ".";
+          return;
+        }
+
+        const sortedStates = Object.entries(stateTotals)
+          .sort((a, b) => b[1] - a[1]);
+
+        const largestState = sortedStates[0];
+        const smallestState = sortedStates[sortedStates.length - 1];
+
+        function percentage(count, total) {
+          return (count / total * 100).toFixed(1) + "%";
+        }
+
+        function dominantGroup(state) {
+          const groups = Object.entries(groupTotals[state])
+            .sort((a, b) => b[1] - a[1]);
+
+          return groups[0][0];
+        }
+
+        const largestShare =
+          percentage(largestState[1], nationalTotal);
+
+        const smallestShare =
+          percentage(smallestState[1], nationalTotal);
+
+        insight.innerHTML =
+          "<strong>Key finding (" + year + "):</strong> " +
+          largestState[0] +
+          " contributed the largest share of Australia's photographic " +
+          "observation records (" + largestShare + "), " +
+          "while " + smallestState[0] +
+          " contributed the smallest share (" + smallestShare + "). " +
+          dominantGroup(largestState[0]) +
+          " was the most frequently recorded nature group in " +
+          largestState[0] + ", while " +
+          dominantGroup(smallestState[0]) +
+          " dominated records in " + smallestState[0] + ". " +
+          "These patterns reflect photographic recording activity, " +
+          "not actual biodiversity abundance.";
+      }
+
+      // Show the finding for the default selected year.
+      updateInsight(view.signal("selectedYear"));
+
+      // Update automatically when the dropdown changes.
+      view.addSignalListener("selectedYear", function(name, value) {
+        updateInsight(value);
+      });
+
+    })
+    .catch(function(error) {
+      console.error("Vis7 insight error:", error);
+
+      if (insight) {
+        insight.textContent =
+          "Key finding unavailable. Please check the data file.";
+      }
+    });
+
 }).catch(console.error);
+
+
 
 
 vegaEmbed("#vis8", "visualisations/vis8.json", {
   actions: false
-}).then(function(result) {
+}).then(async function(result) {
 
   const view = result.view;
   const insight = document.getElementById("vis8-insight");
 
-  const findings = {
-    "Plants":
-      "Plant photography shares remained relatively stable in most states, but declined in the ACT while increasing in Queensland and Tasmania.",
+  if (!insight) return;
 
-    "Insects":
-      "Insect photography shares increased in the Northern Territory (+9.5 percentage points) and ACT (+6.4 pp), but decreased in Tasmania (-9.0 pp), Queensland (-4.8 pp) and Victoria (-4.6 pp).",
+  const response = await fetch("data/02_ala_annual_counts.csv");
 
-    "Birds":
-      "Bird photography shares changed across Australian states and territories between 2023 and 2025. Compare the percentage-point labels to identify the largest changes.",
-
-    "Fungi":
-      "Fungi photography shares varied between 2023 and 2025. The percentage-point labels highlight which states experienced increases or decreases.",
-
-    "Mammals":
-      "Mammal photography shares changed across states. These changes represent differences in recording activity rather than actual mammal abundance.",
-
-    "Amphibians":
-      "Amphibian photography shares remained relatively small across Australia. The chart shows how their contribution to each state's records changed over time.",
-
-    "Reptiles":
-      "Reptile photography shares varied across states between 2023 and 2025. Use the percentage-point labels to compare changes."
-  };
-
-  function updateInsight(name, value) {
-    if (!insight) return;
-
-    insight.innerHTML =
-      "<strong>Key finding (" + value + ", 2023–2025):</strong> " +
-      findings[value];
+  if (!response.ok) {
+    throw new Error("Could not load Vis8 CSV");
   }
 
-  view.addSignalListener("selectedCategory", updateInsight);
+  const csvText = await response.text();
+  const rows = vega.read(csvText, { type: "csv" });
 
-}).catch(console.error);
+  const stateNames = {
+    ACT: "Australian Capital Territory",
+    NSW: "New South Wales",
+    NT: "Northern Territory",
+    QLD: "Queensland",
+    SA: "South Australia",
+    TAS: "Tasmania",
+    VIC: "Victoria",
+    WA: "Western Australia"
+  };
+
+  function normaliseState(value) {
+    const name = String(value ?? "").trim().toLowerCase();
+
+    for (const [code, fullName] of Object.entries(stateNames)) {
+      if (
+        name === code.toLowerCase() ||
+        name === fullName.toLowerCase()
+      ) {
+        return code;
+      }
+    }
+
+    return null;
+  }
+
+  function getField(row, possibleNames) {
+    const keys = Object.keys(row);
+
+    for (const name of possibleNames) {
+      const matchingKey = keys.find(
+        key => key.toLowerCase() === name.toLowerCase()
+      );
+
+      if (matchingKey) return row[matchingKey];
+    }
+
+    return undefined;
+  }
+
+  const formatChange = value => {
+    const rounded = Math.abs(value).toFixed(1);
+    return `${value >= 0 ? "+" : "−"}${rounded} percentage points`;
+  };
+
+  function updateInsight(category) {
+
+    const totals = {};
+
+    rows.forEach(row => {
+
+      const year = Number(getField(row, ["year"]));
+
+      const state = normaliseState(
+        getField(row, [
+          "state",
+          "state_name",
+          "state_code",
+          "state_territory",
+          "state_territory_name",
+          "state_or_territory"
+        ])
+      );
+
+      const group = String(
+        getField(row, [
+          "category",
+          "group",
+          "nature_group",
+          "taxonomic_group"
+        ]) ?? ""
+      ).trim();
+
+      const count = Number(
+        getField(row, [
+          "population_count",
+          "count",
+          "observation_count",
+          "observations",
+          "records"
+        ])
+      );
+
+      if (![2023, 2025].includes(year)) return;
+      if (!state || !Number.isFinite(count)) return;
+
+      const key = `${state}_${year}`;
+
+      if (!totals[key]) {
+        totals[key] = {
+          total: 0,
+          selected: 0
+        };
+      }
+
+      totals[key].total += count;
+
+      if (group.toLowerCase() ===
+          String(category).toLowerCase()) {
+        totals[key].selected += count;
+      }
+
+    });
+
+    const changes = [];
+
+    for (const [code, fullName] of Object.entries(stateNames)) {
+
+      const earlier = totals[`${code}_2023`];
+      const later = totals[`${code}_2025`];
+
+      if (!earlier || !later) continue;
+      if (earlier.total <= 0 || later.total <= 0) continue;
+
+      const share2023 =
+        (earlier.selected / earlier.total) * 100;
+
+      const share2025 =
+        (later.selected / later.total) * 100;
+
+      changes.push({
+        state: fullName,
+        change: share2025 - share2023
+      });
+    }
+
+    if (!changes.length) {
+      insight.innerHTML = `
+        <strong>Key finding:</strong>
+        Unable to calculate state-level changes from
+        the current CSV. Check the browser console
+        for the dataset's column names.
+      `;
+
+      console.log("Vis8 CSV columns:", Object.keys(rows[0] || {}));
+      console.log("Vis8 first row:", rows[0]);
+      return;
+    }
+
+    changes.sort((a, b) => b.change - a.change);
+
+    const highest = changes[0];
+    const lowest = changes[changes.length - 1];
+
+    let highestText;
+
+    if (highest.change > 0) {
+      highestText = `
+        <strong>${highest.state}</strong> recorded
+        the largest increase
+        (<strong>${formatChange(highest.change)}</strong>)
+      `;
+    } else {
+      highestText = `
+        <strong>${highest.state}</strong> recorded
+        the smallest decline
+        (<strong>${formatChange(highest.change)}</strong>)
+      `;
+    }
+
+    let lowestText;
+
+    if (lowest.change < 0) {
+      lowestText = `
+        <strong>${lowest.state}</strong> recorded
+        the largest decrease
+        (<strong>${formatChange(lowest.change)}</strong>)
+      `;
+    } else {
+      lowestText = `
+        <strong>${lowest.state}</strong> recorded
+        the smallest increase
+        (<strong>${formatChange(lowest.change)}</strong>)
+      `;
+    }
+
+    insight.innerHTML = `
+      <strong>Key finding (${category}, 2023–2025):</strong>
+      ${highestText}, while ${lowestText}.
+      This highlights how the same nature group can
+      experience different shifts in photographic
+      attention across states and territories.
+      These percentages reflect recording activity,
+      not actual biodiversity abundance.
+    `;
+  }
+
+  // Initial finding
+  updateInsight(view.signal("selectedCategory"));
+
+  // Update when nature group changes
+  view.addSignalListener("selectedCategory", (name, value) => {
+    updateInsight(value);
+  });
+
+}).catch(error => {
+  console.error("Vis8 error:", error);
+});
+
+
 
 
 vegaEmbed("#vis9", "visualisations/vis9.json", {
   actions: false
-}).then(function(result) {
+}).then(async function(result) {
 
   const view = result.view;
   const insight = document.getElementById("vis9-insight");
 
-  function updateInsight(name, year) {
-    if (!insight) return;
+  if (!insight) return;
 
-    const findings = {
-      2023: "The ACT has a much higher photographic observation density than other states and territories, despite having relatively few protected-area features. The distribution suggests that the number of protected-area features alone does not explain recording density.",
+  try {
+    const [alaResponse, capadResponse] = await Promise.all([
+      fetch("data/04_ala_state_year_counts.csv"),
+      fetch("data/09_capad_2024_terrestrial_state_summary.csv")
+    ]);
 
-      2024: "The ACT stands out for its high photographic observation density despite having relatively few protected-area features. Other states show considerable variation, indicating no simple relationship between feature counts and photographic activity.",
+    if (!alaResponse.ok || !capadResponse.ok) {
+      throw new Error("Unable to load Vis9 data");
+    }
 
-      2025: "The number of protected-area features does not show a consistent relationship with nature photography density. Victoria has the highest protected-area feature count and relatively high photographic activity, while the ACT records by far the highest observation density despite having relatively few protected areas."
+    const alaRows = vega.read(
+      await alaResponse.text(),
+      { type: "csv" }
+    );
+
+    const capadRows = vega.read(
+      await capadResponse.text(),
+      { type: "csv" }
+    );
+
+    const stateCodes = {
+      "Australian Capital Territory": "ACT",
+      "New South Wales": "NSW",
+      "Northern Territory": "NT",
+      "Queensland": "QLD",
+      "South Australia": "SA",
+      "Tasmania": "TAS",
+      "Victoria": "VIC",
+      "Western Australia": "WA"
     };
 
-    insight.innerHTML =
-      "<strong>Key finding (" + year + "):</strong> " +
-      findings[year] +
-      " These differences reflect photographic recording activity, not actual biodiversity abundance.";
+    const landAreas = {
+      ACT: 2358,
+      NSW: 801150,
+      NT: 1347791,
+      QLD: 1729742,
+      SA: 984321,
+      TAS: 68401,
+      VIC: 227444,
+      WA: 2527013
+    };
+
+    const protectedCounts = {};
+
+    capadRows.forEach(row => {
+      protectedCounts[row.state_code] = Number(row.feature_count);
+    });
+
+    function updateInsight(year) {
+
+      const points = alaRows
+        .filter(row => Number(row.year) === Number(year))
+        .map(row => {
+          const code = stateCodes[row.state];
+
+          return {
+            state: row.state,
+            code,
+            x: protectedCounts[code],
+            y: Number(row.population_count) /
+               landAreas[code] * 1000
+          };
+        })
+        .filter(point =>
+          Number.isFinite(point.x) &&
+          Number.isFinite(point.y)
+        );
+
+      if (points.length < 3) {
+        insight.textContent =
+          "Insufficient data for the selected year.";
+        return;
+      }
+
+      const n = points.length;
+
+      const meanX = points.reduce((s, p) => s + p.x, 0) / n;
+      const meanY = points.reduce((s, p) => s + p.y, 0) / n;
+
+      const numerator = points.reduce(
+        (s, p) => s + (p.x - meanX) * (p.y - meanY), 0
+      );
+
+      const denominatorX = points.reduce(
+        (s, p) => s + Math.pow(p.x - meanX, 2), 0
+      );
+
+      const denominatorY = points.reduce(
+        (s, p) => s + Math.pow(p.y - meanY, 2), 0
+      );
+
+      const r = numerator /
+        Math.sqrt(denominatorX * denominatorY);
+
+      if (!Number.isFinite(r)) {
+        insight.textContent =
+          "The correlation could not be calculated.";
+        return;
+      }
+
+      const strength =
+        Math.abs(r) < 0.3 ? "weak" :
+        Math.abs(r) < 0.7 ? "moderate" : "strong";
+
+      const direction = r >= 0 ? "positive" : "negative";
+
+      const highestDensity = [...points]
+        .sort((a, b) => b.y - a.y)[0];
+
+      insight.innerHTML =
+        "<strong>Key finding (" + year + "):</strong> " +
+        "Across Australia's eight states and territories, " +
+        "the relationship between protected-area feature counts " +
+        "and photographic observation density is " +
+        strength + " and " + direction +
+        " (Pearson r = " + r.toFixed(2) + "). " +
+        highestDensity.state +
+        " recorded the highest observation density (" +
+        highestDensity.y.toLocaleString(
+          "en-AU", { maximumFractionDigits: 1 }
+        ) +
+        " records per 1,000 km²). " +
+        "This association does not establish causation. " +
+        "Protected-area feature counts measure the number " +
+        "of mapped features, not the amount of protected land.";
+    }
+
+    updateInsight(view.signal("selectedYear"));
+
+    view.addSignalListener(
+      "selectedYear",
+      function(name, value) {
+        updateInsight(value);
+      }
+    );
+
+  } catch (error) {
+    console.error("Vis9 insight error:", error);
+    insight.textContent =
+      "Key finding unavailable. Please check the data files.";
   }
 
-  view.addSignalListener("selectedYear", updateInsight);
-
 }).catch(console.error);
+
 
 
 vegaEmbed("#vis10", "visualisations/vis10.json", {

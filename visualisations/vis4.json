@@ -1,16 +1,8 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "When Is Nature Photography Most Active?",
-    "subtitle": "Monthly ALA photographic observation counts, 2023–2025",
-    "anchor": "start",
-    "fontSize": 20,
-    "subtitleFontSize": 12,
-    "offset": 20
-  },
-  "width": 650,
-  "height": 340,
+  "width": 620,
+  "height": 560,
   "data": {
     "url": "data/01_ala_monthly_counts.csv",
     "format": {
@@ -35,7 +27,7 @@
   ],
   "transform": [
     {
-      "filter": "datum.year == selectedYear"
+      "filter": "datum.year == selectedYear && datum.month >= 1 && datum.month <= 12"
     },
     {
       "aggregate": [
@@ -46,59 +38,114 @@
         }
       ],
       "groupby": ["month"]
+    },
+    {
+      "calculate": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.month - 1]",
+      "as": "month_label"
+    },
+    {
+      "calculate": "datum.month <= 2 || datum.month == 12 ? 'Summer' : datum.month <= 5 ? 'Autumn' : datum.month <= 8 ? 'Winter' : 'Spring'",
+      "as": "season"
+    },
+    {
+      "calculate": "(datum.month - 0.5) * 2 * PI / 12",
+      "as": "label_angle"
     }
   ],
-  "mark": {
-    "type": "line",
-    "color": "#24765B",
-    "strokeWidth": 3,
-    "point": {
-      "filled": true,
-      "size": 80
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 65,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "theta": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": "ascending",
+          "stack": true
+        },
+        "radius": {
+          "field": "records",
+          "type": "quantitative",
+          "scale": {
+            "zero": true,
+            "rangeMin": 65,
+            "rangeMax": 200
+          }
+        },
+        "color": {
+          "field": "season",
+          "type": "nominal",
+          "title": "Australian season",
+          "scale": {
+            "domain": ["Summer", "Autumn", "Winter", "Spring"],
+            "range": [
+              "#E6A23C",
+              "#C77D4E",
+              "#4C78A8",
+              "#24765B"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "month_label",
+            "type": "nominal",
+            "title": "Month"
+          },
+          {
+            "field": "season",
+            "type": "nominal",
+            "title": "Season"
+          },
+          {
+            "field": "records",
+            "type": "quantitative",
+            "title": "Photographic records",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 230,
+        "font": "DM Sans",
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#263B32"
+      },
+      "encoding": {
+        "theta": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": "ascending",
+          "stack": true
+        },
+        "text": {
+          "field": "month_label",
+          "type": "nominal"
+        }
+      }
     }
-  },
-  "encoding": {
-    "x": {
-      "field": "month",
-      "type": "ordinal",
-      "sort": "ascending",
-      "title": "Month",
-      "axis": {
-        "labelAngle": 0,
-        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value-1]"
-      }
-    },
-    "y": {
-      "field": "records",
-      "type": "quantitative",
-      "title": "Photographic observation records",
-      "scale": {
-        "zero": true
-      },
-      "axis": {
-        "format": "~s"
-      }
-    },
-    "tooltip": [
-      {
-        "field": "month",
-        "type": "ordinal",
-        "title": "Month"
-      },
-      {
-        "field": "records",
-        "type": "quantitative",
-        "title": "Records",
-        "format": ","
-      }
-    ]
-  },
+  ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "axis": {
-      "gridColor": "#E8ECE9",
+    "background": "white",
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
       "labelFontSize": 12,
       "titleFontSize": 13
     }

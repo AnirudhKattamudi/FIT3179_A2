@@ -2,15 +2,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Has the Mix of Nature Photography Changed?",
-    "subtitle": "Share of selected ALA photographic records by nature group, 2023–2025",
+    "text": "Which Nature Groups Dominate Australian Photography?",
+    "subtitle": "Each square represents approximately 1% of selected ALA photographic records",
     "anchor": "start",
+    "font": "DM Sans",
     "fontSize": 20,
+    "fontWeight": 700,
+    "color": "#174f3b",
+    "subtitleFont": "DM Sans",
     "subtitleFontSize": 12,
+    "subtitleColor": "#53675b",
     "offset": 20
   },
-  "width": 650,
-  "height": 340,
   "data": {
     "url": "data/02_ala_annual_counts.csv",
     "format": {
@@ -23,6 +26,9 @@
   },
   "transform": [
     {
+      "filter": "isValid(datum.year) && isValid(datum.category) && isValid(datum.population_count)"
+    },
+    {
       "aggregate": [
         {
           "op": "sum",
@@ -31,87 +37,225 @@
         }
       ],
       "groupby": ["year", "category"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "records",
+          "as": "year_total"
+        }
+      ],
+      "groupby": ["year"]
+    },
+    {
+      "calculate": "datum.records / datum.year_total",
+      "as": "share"
+    },
+    {
+      "calculate": "datum.share * 100",
+      "as": "raw_squares"
+    },
+    {
+      "calculate": "floor(datum.raw_squares)",
+      "as": "base_squares"
+    },
+    {
+      "calculate": "datum.raw_squares - datum.base_squares",
+      "as": "remainder"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "base_squares",
+          "as": "base_total"
+        }
+      ],
+      "groupby": ["year"]
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "remainder_rank"
+        }
+      ],
+      "groupby": ["year"],
+      "sort": [
+        {
+          "field": "remainder",
+          "order": "descending"
+        },
+        {
+          "field": "category",
+          "order": "ascending"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.base_squares + (datum.remainder_rank <= 100 - datum.base_total ? 1 : 0)",
+      "as": "squares"
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "squares",
+          "as": "cumulative_squares"
+        }
+      ],
+      "groupby": ["year"],
+      "sort": [
+        {
+          "field": "category",
+          "order": "ascending"
+        }
+      ],
+      "frame": [null, 0]
+    },
+    {
+      "calculate": "datum.cumulative_squares - datum.squares",
+      "as": "start_square"
+    },
+    {
+      "calculate": "sequence(datum.start_square, datum.cumulative_squares)",
+      "as": "square_array"
+    },
+    {
+      "flatten": ["square_array"],
+      "as": ["square_index"]
+    },
+    {
+      "calculate": "datum.square_index % 10",
+      "as": "column"
+    },
+    {
+      "calculate": "floor(datum.square_index / 10)",
+      "as": "row"
     }
   ],
-  "mark": {
-    "type": "bar"
-  },
-  "encoding": {
-    "x": {
+  "facet": {
+    "column": {
       "field": "year",
       "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "labelAngle": 0,
-        "labelFontSize": 13
+      "sort": [2023, 2024, 2025],
+      "title": null,
+      "header": {
+        "labelFont": "DM Sans",
+        "labelFontSize": 17,
+        "labelFontWeight": "bold",
+        "labelColor": "#245B46"
       }
+    }
+  },
+  "spec": {
+    "width": 230,
+    "height": 230,
+    "mark": {
+      "type": "rect",
+      "stroke": "white",
+      "strokeWidth": 1.5,
+      "cornerRadius": 2
     },
-    "y": {
-      "aggregate": "sum",
-      "field": "records",
-      "type": "quantitative",
-      "stack": "normalize",
-      "title": "Share of photographic records",
-      "axis": {
-        "format": ".0%"
-      }
-    },
-    "color": {
-      "field": "category",
-      "type": "nominal",
-      "title": "Nature group",
-      "scale": {
-        "domain": [
-          "Plants",
-          "Insects",
-          "Birds",
-          "Fungi",
-          "Mammals",
-          "Reptiles",
-          "Amphibians"
-        ],
-        "range": [
-          "#24765B",
-          "#E6A23C",
-          "#4C78A8",
-          "#9467BD",
-          "#E07B75",
-          "#72B7B2",
-          "#B5CF6B"
-        ]
-      }
-    },
-    "tooltip": [
-      {
-        "field": "year",
+    "encoding": {
+      "x": {
+        "field": "column",
         "type": "ordinal",
-        "title": "Year"
+        "axis": null,
+        "scale": {
+          "paddingInner": 0.04,
+          "paddingOuter": 0.02
+        }
       },
-      {
+      "y": {
+        "field": "row",
+        "type": "ordinal",
+        "sort": "descending",
+        "axis": null,
+        "scale": {
+          "paddingInner": 0.04,
+          "paddingOuter": 0.02
+        }
+      },
+      "color": {
         "field": "category",
         "type": "nominal",
-        "title": "Nature group"
+        "title": "Nature group",
+        "scale": {
+          "domain": [
+            "Plants",
+            "Insects",
+            "Birds",
+            "Fungi",
+            "Mammals",
+            "Reptiles",
+            "Amphibians"
+          ],
+          "range": [
+            "#24765B",
+            "#E6A23C",
+            "#4C78A8",
+            "#9467BD",
+            "#E07B75",
+            "#72B7B2",
+            "#B5CF6B"
+          ]
+        },
+        "legend": {
+          "orient": "bottom",
+          "columns": 4,
+          "labelFontSize": 12,
+          "titleFontSize": 13
+        }
       },
-      {
-        "field": "records",
-        "type": "quantitative",
-        "title": "Records",
-        "format": ","
-      }
-    ]
+      "tooltip": [
+        {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        {
+          "field": "category",
+          "type": "nominal",
+          "title": "Nature group"
+        },
+        {
+          "field": "records",
+          "type": "quantitative",
+          "title": "Observation records",
+          "format": ","
+        },
+        {
+          "field": "share",
+          "type": "quantitative",
+          "title": "Actual share",
+          "format": ".1%"
+        },
+        {
+          "field": "squares",
+          "type": "quantitative",
+          "title": "Squares out of 100"
+        }
+      ]
+    }
   },
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "axis": {
-      "gridColor": "#E8ECE9",
-      "labelFontSize": 12,
-      "titleFontSize": 13
+    "background": "white",
+    "facet": {
+      "spacing": 20
+    },
+    "header": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans"
     },
     "legend": {
-      "labelFontSize": 12,
-      "titleFontSize": 13
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans"
     }
   }
 }

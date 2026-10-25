@@ -3,15 +3,28 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Do More Protected Areas Mean More Nature Photography?",
-    "subtitle": "Protected-area feature counts (2024) vs photographic observation density (2023–2025)",
+    "subtitle": "Protected-area features (2024) vs photographic observation density (2023–2025)",
     "anchor": "start",
-    "fontSize": 18,
-    "subtitleFontSize": 12
+    "font": "DM Sans",
+    "fontSize": 20,
+    "fontWeight": 700,
+    "color": "#174f3b",
+    "subtitleFont": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#53675b",
+    "offset": 20
   },
   "width": 650,
   "height": 360,
   "data": {
-    "url": "data/04_ala_state_year_counts.csv"
+    "url": "data/04_ala_state_year_counts.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "population_count": "number"
+      }
+    }
   },
   "params": [
     {
@@ -26,7 +39,7 @@
   ],
   "transform": [
     {
-      "filter": "toNumber(datum.year) == selectedYear"
+      "filter": "datum.year == selectedYear"
     },
     {
       "calculate": "datum.state == 'Australian Capital Territory' ? 'ACT' : datum.state == 'New South Wales' ? 'NSW' : datum.state == 'Northern Territory' ? 'NT' : datum.state == 'Queensland' ? 'QLD' : datum.state == 'South Australia' ? 'SA' : datum.state == 'Tasmania' ? 'TAS' : datum.state == 'Victoria' ? 'VIC' : 'WA'",
@@ -36,7 +49,13 @@
       "lookup": "state_code",
       "from": {
         "data": {
-          "url": "data/09_capad_2024_terrestrial_state_summary.csv"
+          "url": "data/09_capad_2024_terrestrial_state_summary.csv",
+          "format": {
+            "type": "csv",
+            "parse": {
+              "feature_count": "number"
+            }
+          }
         },
         "key": "state_code",
         "fields": ["feature_count"]
@@ -47,7 +66,7 @@
       "as": "land_area_km2"
     },
     {
-      "calculate": "datum.population_count / datum.land_area_km2 * 1000",
+      "calculate": "toNumber(datum.population_count) / datum.land_area_km2 * 1000",
       "as": "observation_density"
     },
     {
@@ -60,6 +79,7 @@
         "type": "circle",
         "size": 230,
         "opacity": 0.85,
+        "color": "#147d64",
         "stroke": "white",
         "strokeWidth": 1.5
       },
@@ -113,9 +133,6 @@
             "tickSize": 4
           }
         },
-        "color": {
-          "value": "#147d64"
-        },
         "tooltip": [
           {
             "field": "state",
@@ -140,6 +157,12 @@
             "format": ",.0f"
           },
           {
+            "field": "land_area_km2",
+            "type": "quantitative",
+            "title": "Land Area (km²)",
+            "format": ",.0f"
+          },
+          {
             "field": "observation_density",
             "type": "quantitative",
             "title": "Records per 1,000 km²",
@@ -153,8 +176,10 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 9,
+        "dx": 10,
+        "font": "DM Sans",
         "fontSize": 11,
+        "fontWeight": "bold",
         "color": "#174d39"
       },
       "encoding": {
@@ -174,9 +199,20 @@
     }
   ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "background": "white"
+    "background": "white",
+    "axis": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans"
+    }
   }
 }

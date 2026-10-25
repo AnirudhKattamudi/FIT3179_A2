@@ -2,12 +2,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Where Are the Most Nature Photographs Recorded?",
     "subtitle": "Photographic observation records by state and territory, 2023–2025",
     "anchor": "start",
-    "fontSize": 18,
+    "font": "DM Sans",
+    "fontSize": 20,
+    "fontWeight": 700,
+    "color": "#174f3b",
+    "subtitleFont": "DM Sans",
     "subtitleFontSize": 12,
-    "color": "#174d39"
+    "subtitleColor": "#53675b",
+    "offset": 20
   },
   "width": 700,
   "height": 470,
@@ -182,6 +186,7 @@
         {
           "mark": {
             "type": "text",
+            "font": "DM Sans",
             "fontSize": 12,
             "fontWeight": "bold",
             "color": "#174d39",
@@ -207,9 +212,22 @@
     }
   ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "background": "white"
+    "background": "white",
+    "axis": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
   }
 }

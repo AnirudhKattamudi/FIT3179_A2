@@ -5,8 +5,14 @@
     "text": "How Has Nature Photography Changed Across States?",
     "subtitle": "Change in each nature group's share of state records, 2023 vs 2025",
     "anchor": "start",
-    "fontSize": 18,
-    "subtitleFontSize": 12
+    "font": "DM Sans",
+    "fontSize": 20,
+    "fontWeight": 700,
+    "color": "#174f3b",
+    "subtitleFont": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#53675b",
+    "offset": 20
   },
   "width": 650,
   "height": {
@@ -126,9 +132,7 @@
           "field": "share_2023",
           "type": "quantitative",
           "title": "Share of State Records (%)",
-          "scale": {
-            "domain": [0, 75]
-          },
+
           "axis": {
             "labelFontSize": 12,
             "titleFontSize": 13
@@ -197,6 +201,7 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
+        "font": "DM Sans",
         "fontSize": 12,
         "fontWeight": "bold",
         "color": "#174d39"
@@ -214,9 +219,23 @@
     }
   ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "background": "white"
+    "background": "white",
+    "axis": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "gridColor": "#E8ECE9"
+    },
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
   }
 }

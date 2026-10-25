@@ -152,3 +152,439 @@ h2 {
   font-size: 14px;
   line-height: 1.7;
 }
+
+
+
+.radial-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.radial-chart-container .vega-embed {
+  max-width: 100%;
+}
+
+/* Position the Vis4 year selector above the chart */
+#vis4 .vega-embed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vis4 .vega-bindings {
+  order: -1;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+#vis4 .vega-bind {
+  font-size: 14px;
+}
+.story-intro {
+  background: #ffffff;
+  border-left: 4px solid #24765b;
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin: 24px 0 30px;
+}
+
+.story-intro h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 12px 0 20px;
+}
+
+.story-intro p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+
+.chapter-takeaway {
+  background: #e8f1e9;
+  border-top: 2px solid #24765b;
+  padding: 20px 24px;
+  border-radius: 6px;
+  margin: 28px 0;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #174b37;
+}
+
+.story-conclusion {
+  margin-top: 45px;
+  margin-bottom: 40px;
+  padding: 28px 30px;
+  background: #f2f7f2;
+  border-top: 4px solid #2f7653;
+  border-radius: 8px;
+}
+
+.story-conclusion h2 {
+  color: #174f3b;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.story-conclusion h3 {
+  color: #245b46;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.story-conclusion p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.story-conclusion .closing-message {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #b8d1bf;
+  color: #174f3b;
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+
+
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 28px 0 35px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 25px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 30, 18, 0.8),
+    transparent
+  );
+  color: white;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* Overall website typography */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #263b32;
+}
+
+/* Main website title */
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(34px, 4.5vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  color: #174f3b;
+  margin-bottom: 12px;
+}
+
+/* Chapter headings */
+h2 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+  color: #174f3b;
+  margin-top: 38px;
+}
+
+/* Chart section headings */
+h3 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #245b46;
+}
+
+/* Paragraphs */
+p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Key findings */
+.insight,
+.chapter-takeaway,
+.story-transition {
+  line-height: 1.75;
+}
+
+/* Final conclusion title */
+.story-conclusion h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+}
+
+
+/* =====================================
+   EDITORIAL TYPOGRAPHY
+   ===================================== */
+
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #263b32;
+  line-height: 1.75;
+}
+
+/* Main website title */
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  color: #174f3b;
+}
+
+/* Chapter headings */
+h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(25px, 3vw, 32px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  color: #174f3b;
+}
+
+/* Chart titles and subtitles */
+h3 {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #245b46;
+}
+
+/* Paragraphs */
+p {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Key findings */
+.insight,
+.chapter-takeaway,
+.story-transition {
+  font-family: 'DM Sans', Arial, sans-serif;
+  line-height: 1.75;
+}
+
+/* Conclusion heading */
+.story-conclusion h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 32px;
+}
+
+/* Mobile typography */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0 42px;
+}
+
+.hero-stat {
+  background: #eaf2eb;
+  border: 1px solid #d8e6da;
+  border-radius: 10px;
+  padding: 24px 14px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #174f3b;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  display: block;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #53675b;
+}
+
+@media (max-width: 600px) {
+  .hero-stats {
+    gap: 8px;
+  }
+
+  .hero-stat {
+    padding: 16px 7px;
+  }
+
+  .stat-number {
+    font-size: 22px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+}
+
+
+/* Sticky chapter navigation */
+.chapter-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(248, 250, 247, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #dce8df;
+  width: 100%;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-brand {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #174f3b;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #53675b;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #174f3b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#chapter1,
+#chapter2,
+#chapter3,
+#chapter4 {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 750px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    gap: 18px;
+    padding-bottom: 4px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+}
+
+
+/* Centre Vega visualisations */
+.chart-section .vega-embed {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 25px auto 30px;
+}
+
+/* Keep charts responsive */
+.chart-section .vega-embed canvas,
+.chart-section .vega-embed svg {
+  max-width: 100%;
+}
+
+.chapter-heading {
+  margin-bottom: 26px;
+}
+
+.chapter-number {
+  display: block;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #28765b;
+  margin-bottom: 12px;
+}
+
+.chapter-heading h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(30px, 4vw, 40px);
+  margin: 0 0 10px;
+}
+
+.chapter-subtitle {
+  font-size: 16px;
+  color: #607369;
+  margin: 0;
+}

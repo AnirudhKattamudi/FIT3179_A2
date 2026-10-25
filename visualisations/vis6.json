@@ -5,8 +5,14 @@
     "text": "Where Are Nature Photographs Most Concentrated?",
     "subtitle": "Photographic observation records per 1,000 km² of land, 2023–2025",
     "anchor": "start",
-    "fontSize": 18,
-    "subtitleFontSize": 12
+    "font": "DM Sans",
+    "fontSize": 20,
+    "fontWeight": 700,
+    "color": "#174f3b",
+    "subtitleFont": "DM Sans",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#53675b",
+    "offset": 20
   },
   "width": 650,
   "height": 460,
@@ -151,6 +157,7 @@
       },
       "mark": {
         "type": "text",
+        "font": "DM Sans",
         "fontSize": 14,
         "fontWeight": "bold",
         "color": "#174d39",
@@ -173,9 +180,23 @@
     }
   ],
   "config": {
+    "font": "DM Sans",
     "view": {
       "stroke": null
     },
-    "background": "white"
+    "background": "white",
+    "axis": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "gridColor": "#E8ECE9"
+    },
+    "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    }
   }
 }
